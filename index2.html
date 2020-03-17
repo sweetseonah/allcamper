@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>allcamper에 오신것을 환영합니</title>
+      <link rel="stylesheet" href="./css/base.css">
+      <link rel="stylesheet" href="./css/style.css">
+      <script type="text/javascript" src="./js/main.js"></script>
+      <script type="text/javascript" src="./js/jquery-3.4.1.min.js"></script>
+      <script type="text/javascript" src="./js/jquery.bxslider.js"></script>
+  </head>
+  <body>
+        <div class="visual">
+              <header class="clear">
+                    <h1 class="logo">
+                          <img src="./img/logo.svg" alt="logo"/>
+                    </h1>
+                    <nav class="">
+                          <ul class="clear">
+                              <li><a href="#">Allcamper 소개</a>
+                                  <ul class="navDropdown">
+                                    <li><a href="#">이용방법</a></li>
+                                  </ul>
+                              </li>
+                              <li><a href="#">커뮤니티</a>
+                                  <ul class="navDropdown">
+                                    <li><a href="#">사고팔기</a></li>
+                                    <li><a href="#">DIY캠퍼</a></li>
+                                  </ul>
+                              </li>
+                              <li><a href="#">캠핑카여행후기</a></li>
+                              <li><a href="#">캠핑카공유</a></li>
+                          </ul>
+                    </nav>
+                    <ul Id="beforeLogin">
+                          <li><a href="#">회원가입</a></li>
+                          <li><a href="#">로그인</a></li>
+                    </ul>
+                    <ul ID="afterLogin">
+                          <li class="login"><a href="#"><img src="./img/login.svg" alt="login"></a>
+                              <ul class="navDropdown">
+                                  <li class="mypage"><a href="#">마이페이지</a></li>
+                                  <li class="registerCamper"><a href="#">캠핑카 등록</a></li>
+                                  <li class="sharingCamper"><a href="#">내 캠핑카 공유</a></li>
+                                  <li class="ewallet"><a href="#">전자지갑</a></li>
+                                  <li class="logout"><a href="#">로그아웃</a></li>
+                              </ul>
+                          </li>
+                    </ul>
+              </header>
+              <!-- <img class="mainCamper" src="./img/camper.svg" alt="camper">
+              <img class="mainTree" src="./img/tree.svg" alt="camper"> -->
+        </div>
+        <main>
+              <div class="fillter">
+                    <div id="community" data-fillter="community">
+                          <a href="#">
+                                <img src="./img/community.svg" alt="커뮤니티 아이콘"/>
+                                <p>커뮤니티</p>
+                                <div class="bottomBorder"></div>
+                          </a>
+                    </div>
+                    <div id="review" data-fillter="review">
+                          <a href="#">
+                                <img src="./img/review.svg" alt="여행후기 아이콘"/>
+                                <p>캠핑카</br>여행후기</p>
+                                <div class="bottomBorder"></div>
+                          </a>
+                    </div>
+                    <div id="share" data-fillter="share">
+                          <a href="#">
+                                <img src="./img/share.svg" alt="캠핑카공유"/>
+                                <p>캠핑카공유</p>
+                                <div class="bottomBorder"></div>
+                          </a>
+                    </div>
+              </div><!--<div class="fillter">-->
+              <div class="fillterContainer">
+                      <div data-fillter="community">
+                              <div class="containerTop">
+                                      <h3><img src="./img/userimg1.svg" alt="유저 이미지"/></h3>
+                                      <p>Susna_campingholic</p>
+                              </div>
+                              <div class="containerImg">
+                                      <div class="slide">
+                                            <div class="slider slideBox clear">
+                                              <img src="./img/slide1.jpg" width="353.6" height="236" alt="캠핑카"/>
+                                              <img src="./img/slide2.jpg" width="353.6" height="236" alt="캠핑카"/>
+                                              <img src="./img/slide3.jpg" width="353.6" height="236" alt="캠핑카"/>
+                                              <img src="./img/slide4.jpg" width="353.6" height="236" alt="캠핑카"/>
+                                              <img src="./img/slide5.jpg" width="353.6" height="236" alt="캠핑카"/>
+                                            </div>
+                                      </div>
+                                      <div class="slideBtn clear">
+                                            <img class="preview" src="./img/preview.svg" alt="preview">
+                                            <img class="next" src="./img/next.svg" alt="next">
+                                      </div>
+                              </div>
+                              <div class="containerBtm">
+                                      <h3>장호항 바다 앞</h3>
+                                      <div class="clear">
+                                        <div class="location">
+                                          <img src="./img/pin.svg" alt="pin icon"/>
+                                          <p>제부도, 경기도 화성시</p>
+                                        </div>
+                                        <p class="date">2020.03.03</p>
+                                      </div>
+                                      <p class="br"></p>
+                                      <div class="clear">
+                                        <p class="like">좋아요 1개</p>
+                                        <div class="icons">
+                                          <a href="#"><img src="./img/link.svg" alt="link icon"></a>
+                                          <a href="#"><img src="./img/heart.svg" alt="heart icon"></a>
+                                        </div>
+                                      </div>
+                              </div>
+                      </div><!--<div data-fillter="community">-->
+                      <div data-fillter="community">
+                              <div class="containerTop">
+                                      <h3><img src="./img/userimg1.svg" alt="유저 이미지"/></h3>
+                                      <p>Susna_campingholic</p>
+                              </div>
+                              <div class="containerImg">
+                                      <div class="slide">
+                                            <div class="slider slideBox clear">
+                                              <img src="./img/slide1.jpg" width="353.6" height="236" alt="캠핑카"/>
+                                              <img src="./img/slide2.jpg" width="353.6" height="236" alt="캠핑카"/>
+                                              <img src="./img/slide3.jpg" width="353.6" height="236" alt="캠핑카"/>
+                                              <img src="./img/slide4.jpg" width="353.6" height="236" alt="캠핑카"/>
+                                              <img src="./img/slide5.jpg" width="353.6" height="236" alt="캠핑카"/>
+                                            </div>
+                                      </div>
+                                      <div class="slideBtn clear">
+                                            <img class="preview" src="./img/preview.svg" alt="preview">
+                                            <img class="next" src="./img/next.svg" alt="next">
+                                      </div>
+                              </div>
+                              <div class="containerBtm">
+                                      <h3>장호항 바다 앞</h3>
+                                      <div class="clear">
+                                        <div class="location">
+                                          <img src="./img/pin.svg" alt="pin icon"/>
+                                          <p>제부도, 경기도 화성시</p>
+                                        </div>
+                                        <p class="date">2020.03.03</p>
+                                      </div>
+                                      <p class="br"></p>
+                                      <div class="clear">
+                                        <p class="like">좋아요 1개</p>
+                                        <div class="icons">
+                                          <a href="#"><img src="./img/link.svg" alt="link icon"></a>
+                                          <a href="#"><img src="./img/heart.svg" alt="heart icon"></a>
+                                        </div>
+                                      </div>
+                              </div>
+                      </div><!--<div data-fillter="community">-->
+                      <div data-fillter="community">
+                              <div class="containerTop">
+                                      <h3><img src="./img/userimg1.svg" alt="유저 이미지"/></h3>
+                                      <p>Susna_campingholic</p>
+                              </div>
+                              <div class="containerImg">
+                                      <div class="slide">
+                                            <div class="slider slideBox clear">
+                                              <img src="./img/slide1.jpg" width="353.6" height="236" alt="캠핑카"/>
+                                              <img src="./img/slide2.jpg" width="353.6" height="236" alt="캠핑카"/>
+                                              <img src="./img/slide3.jpg" width="353.6" height="236" alt="캠핑카"/>
+                                              <img src="./img/slide4.jpg" width="353.6" height="236" alt="캠핑카"/>
+                                              <img src="./img/slide5.jpg" width="353.6" height="236" alt="캠핑카"/>
+                                            </div>
+                                      </div>
+                                      <div class="slideBtn clear">
+                                            <img class="preview" src="./img/preview.svg" alt="preview">
+                                            <img class="next" src="./img/next.svg" alt="next">
+                                      </div>
+                              </div>
+                              <div class="containerBtm">
+                                      <h3>장호항 바다 앞</h3>
+                                      <div class="clear">
+                                        <div class="location">
+                                          <img src="./img/pin.svg" alt="pin icon"/>
+                                          <p>제부도, 경기도 화성시</p>
+                                        </div>
+                                        <p class="date">2020.03.03</p>
+                                      </div>
+                                      <p class="br"></p>
+                                      <div class="clear">
+                                        <p class="like">좋아요 1개</p>
+                                        <div class="icons">
+                                          <a href="#"><img src="./img/link.svg" alt="link icon"></a>
+                                          <a href="#"><img src="./img/heart.svg" alt="heart icon"></a>
+                                        </div>
+                                      </div>
+                              </div>
+                      </div><!--<div data-fillter="community">-->
+                      <div data-fillter="community">
+                              <div class="containerTop">
+                                      <h3><img src="./img/userimg1.svg" alt="유저 이미지"/></h3>
+                                      <p>Susna_campingholic</p>
+                              </div>
+                              <div class="containerImg">
+                                      <div class="slide">
+                                            <div class="slider slideBox clear">
+                                              <img src="./img/slide1.jpg" width="353.6" height="236" alt="캠핑카"/>
+                                              <img src="./img/slide2.jpg" width="353.6" height="236" alt="캠핑카"/>
+                                              <img src="./img/slide3.jpg" width="353.6" height="236" alt="캠핑카"/>
+                                              <img src="./img/slide4.jpg" width="353.6" height="236" alt="캠핑카"/>
+                                              <img src="./img/slide5.jpg" width="353.6" height="236" alt="캠핑카"/>
+                                            </div>
+                                      </div>
+                                      <div class="slideBtn clear">
+                                            <img class="preview" src="./img/preview.svg" alt="preview">
+                                            <img class="next" src="./img/next.svg" alt="next">
+                                      </div>
+                              </div>
+                              <div class="containerBtm">
+                                      <h3>장호항 바다 앞</h3>
+                                      <div class="clear">
+                                        <div class="location">
+                                          <img src="./img/pin.svg" alt="pin icon"/>
+                                          <p>제부도, 경기도 화성시</p>
+                                        </div>
+                                        <p class="date">2020.03.03</p>
+                                      </div>
+                                      <p class="br"></p>
+                                      <div class="clear">
+                                        <p class="like">좋아요 1개</p>
+                                        <div class="icons">
+                                          <a href="#"><img src="./img/link.svg" alt="link icon"></a>
+                                          <a href="#"><img src="./img/heart.svg" alt="heart icon"></a>
+                                        </div>
+                                      </div>
+                              </div>
+                      </div><!--<div data-fillter="community">-->
+                      <div data-fillter="community">
+                              <div class="containerTop">
+                                      <h3><img src="./img/userimg1.svg" alt="유저 이미지"/></h3>
+                                      <p>Susna_campingholic</p>
+                              </div>
+                              <div class="containerImg">
+                                      <div class="slide">
+                                            <div class="slider slideBox clear">
+                                              <img src="./img/slide1.jpg" width="353.6" height="236" alt="캠핑카"/>
+                                              <img src="./img/slide2.jpg" width="353.6" height="236" alt="캠핑카"/>
+                                              <img src="./img/slide3.jpg" width="353.6" height="236" alt="캠핑카"/>
+                                              <img src="./img/slide4.jpg" width="353.6" height="236" alt="캠핑카"/>
+                                              <img src="./img/slide5.jpg" width="353.6" height="236" alt="캠핑카"/>
+                                            </div>
+                                      </div>
+                                      <div class="slideBtn clear">
+                                            <img class="preview" src="./img/preview.svg" alt="preview">
+                                            <img class="next" src="./img/next.svg" alt="next">
+                                      </div>
+                              </div>
+                              <div class="containerBtm">
+                                      <h3>장호항 바다 앞</h3>
+                                      <div class="clear">
+                                        <div class="location">
+                                          <img src="./img/pin.svg" alt="pin icon"/>
+                                          <p>제부도, 경기도 화성시</p>
+                                        </div>
+                                        <p class="date">2020.03.03</p>
+                                      </div>
+                                      <p class="br"></p>
+                                      <div class="clear">
+                                        <p class="like">좋아요 1개</p>
+                                        <div class="icons">
+                                          <a href="#"><img src="./img/link.svg" alt="link icon"></a>
+                                          <a href="#"><img src="./img/heart.svg" alt="heart icon"></a>
+                                        </div>
+                                      </div>
+                              </div>
+                      </div><!--<div data-fillter="community">-->
+                      <div data-fillter="community">
+                              <div class="containerTop">
+                                      <h3><img src="./img/userimg1.svg" alt="유저 이미지"/></h3>
+                                      <p>Susna_campingholic</p>
+                              </div>
+                              <div class="containerImg">
+                                      <div class="slide">
+                                            <div class="slider slideBox clear">
+                                              <img src="./img/slide1.jpg" width="353.6" height="236" alt="캠핑카"/>
+                                              <img src="./img/slide2.jpg" width="353.6" height="236" alt="캠핑카"/>
+                                              <img src="./img/slide3.jpg" width="353.6" height="236" alt="캠핑카"/>
+                                              <img src="./img/slide4.jpg" width="353.6" height="236" alt="캠핑카"/>
+                                              <img src="./img/slide5.jpg" width="353.6" height="236" alt="캠핑카"/>
+                                            </div>
+                                      </div>
+                                      <div class="slideBtn clear">
+                                            <img class="preview" src="./img/preview.svg" alt="preview">
+                                            <img class="next" src="./img/next.svg" alt="next">
+                                      </div>
+                              </div>
+                              <div class="containerBtm">
+                                      <h3>장호항 바다 앞</h3>
+                                      <div class="clear">
+                                        <div class="location">
+                                          <img src="./img/pin.svg" alt="pin icon"/>
+                                          <p>제부도, 경기도 화성시</p>
+                                        </div>
+                                        <p class="date">2020.03.03</p>
+                                      </div>
+                                      <p class="br"></p>
+                                      <div class="clear">
+                                        <p class="like">좋아요 1개</p>
+                                        <div class="icons">
+                                          <a href="#"><img src="./img/link.svg" alt="link icon"></a>
+                                          <a href="#"><img src="./img/heart.svg" alt="heart icon"></a>
+                                        </div>
+                                      </div>
+                              </div>
+                      </div><!--<div data-fillter="community">-->
+                      <div data-fillter="community">
+                              <div class="containerTop">
+                                      <h3><img src="./img/userimg1.svg" alt="유저 이미지"/></h3>
+                                      <p>Susna_campingholic</p>
+                              </div>
+                              <div class="containerImg">
+                                      <div class="slide">
+                                            <div class="slider slideBox clear">
+                                              <img src="./img/slide1.jpg" width="353.6" height="236" alt="캠핑카"/>
+                                              <img src="./img/slide2.jpg" width="353.6" height="236" alt="캠핑카"/>
+                                              <img src="./img/slide3.jpg" width="353.6" height="236" alt="캠핑카"/>
+                                              <img src="./img/slide4.jpg" width="353.6" height="236" alt="캠핑카"/>
+                                              <img src="./img/slide5.jpg" width="353.6" height="236" alt="캠핑카"/>
+                                            </div>
+                                      </div>
+                                      <div class="slideBtn clear">
+                                            <img class="preview" src="./img/preview.svg" alt="preview">
+                                            <img class="next" src="./img/next.svg" alt="next">
+                                      </div>
+                              </div>
+                              <div class="containerBtm">
+                                      <h3>장호항 바다 앞</h3>
+                                      <div class="clear">
+                                        <div class="location">
+                                          <img src="./img/pin.svg" alt="pin icon"/>
+                                          <p>제부도, 경기도 화성시</p>
+                                        </div>
+                                        <p class="date">2020.03.03</p>
+                                      </div>
+                                      <p class="br"></p>
+                                      <div class="clear">
+                                        <p class="like">좋아요 1개</p>
+                                        <div class="icons">
+                                          <a href="#"><img src="./img/link.svg" alt="link icon"></a>
+                                          <a href="#"><img src="./img/heart.svg" alt="heart icon"></a>
+                                        </div>
+                                      </div>
+                              </div>
+                      </div><!--<div data-fillter="community">-->
+                      <div data-fillter="community">
+                              <div class="containerTop">
+                                      <h3><img src="./img/userimg1.svg" alt="유저 이미지"/></h3>
+                                      <p>Susna_campingholic</p>
+                              </div>
+                              <div class="containerImg">
+                                      <div class="slide">
+                                            <div class="slider slideBox clear">
+                                              <img src="./img/slide1.jpg" width="353.6" height="236" alt="캠핑카"/>
+                                              <img src="./img/slide2.jpg" width="353.6" height="236" alt="캠핑카"/>
+                                              <img src="./img/slide3.jpg" width="353.6" height="236" alt="캠핑카"/>
+                                              <img src="./img/slide4.jpg" width="353.6" height="236" alt="캠핑카"/>
+                                              <img src="./img/slide5.jpg" width="353.6" height="236" alt="캠핑카"/>
+                                            </div>
+                                      </div>
+                                      <div class="slideBtn clear">
+                                            <img class="preview" src="./img/preview.svg" alt="preview">
+                                            <img class="next" src="./img/next.svg" alt="next">
+                                      </div>
+                              </div>
+                              <div class="containerBtm">
+                                      <h3>장호항 바다 앞</h3>
+                                      <div class="clear">
+                                        <div class="location">
+                                          <img src="./img/pin.svg" alt="pin icon"/>
+                                          <p>제부도, 경기도 화성시</p>
+                                        </div>
+                                        <p class="date">2020.03.03</p>
+                                      </div>
+                                      <p class="br"></p>
+                                      <div class="clear">
+                                        <p class="like">좋아요 1개</p>
+                                        <div class="icons">
+                                          <a href="#"><img src="./img/link.svg" alt="link icon"></a>
+                                          <a href="#"><img src="./img/heart.svg" alt="heart icon"></a>
+                                        </div>
+                                      </div>
+                              </div>
+                      </div><!--<div data-fillter="community">-->
+                      <div data-fillter="community">
+                              <div class="containerTop">
+                                      <h3><img src="./img/userimg1.svg" alt="유저 이미지"/></h3>
+                                      <p>Susna_campingholic</p>
+                              </div>
+                              <div class="containerImg">
+                                      <div class="slide">
+                                            <div class="slider slideBox clear">
+                                              <img src="./img/slide1.jpg" width="353.6" height="236" alt="캠핑카"/>
+                                              <img src="./img/slide2.jpg" width="353.6" height="236" alt="캠핑카"/>
+                                              <img src="./img/slide3.jpg" width="353.6" height="236" alt="캠핑카"/>
+                                              <img src="./img/slide4.jpg" width="353.6" height="236" alt="캠핑카"/>
+                                              <img src="./img/slide5.jpg" width="353.6" height="236" alt="캠핑카"/>
+                                            </div>
+                                      </div>
+                                      <div class="slideBtn clear">
+                                            <img class="preview" src="./img/preview.svg" alt="preview">
+                                            <img class="next" src="./img/next.svg" alt="next">
+                                      </div>
+                              </div>
+                              <div class="containerBtm">
+                                      <h3>장호항 바다 앞</h3>
+                                      <div class="clear">
+                                        <div class="location">
+                                          <img src="./img/pin.svg" alt="pin icon"/>
+                                          <p>제부도, 경기도 화성시</p>
+                                        </div>
+                                        <p class="date">2020.03.03</p>
+                                      </div>
+                                      <p class="br"></p>
+                                      <div class="clear">
+                                        <p class="like">좋아요 1개</p>
+                                        <div class="icons">
+                                          <a href="#"><img src="./img/link.svg" alt="link icon"></a>
+                                          <a href="#"><img src="./img/heart.svg" alt="heart icon"></a>
+                                        </div>
+                                      </div>
+                              </div>
+                      </div><!--<div data-fillter="community">-->
+              </div><!--<div class="fillterContainer">-->
+        </main>
+        <footer>
+
+        </footer>
+  </body>
+</html>

@@ -40,20 +40,18 @@ main .fillter > div:first-child a p,
 main .fillter > div:nth-child(3) a p{padding-top:2rem;}
 
 main .fillterContainer{width:100%; max-width:84rem;  margin: 5rem auto;}
-main .fillterContainer>div{border:1px solid #01189B; border-radius:20px; display:inline-block; width:23rem; height:26rem; margin:1.5rem;}
+main .fillterContainer>div{border:1px solid #01189B; border-radius:20px; display:inline-block; width:23rem; height:29rem; margin:1.5rem;}
 main .fillterContainer>div>div{width:23rem; display:inline-block; box-sizing:border-box;}
-main .fillterContainer>div>div:first-child{height:16%;}
-main .fillterContainer>div>div:nth-child(2){height:57%;}
+main .fillterContainer>div>div:first-child{height:12%;}
+main .fillterContainer>div>div:nth-child(2){height:48%;}
+main .fillterContainer>div>div:nth-child(3){height:40%;}
 
-.containerTop .location p,
+.containerTop h3,
+.containerTop p,
 .containerImg .slideBtn img{width:100%; display:inline;}
 
-.containerTop{padding:1.5rem 0.65rem 0.65rem 0.65rem;}
-.containerTop>div{display:inline-block;}
-.containerTop .campersIcon{float:left; margin-top:}
-.containerTop .campersIcon img{width:5rem;}
-.containerTop .location{float:right; line-height:3; }
-.containerTop .location img{width:1rem;}
+.containerTop{padding:0.75rem 0.65rem;}
+.containerTop h3 img{width:2rem;}
 
 .containerImg{position:relative; width:100%;}
 .containerImg .slide{position:absolute; width:21.7rem; height:14.75rem; padding:0 0.4rem; overflow:hidden;}
@@ -63,19 +61,18 @@ main .fillterContainer>div>div:nth-child(2){height:57%;}
 .containerImg .slideBtn img{ width:1.625rem; cursor:pointer; }
 .containerImg .slideBtn img:first-child{float:left;}
 .containerImg .slideBtn img:nth-child(2){float:right;}
-.containerImg .likeOnimg{position:absolute; bottom:4%; width:inherit; padding:0 1rem; box-sizing: border-box; z-index: 9999;}
-.containerImg .likeOnimg img{width:1.5rem; float:right;}
 
-.containerBtm{padding:0.625rem 0.625rem 1rem 0.625rem;}
-.containerBtm .facilities,
-.containerBtm .facilities img,
-.containerBtm h3,
-.containerBtm .reviewStar,
-.containerBtm p{display: inline-block;}
-.containerBtm .facilities{float:left;}
-.containerBtm .facilities img{width:3.125rem;}
-.containerBtm h3{float:right;}
-.containerBtm h3 img{fill:#FF4E00;}
-.containerBtm .reviewStar{float:left;}
-.containerBtm .reviewStar img{width:1.125rem;}
-.containerBtm p{float:right;}
+.containerBtm{width:100%;}
+.containerBtm img{width: inherit;}
+.containerBtm h3{font-size:1.875rem; padding-top:1rem; font-weight:bold; color:#000; text-align: center;}
+.containerBtm > div{margin:0 auto; width:21.7rem; padding:1rem; box-sizing: border-box;}
+
+.containerBtm div div,
+.containerBtm div p{display:inline-block;}
+.location,
+.like{float:left;}
+.date,
+.icons{float:right;}
+.icons a:nth-child(2){padding:0 0 0 0.5rem;}
+
+.containerBtm .br{margin:0 auto; width:21rem; height:2px; background:#ff4e00;}

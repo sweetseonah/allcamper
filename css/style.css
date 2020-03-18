@@ -40,15 +40,15 @@ main .fillter > div:first-child a p,
 main .fillter > div:nth-child(3) a p{padding-top:2rem;}
 
 main .fillterContainer{width:100%; max-width:84rem;  margin: 5rem auto;}
-main .fillterContainer>div{border:1px solid #01189B; border-radius:20px; display:inline-block; width:23rem; height:26rem; margin:1.5rem;}
+main .fillterContainer>div{border:1px solid #01189B; border-radius:20px; display:inline-block; width:23rem; height:26.5rem; margin:1.5rem;}
 main .fillterContainer>div>div{width:23rem; display:inline-block; box-sizing:border-box;}
-main .fillterContainer>div>div:first-child{height:16%;}
-main .fillterContainer>div>div:nth-child(2){height:57%;}
+main .fillterContainer>div>div:first-child{height:15%;}
+main .fillterContainer>div>div:nth-child(2){height:56%;}
 
 .containerTop .location p,
 .containerImg .slideBtn img{width:100%; display:inline;}
 
-.containerTop{padding:1.5rem 0.65rem 0.65rem 0.65rem;}
+.containerTop{padding:1rem 0.65rem 0.65rem 0.65rem;}
 .containerTop>div{display:inline-block;}
 .containerTop .campersIcon{float:left; margin-top:}
 .containerTop .campersIcon img{width:5rem;}
@@ -67,6 +67,7 @@ main .fillterContainer>div>div:nth-child(2){height:57%;}
 .containerImg .likeOnimg img{width:1.5rem; float:right;}
 
 .containerBtm{padding:0.625rem 0.625rem 1rem 0.625rem;}
+.containerBtm>div:first-child{margin-bottom:0.625rem;}
 .containerBtm .facilities,
 .containerBtm .facilities img,
 .containerBtm h3,

@@ -1,35 +1,87 @@
 @charset "utf-8";
 body{background:#fff;}
 
-body>div{position:relative; height:100vh; max-width:1920px; margin: 0 auto;}
-body>div header{ height:5rem; padding:2.15rem 1.9rem; line-height: 1;}
-body>div header a{color:#333;}
-body>div header a:hover{color:#01189B;}
+header{ max-width: 1920px; position: fixed; height:5rem; padding:2.15rem 1.9rem; line-height: 1; z-index: 9999;}
+header a{color:#333;}
+header a:hover{color:#01189B;}
 
-body>div header h1, body>div header nav, body>div header ul{ display:inline-block; }
-
-div header h1{float:left; width:9.375rem;}
-
-div header >nav{float:left;}
-div header > ul{float:right;}
+header h1, header nav, header ul{ display:inline-block; }
+header h1{float:left; width:9.375rem;}
+header >nav{float:left;}
+header > ul{float:right;}
 
 header nav ul li
-,div header ul li {position:relative; width:10rem; padding:2rem 0 0 0;  float:left; text-align: center;}
+,header ul li {position:relative; width:10rem; padding:2rem 0 0 0;  float:left; text-align: center;}
 header nav ul li:hover .navDropdown
-,div header ul li:hover .navDropdown{display: block;}
+,header ul li:hover .navDropdown{display: block;}
+
+#beforeLogin{display:block;}
+#afterLogin{display:none;}
 
 .navDropdown{display: none; line-height:1; margin:1.5rem 0 0 0;}
 .navDropdown li{box-sizing:content-box; padding:1rem 0;}
 .navDropdown li:hover{background:rgba(255,255,255,0.6);}
 .navDropdown li:hover a{color:#01189B;}
 
-.visual{position:relative; box-sizing: content-box; background:url(../img/background3.svg) no-repeat bottom; background-size:contain;}
-.visual>img{position:absolute; width:inherit;}
-.mainCamper{z-index:99;}
-.mainTree{z-index:9;}
+.visual{position:relative; height:100vh; max-width:1920px; margin: 0 auto;overflow: hidden; max-width: 1920px;}
+.visualBackground{position:absolute; top:0; left:0; background:url(../img/mainbackground.svg) no-repeat bottom; background-size:cover; width:7659px; height:100vh; z-index:9;}
+.mainCamper{position:absolute; top:50%; left:0; background:url(../img/mainCamper.svg) no-repeat; width:8192px;  height:100%; z-index:9999;}
+/*
+.visualBackground {
+  /* Choose the animation */
+  animation-name: movingBox;
 
-#beforeLogin{display:block;}
-#afterLogin{display:none;}
+  /* The animation’s duration */
+  animation-duration: 40000ms;
+
+  /* The number of times we want
+      the animation to run */
+  animation-iteration-count: infinite;
+
+  /* Causes the animation to reverse
+      on every odd iteration */
+  animation-direction: alternate;
+}
+
+@keyframes movingBox {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  0% {
+    transform: translate(0,  0);
+  }
+
+  100% {
+    transform: translate(-7659px, 0);
+  }
+}
+
+.mainCamper {
+  /* Choose the animation */
+  animation-name: mainCamper;
+
+  /* The animation’s duration */
+  animation-duration: 30000ms;
+
+  /* The number of times we want
+      the animation to run */
+  animation-iteration-count: infinite;
+
+  /* Causes the animation to reverse
+      on every odd iteration */
+  animation-direction: alternate;
+}
+
+@keyframes maincamper {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  100% {
+    transform: translate(8192px, 0);
+  }
+}
 
 main{background:#fff; font-size: 16px; ; }
 main .fillter{position:relative; width:45.5rem; height:15rem; margin:0 auto; padding:5rem 0 0 0; }

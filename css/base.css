@@ -1,6 +1,52 @@
 
 @charset "utf-8";
-@font-face { font-family: 'Youth'; font-style: normal; src: url('./font/Youth.woff2') format('woff2'), url('./font/Youth.woff') format('woff'); } .youth * { font-family: 'Youth', sans-serif; }
+@font-face { font-family: 'Youth'; font-style: normal; font-weight: 250; src: url('./font/Youth.woff2') format('woff2'), url('./font/Youth.woff') format('woff'); } .youth * { font-family: 'Youth', sans-serif; }
+
+.youth * {
+ font-family: 'Youth', sans-serif;
+}
+
+/** 이하는 공통 **/
+.normal {
+ font-style: normal;
+}
+
+.w250 {
+ font-weight: 250;
+}
+
+.w300 {
+ font-weight: 300;
+}
+
+.w350 {
+ font-weight: 350;
+}
+
+.w400 {
+ font-weight: 400;
+}
+
+.w500 {
+ font-weight: 500;
+}
+
+.w700 {
+ font-weight: 700;
+}
+
+.w800 {
+ font-weight: 800;
+}
+
+.w900 {
+ font-weight: 900;
+}
+
+li span {
+ line-height: 1.8;
+ font-size: 1.3em;
+}
 
 /* Reset */
  * {outline:0 !important;}

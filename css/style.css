@@ -26,7 +26,7 @@ header nav ul li:hover .navDropdown
 .visual{position:relative; height:100vh; max-width:1920px; margin: 0 auto;overflow: hidden; max-width: 1920px;}
 .visualBackground{position:absolute; top:0; left:0; background:url(../img/mainbackground.svg) no-repeat bottom; background-size:cover; width:7659px; height:100vh; z-index:9;}
 .mainCamper{position:absolute; top:50%; left:0; background:url(../img/mainCamper.svg) no-repeat; width:8192px;  height:100%; z-index:9999;}
-/*
+
 .visualBackground {
   /* Choose the animation */
   animation-name: movingBox;

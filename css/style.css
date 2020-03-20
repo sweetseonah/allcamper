@@ -5,7 +5,7 @@ header{width:100%; position: fixed; height:5rem; padding:1rem 1.9rem; line-heigh
 header a{color:#36393E;}
 header a:hover{color:#FF4500;}
 
-header h1, header nav, header ul{ display:inline-block; }
+header h1, header nav, header ul{display:inline-block; }
 header h1{float:left; width:7rem;}
 header >nav{float:left;}
 header > ul{float:right;}
@@ -20,10 +20,10 @@ header nav ul li:hover .navDropdown
 
 .navDropdown{display: none; line-height:1; margin:1.5rem 0 0 0;}
 .navDropdown li{box-sizing:content-box; padding:1rem 0;}
-.navDropdown li:hover{background:rgba(22,67,106,0.7);}
-.navDropdown li:hover a{color:#FF4500;}
+.navDropdown li:hover{background:rgba(22,67,106,1);}
+.navDropdown li:hover a{color:#fff;}
 
-.visual{position:relative; height:110vh; width:100vw; margin: 0 auto; overflow: hidden; }
+.visual{position:relative; height:110vh; width:100vw; max-width: 1920px; margin: 0 auto; overflow: hidden; }
 .visualBackground{position:absolute; top:0; left:0; background:url(../img/mainbackground.svg) no-repeat bottom; background-size:cover; width:9555px; height:110vh; z-index:9;}
 .mainCamper{position:absolute; top:50%; margin-left:-8192px; background:url(../img/mainCamper.svg) no-repeat; width:8192px;  height:100%; z-index:9999;}
 
@@ -117,7 +117,7 @@ main .fillterContainer>div>div:nth-child(2){height:56%;}
 
 footer {
     width: 100%;
-    background: #101F3A;
+    background: #16436A;
 }
 .footer_cont {
     width: 90%;

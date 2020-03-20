@@ -1,17 +1,17 @@
 @charset "utf-8";
 body{background:#fff;}
 
-header{ max-width: 1920px; position: fixed; height:5rem; padding:2.15rem 1.9rem; line-height: 1; z-index: 9999;}
-header a{color:#333;}
-header a:hover{color:#01189B;}
+header{width:100%; position: fixed; height:5rem; padding:1rem 1.9rem; line-height: 1; z-index: 9999;}
+header a{color:#36393E;}
+header a:hover{color:#FF4500;}
 
 header h1, header nav, header ul{ display:inline-block; }
-header h1{float:left; width:9.375rem;}
+header h1{float:left; width:7rem;}
 header >nav{float:left;}
 header > ul{float:right;}
 
 header nav ul li
-,header ul li {position:relative; width:10rem; padding:2rem 0 0 0;  float:left; text-align: center;}
+,header ul li {position:relative; width:10rem; padding:2rem 0 0 0; float:left; text-align: center;}
 header nav ul li:hover .navDropdown
 ,header ul li:hover .navDropdown{display: block;}
 
@@ -20,79 +20,61 @@ header nav ul li:hover .navDropdown
 
 .navDropdown{display: none; line-height:1; margin:1.5rem 0 0 0;}
 .navDropdown li{box-sizing:content-box; padding:1rem 0;}
-.navDropdown li:hover{background:rgba(255,255,255,0.6);}
-.navDropdown li:hover a{color:#01189B;}
+.navDropdown li:hover{background:rgba(22,67,106,0.7);}
+.navDropdown li:hover a{color:#FF4500;}
 
-.visual{position:relative; height:100vh; max-width:1920px; margin: 0 auto;overflow: hidden; max-width: 1920px;}
-.visualBackground{position:absolute; top:0; left:0; background:url(../img/mainbackground.svg) no-repeat bottom; background-size:cover; width:7659px; height:100vh; z-index:9;}
-.mainCamper{position:absolute; top:50%; left:0; background:url(../img/mainCamper.svg) no-repeat; width:8192px;  height:100%; z-index:9999;}
+.visual{position:relative; height:110vh; width:100vw; margin: 0 auto; overflow: hidden; }
+.visualBackground{position:absolute; top:0; left:0; background:url(../img/mainbackground.svg) no-repeat bottom; background-size:cover; width:9555px; height:110vh; z-index:9;}
+.mainCamper{position:absolute; top:50%; margin-left:-8192px; background:url(../img/mainCamper.svg) no-repeat; width:8192px;  height:100%; z-index:9999;}
 
 .visualBackground {
-  /* Choose the animation */
   animation-name: movingBox;
-
-  /* The animation’s duration */
   animation-duration: 40000ms;
-
-  /* The number of times we want
-      the animation to run */
-  animation-iteration-count: infinite;
-
-  /* Causes the animation to reverse
-      on every odd iteration */
-  animation-direction: alternate;
 }
-
 @keyframes movingBox {
-  0% {
-    transform: translate(0, 0);
+  from {
+    margin-left: -1920px;
   }
 
-  0% {
-    transform: translate(0,  0);
-  }
-
-  100% {
-    transform: translate(-7659px, 0);
+  to {
+  margin-left: -7645px;
   }
 }
 
 .mainCamper {
   /* Choose the animation */
-  animation-name: mainCamper;
+  animation-name: maincamper;
 
   /* The animation’s duration */
-  animation-duration: 30000ms;
-
-  /* The number of times we want
-      the animation to run */
-  animation-iteration-count: infinite;
-
-  /* Causes the animation to reverse
-      on every odd iteration */
-  animation-direction: alternate;
+  animation-duration: 40000ms;
 }
-
 @keyframes maincamper {
   0% {
     transform: translate(0, 0);
   }
 
+  90% {
+    transform: translate(9100px, 0);
+  }
+
   100% {
-    transform: translate(8192px, 0);
+    transform: translate(8350px, 0);
   }
 }
 
 main{background:#fff; font-size: 16px; ; }
-main .fillter{position:relative; width:45.5rem; height:15rem; margin:0 auto; padding:5rem 0 0 0; }
-main .fillter div{height:inherit; position:relative; display:inline-block; text-align: center; cursor:pointer;}
-main .fillter div:nth-child(2){padding:0 7rem;}
-main .fillter div a p{font-size:2rem;}
-main .fillter > div:first-child a p,
-main .fillter > div:nth-child(3) a p{padding-top:2rem;}
+main .fillter{position:relative; width:45.5rem; height:13rem; margin:0 auto; padding:10rem 0 0 0; }
+main .fillter > div{display:inline-block; text-align: center; cursor:pointer; width:200px; height:200px; border-radius: 300px; border:1px solid #16436A;  box-shadow: 0px 3px 6px rgba(0, 0, 0, .16);  }
+main .fillter > div:nth-child(2){margin:0 3.5rem;}
+main .fillter div a{width:180px; height:180px; margin:0.5rem 0 0 0; background:#16436A; border-radius:100px; display: inline-block; box-shadow: 0px 3px 6px rgba(0, 0, 0, .16); }
+main .fillter div a img{width:70%;}
+main .fillter div:first-child a img,
+main .fillter div:nth-child(3) a img{padding:0.7rem 0 0 0;}
+main .fillter div:nth-child(2) a img{padding:0.3rem 0 0 0;}
+main .fillter div a p{color:#fff;}
 
-main .fillterContainer{width:100%; max-width:79.1rem;  margin: 5rem auto;}
-main .fillterContainer>div{border:1px solid #01189B; border-radius:20px; display:inline-block; width:23rem; height:26.5rem; margin:1.5rem;}
+main .fillterContainer{width:100%; max-width:79.1rem;  margin:10rem auto;}
+main .fillterContainer>div{border:1px solid #16436A; border-radius:20px; display:inline-block; width:23rem; height:26.5rem; margin:1.5rem; box-shadow: 0px 3px 6px rgba(0, 0, 0, .16); }
 main .fillterContainer>div>div{width:23rem; display:inline-block; box-sizing:border-box;}
 main .fillterContainer>div>div:first-child{height:14%;}
 main .fillterContainer>div>div:nth-child(2){height:56%;}

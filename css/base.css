@@ -61,7 +61,7 @@ table{width:100%;border-spacing:0;border-collapse:collapse;}
 img,fieldset{border:0;}
 img{width:100%;}
 address,cite,code,em{font-style:normal;font-weight:normal;}
-label,img,input,select,textarea,button{vertical-align:middle;}
+label,img,input,select,textarea,button,svg{vertical-align:middle;}
 .hide,caption,legend{line-height:0;font-size:1px;overflow:hidden;}
 hr{display:none;}
 main,header,section,nav,footer,aside,article,figure{display:block;}
@@ -99,9 +99,16 @@ input[type=email][disabled]{background:#eaeaea; border-color:#c0c0c0; color:#666
 textarea[readonly],
 textarea[disabled]{padding:0.55rem; font-size:0.8rem; color:#666; font-weight:normal; line-height:140%; height:3.9rem; background:#eaeaea; border:1px solid #c0c0c0;}
 
-input{width:35.5rem; border: 1px solid #16436A; height:2.3rem; border-radius:0.5rem;}
-button{width:7.5rem; height:2.5rem; border-radius:0.5rem; border: 1px solid #16436A; background:none; color:#16436A; font-size:1.4rem;}
+button{width:7.5rem; height:2.5rem; border-radius:0.5rem; border: 1px solid #16436A; background:none; color:#16436A; font-size:1.4rem; cursor: pointer;}
 
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20rem;
+  right: 25%;
+  z-index: 99;
+  cursor: pointer;
+}
 
 .clear {clear:both;}
 .clear:after { content:""; display:block; clear:both;}

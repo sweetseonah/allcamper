@@ -5,7 +5,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>allcamper에 오신것을 환영합니</title>
       <link rel="stylesheet" href="./css/base.css">
-      <link rel="stylesheet" href="./css/community.css">
+      <link rel="stylesheet" href="./css/review.css">
       <script type="text/javascript" src="./js/main.js"></script>
       <script type="text/javascript" src="./js/jquery-3.4.1.min.js"></script>
 
@@ -61,48 +61,76 @@
                     </ul>
         </header>
         <section class="pageTitle">
-              <h1><img src="./img/community_icon.svg" alt="커뮤니티 아이콘">커뮤니티</h1>
+              <header>
+                    <svg version="1.1"
+                    	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+                    	 x="0px" y="0px" viewBox="0 0 101 101" style="overflow:scroll; enable-background:new 0 0 101 101;"
+                    	 xml:space="preserve">
+                    <polyline fill="none" stroke="#000000" stroke-miterlimit="10" points="60.5,31.5 66.5,21.5 73.5,31.5 "/>
+                    <polyline fill="none" stroke="#000000" stroke-miterlimit="10" points="70.5,27 82.5,7.5 95,27 "/>
+                    <polygon fill="#FFFFFF" stroke="#000000" stroke-miterlimit="10" points="50.3,13.2 18.2,72.5 82.5,72.5 "/>
+                    <!-- <rect x="0.5" y="0.5" fill="none" stroke="#000000" stroke-miterlimit="10" width="100" height="100"/> -->
+                    <line fill="#FFFFFF" stroke="#000000" stroke-miterlimit="10" x1="50.5" y1="71.5" x2="50.5" y2="13.5"/>
+                    <g>
+                    	<g>
+
+                    			<rect x="39.9" y="82.5" transform="matrix(0.9361 -0.3517 0.3517 0.9361 -26.4285 22.9518)" fill="#FFFFFF" stroke="#000000" stroke-miterlimit="10" width="20.1" height="3.4"/>
+
+                    			<rect x="39.9" y="82.5" transform="matrix(-0.9361 -0.3517 0.3517 -0.9361 67.1263 180.6523)" fill="#FFFFFF" stroke="#000000" stroke-miterlimit="10" width="20.1" height="3.4"/>
+                    	</g>
+                    	<g>
+                    		<path fill="#FFFFFF" stroke="#000000" stroke-miterlimit="10" d="M56.3,73.8c0,3.3-2.7,6-6,6c-3.3,0-6-2.7-6-6s6-11.2,6-11.2S56.3,70.5,56.3,73.8z"/>
+                    		<path fill="#FFFFFF" stroke="#000000" stroke-miterlimit="10" d="M54.5,75.5c0,2.2-1.9,3.9-4.2,3.9c-2.3,0-4.2-1.7-4.2-3.9s4.2-7.3,4.2-7.3S54.5,73.4,54.5,75.5z"/>
+                    	</g>
+                    </g>
+                    <path fill="none" stroke="#000000" stroke-miterlimit="10" d="M18.5,72.5c34-9,32-58,32-58s-2,49,32,58"/>
+                    <path fill="none" stroke="#000000" stroke-miterlimit="10" d="M31.9,26c-4.9-1.7-7.6-7-5.9-12c0.5-1.5,1.3-2.7,2.3-3.7c-3.4,0.5-6.4,2.8-7.6,6.3c-1.7,4.9,1,10.3,5.9,12
+                    	c3.5,1.2,7.2,0.2,9.6-2.2C34.9,26.6,33.4,26.5,31.9,26z"/>
+                    <path fill="none" stroke="#000000" stroke-miterlimit="10" d="M22.5,77.5"/>
+                    <g>
+                    	<line fill="none" stroke="#000000" stroke-miterlimit="10" x1="22.5" y1="77.5" x2="36.5" y2="77.5"/>
+                    	<line fill="none" stroke="#000000" stroke-miterlimit="10" x1="29.5" y1="81.5" x2="36.5" y2="81.5"/>
+                    	<line fill="none" stroke="#000000" stroke-miterlimit="10" x1="33" y1="85.5" x2="37" y2="85.5"/>
+                    </g>
+                    <g>
+                    	<line fill="none" stroke="#000000" stroke-miterlimit="10" x1="78" y1="77.5" x2="64" y2="77.5"/>
+                    	<line fill="none" stroke="#000000" stroke-miterlimit="10" x1="71" y1="81.5" x2="64" y2="81.5"/>
+                    	<line fill="none" stroke="#000000" stroke-miterlimit="10" x1="67.5" y1="85.5" x2="63.5" y2="85.5"/>
+                    </g>
+                    <polyline fill="none" stroke="#000000" stroke-miterlimit="10" points="77.1,16.2 78.5,19.5 82.5,14.5 85.5,19.5 87.5,15.2 "/>
+                    <polyline fill="none" stroke="#000000" stroke-miterlimit="10" points="63.5,26.5 65.5,28.5 66.5,26.5 68.5,28.5 69.8,26.2 "/>
+                    </svg>
+                    <p>캠핑카여행후기</p>
+              </header>
               <ul class="clear">
                     <li><input type="text" name="" value=""></input></li>
                     <li><button>search</button></li>
                     <li>
                           <a href="" rel="">
-                                <img src="./img/registering.svg" alt="차량등록 아이콘">
-                                <p>차량등록</p>
+                                <img src="./img/writepost.svg" alt="여행후기쓰기 아이콘">
+                                <p>여행후기쓰기</p>
                           </a>
                     </li>
               </ul>
         </section>
         <main>
               <section class="fillter">
-                    <div id="community" data-fillter="all">
+                    <div id="reviewAll" data-fillter="all">
                             <a href="">
-                                  <img src="./img/all.svg" alt="all cmaper 아이콘"/>
+                                  <img src="./img/review_all.svg" alt="all location 아이콘"/>
                                   <p>All</p>
                             </a>
                     </div>
-                    <div id="review" data-fillter="motorhome">
+                    <div id="domesitc" data-fillter="domestic">
                             <a href="">
-                                <img src="./img/motorhome.svg" alt="모터홈 아이콘"/>
-                                <p>모터홈</p>
+                                <img src="./img/domestic.svg" alt="국내 지역 아이콘"/>
+                                <p>국내</p>
                             </a>
                     </div>
-                    <div id="share" data-fillter="caravan">
+                    <div id="abroad" data-fillter="abroad">
                             <a href="">
-                                  <img src="./img/caravan.svg" alt="카라반 아이콘"/>
-                                  <p>카라반</p>
-                            </a>
-                    </div>
-                    <div id="share" data-fillter="diycamper">
-                            <a href="">
-                              <svg id="diycamper" data-name="diycamper" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 118.5 60.02">
-                                  <path fill="none" stroke="#fff" d="M10.29,11.72c-2.75.71-4.51,4-4.51,4A29.43,29.43,0,0,0,3.87,36.85S2,47.54,7.9,47.3h3.79"/><path fill="none" stroke="#fff" d="M39.12,48.31H12.56a.71.71,0,0,1-.72-.71A51,51,0,0,1,10.17,12a2.3,2.3,0,0,1,2.09-1.49L38.11,10a2.43,2.43,0,0,0,0,2S35.54,27.66,39.12,48.31Z"/><path
-                                  fill="none" stroke="#fff" d="M89.21,17.32l2.13,1.2,2.23,1.26s12.2,3.89,15.76,6.26a25.17,25.17,0,0,1,3.4,3.35,26.61,26.61,0,0,1,2,3.19c.1.2.21.41.31.62.63,1.17.69,2.79,1.41,3.68,1.43,1.67,1.25,3.76,1.07,5.55,0,.45-.39.94-.33,1.49a1.4,1.4,0,0,0,.08.34A2.19,2.19,0,0,1,115.78,47h-5.72"/><path fill="none" stroke="#fff" d="M90.23,22S88,7.42,82.29,7c0,0,5.49,33.19,0,52l7.94-16S93.27,30.34,90.23,22Z"/><circle fill="none" stroke="#fff" cx="101.09" cy="45.63" r="9.07"/>
-                                  <circle fill="none" stroke="#fff" cx="101.09" cy="45.63" r="6.15"/>
-                                  <path fill="none" stroke="#fff" d="M32.15,48.31a9.08,9.08,0,0,1-17.34,0"/>
-                                  <path fill="none" stroke="#fff" d="M29,48.31a6.14,6.14,0,0,1-11.06,0"/><path fill="none" stroke="#fff" d="M38.14,12H59.72a1.14,1.14,0,0,1,1.19,1.1v32a1.14,1.14,0,0,1-1.19,1.1H38.79"/><path fill="none" stroke="#fff" d="M83.48,16.55c-.48-.3-8.85-5.63-18.09-4.71,0,0-2.39-.12-2.33,1.79l4.18,27.7a7.22,7.22,0,0,0,3.12,4.05l.27.14a5.6,5.6,0,0,0,1.68.45c3.26.16,6.48.1,9.8.2l1.23,0,.9,0h.17"/><polyline fill="none" stroke="#fff" points="38.97 47.3 84.19 47.3 84.32 47.3"/><polyline fill="none" stroke="#fff" points="92.17 47.3 88.38 47.3 88.09 47.3"/><path fill="none" stroke="#fff" d="M38,10.35,62.53,10s9.73-.24,14.2,1.55l6.49,2.73"/><path fill="none" stroke="#fff" d="M10,12.55l24.64-.42a1.2,1.2,0,0,1,1.2,1.2L34.64,27a1.19,1.19,0,0,1-1.19,1.19H8.14a1.08,1.08,0,0,1-.36-.05"/><path fill="none" stroke="#fff" d="M111.17,27.69s-3.63-.87-3.15.5c0,0,2.27,7.11,5.13,9.08,0,0,3.18,1.75,4.19,1.32"/><path fill="none" stroke="#fff" d="M91.58,33s8-4.11,18.43,0"/>
-                              </svg>
-                                  <p>DIY캠퍼</p>
+                                  <img src="./img/abroad.svg" alt="해외 지역 아이콘"/>
+                                  <p>해외</p>
                             </a>
                     </div>
               </section><!--<div class="fillter">-->
@@ -129,29 +157,43 @@
                               </section>
                               <section class="containerBtm">
                                     <div class="clear">
-                                            <div class="campersIcon">
-                                                  <img src="./img/diycamper.svg" alt="차량유형 모터홈 icon"/>
+                                            <div class="articleTit">
+                                                <h2>첫 캠핑카 여행 후기</h2>
                                             </div>
-                                            <div class="location">
-                                                  <img src="./img/pin.svg" alt="pin icon"/>
-                                                  <p>제부도, 경기도 화성시</p>
-                                            </div>
+                                            <ul class="clear">
+                                                  <li><p>좋아요 10개</p></li>
+                                                  <li><svg xmlns="http://www.w3.org/2000/svg" width="24.861" height="28.412" viewBox="0 0 24.861 28.412">
+                                                    <path
+                                                      id="Icon_awesome-share-alt"
+                                                      data-name="Icon awesome-share-alt"
+                                                      d="M19.533,17.758a5.3,5.3,0,0,0-3.318,1.16l-5.687-3.555a5.358,5.358,0,0,0,0-2.313L16.216,9.5a5.318,5.318,0,1,0-1.883-3.011L8.645,10.038a5.327,5.327,0,1,0,0,8.336l5.687,3.555a5.328,5.328,0,1,0,5.2-4.171Z"
+                                                      fill="#95C04C"/>
+                                                  </svg></li>
+                                                  <li><svg xmlns="http://www.w3.org/2000/svg" width="30.226" height="26.747" viewBox="0 0 30.226 26.747">
+                                                    <path
+                                                      id="Icon_feather-heart"
+                                                      data-name="Icon feather-heart"
+                                                      d="M27.45,6.6a7.164,7.164,0,0,0-10.133,0L15.936,7.977,14.555,6.6A7.165,7.165,0,1,0,4.422,16.73L5.8,18.111,15.936,28.244,26.069,18.111,27.45,16.73a7.164,7.164,0,0,0,0-10.133Z"
+                                                      transform="translate(-0.823 -2.997)"
+                                                      fill="none"
+                                                      stroke="#95C04C"
+                                                      stroke-linecap="round"
+                                                      stroke-linejoin="round"
+                                                      stroke-width="3"/>
+                                                  </svg></li>
+                                            </ul>
                                     </div>
                                     <div>
                                           <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit....</p>
                                     </div>
                                     <div class="clear">
-                                          <div class="facilities">
-                                                <img src="./img/aircon.svg" alt="aircon icon"/>
-                                                <img src="./img/refri.svg" alt="regrigarator icon"/>
-                                                <img src="./img/awaning.svg" alt="awaning icon"/>
-                                                <img src="./img/navi.svg" alt="navi icon"/>
+                                          <div class="location">
+                                                <img src="./img/pin.svg" alt="pin icon"/>
+                                                <p>Mount Cook National Park, New Zealand</p>
                                           </div>
-                                          <ul class="clear">
-                                                <li><p>좋아요 10개</p></li>
-                                                <li><img src="./img/link.svg" alt="link icon"></li>
-                                                <li><img src="./img/heart.svg" alt="heart icon"></li>
-                                          </ul>
+                                          <p class="date">
+                                              2020.02.01
+                                          </p>
                                     </div>
                                     <div>
                                           <input type="text" name="" value=""></input>
@@ -181,29 +223,43 @@
                               </section>
                               <section class="containerBtm">
                                     <div class="clear">
-                                            <div class="campersIcon">
-                                                  <img src="./img/diycamper.svg" alt="차량유형 모터홈 icon"/>
+                                            <div class="articleTit">
+                                                <h2>첫 캠핑카 여행 후기</h2>
                                             </div>
-                                            <div class="location">
-                                                  <img src="./img/pin.svg" alt="pin icon"/>
-                                                  <p>제부도, 경기도 화성시</p>
-                                            </div>
+                                            <ul class="clear">
+                                                  <li><p>좋아요 10개</p></li>
+                                                  <li><svg xmlns="http://www.w3.org/2000/svg" width="24.861" height="28.412" viewBox="0 0 24.861 28.412">
+                                                    <path
+                                                      id="Icon_awesome-share-alt"
+                                                      data-name="Icon awesome-share-alt"
+                                                      d="M19.533,17.758a5.3,5.3,0,0,0-3.318,1.16l-5.687-3.555a5.358,5.358,0,0,0,0-2.313L16.216,9.5a5.318,5.318,0,1,0-1.883-3.011L8.645,10.038a5.327,5.327,0,1,0,0,8.336l5.687,3.555a5.328,5.328,0,1,0,5.2-4.171Z"
+                                                      fill="#95C04C"/>
+                                                  </svg></li>
+                                                  <li><svg xmlns="http://www.w3.org/2000/svg" width="30.226" height="26.747" viewBox="0 0 30.226 26.747">
+                                                    <path
+                                                      id="Icon_feather-heart"
+                                                      data-name="Icon feather-heart"
+                                                      d="M27.45,6.6a7.164,7.164,0,0,0-10.133,0L15.936,7.977,14.555,6.6A7.165,7.165,0,1,0,4.422,16.73L5.8,18.111,15.936,28.244,26.069,18.111,27.45,16.73a7.164,7.164,0,0,0,0-10.133Z"
+                                                      transform="translate(-0.823 -2.997)"
+                                                      fill="none"
+                                                      stroke="#95C04C"
+                                                      stroke-linecap="round"
+                                                      stroke-linejoin="round"
+                                                      stroke-width="3"/>
+                                                  </svg></li>
+                                            </ul>
                                     </div>
                                     <div>
                                           <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit....</p>
                                     </div>
                                     <div class="clear">
-                                          <div class="facilities">
-                                                <img src="./img/aircon.svg" alt="aircon icon"/>
-                                                <img src="./img/refri.svg" alt="regrigarator icon"/>
-                                                <img src="./img/awaning.svg" alt="awaning icon"/>
-                                                <img src="./img/navi.svg" alt="navi icon"/>
+                                          <div class="location">
+                                                <img src="./img/pin.svg" alt="pin icon"/>
+                                                <p>Mount Cook National Park, New Zealand</p>
                                           </div>
-                                          <ul class="clear">
-                                                <li><p>좋아요 10개</p></li>
-                                                <li><img src="./img/link.svg" alt="link icon"></li>
-                                                <li><img src="./img/heart.svg" alt="heart icon"></li>
-                                          </ul>
+                                          <p class="date">
+                                              2020.02.01
+                                          </p>
                                     </div>
                                     <div>
                                           <input type="text" name="" value=""></input>
@@ -233,29 +289,43 @@
                               </section>
                               <section class="containerBtm">
                                     <div class="clear">
-                                            <div class="campersIcon">
-                                                  <img src="./img/diycamper.svg" alt="차량유형 모터홈 icon"/>
+                                            <div class="articleTit">
+                                                <h2>첫 캠핑카 여행 후기</h2>
                                             </div>
-                                            <div class="location">
-                                                  <img src="./img/pin.svg" alt="pin icon"/>
-                                                  <p>제부도, 경기도 화성시</p>
-                                            </div>
+                                            <ul class="clear">
+                                                  <li><p>좋아요 10개</p></li>
+                                                  <li><svg xmlns="http://www.w3.org/2000/svg" width="24.861" height="28.412" viewBox="0 0 24.861 28.412">
+                                                    <path
+                                                      id="Icon_awesome-share-alt"
+                                                      data-name="Icon awesome-share-alt"
+                                                      d="M19.533,17.758a5.3,5.3,0,0,0-3.318,1.16l-5.687-3.555a5.358,5.358,0,0,0,0-2.313L16.216,9.5a5.318,5.318,0,1,0-1.883-3.011L8.645,10.038a5.327,5.327,0,1,0,0,8.336l5.687,3.555a5.328,5.328,0,1,0,5.2-4.171Z"
+                                                      fill="#95C04C"/>
+                                                  </svg></li>
+                                                  <li><svg xmlns="http://www.w3.org/2000/svg" width="30.226" height="26.747" viewBox="0 0 30.226 26.747">
+                                                    <path
+                                                      id="Icon_feather-heart"
+                                                      data-name="Icon feather-heart"
+                                                      d="M27.45,6.6a7.164,7.164,0,0,0-10.133,0L15.936,7.977,14.555,6.6A7.165,7.165,0,1,0,4.422,16.73L5.8,18.111,15.936,28.244,26.069,18.111,27.45,16.73a7.164,7.164,0,0,0,0-10.133Z"
+                                                      transform="translate(-0.823 -2.997)"
+                                                      fill="none"
+                                                      stroke="#95C04C"
+                                                      stroke-linecap="round"
+                                                      stroke-linejoin="round"
+                                                      stroke-width="3"/>
+                                                  </svg></li>
+                                            </ul>
                                     </div>
                                     <div>
                                           <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit....</p>
                                     </div>
                                     <div class="clear">
-                                          <div class="facilities">
-                                                <img src="./img/aircon.svg" alt="aircon icon"/>
-                                                <img src="./img/refri.svg" alt="regrigarator icon"/>
-                                                <img src="./img/awaning.svg" alt="awaning icon"/>
-                                                <img src="./img/navi.svg" alt="navi icon"/>
+                                          <div class="location">
+                                                <img src="./img/pin.svg" alt="pin icon"/>
+                                                <p>Mount Cook National Park, New Zealand</p>
                                           </div>
-                                          <ul class="clear">
-                                                <li><p>좋아요 10개</p></li>
-                                                <li><img src="./img/link.svg" alt="link icon"></li>
-                                                <li><img src="./img/heart.svg" alt="heart icon"></li>
-                                          </ul>
+                                          <p class="date">
+                                              2020.02.01
+                                          </p>
                                     </div>
                                     <div>
                                           <input type="text" name="" value=""></input>

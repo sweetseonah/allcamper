@@ -109,6 +109,7 @@ main .fillterContainer>div>div:nth-child(3){height:40%;}
 .date,
 .icons{float:right;}
 .like{line-height: 1.5;}
+.date{line-height:2;}
 .icons a:nth-child(2){padding:0 0 0 0.5rem;}
 
 .containerBtm .br{margin:0 auto; width:21rem; height:2px; background:#95C04C;}

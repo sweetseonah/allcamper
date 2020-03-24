@@ -1,0 +1,147 @@
+@charset "utf-8";
+body{background:#fff;}
+
+.visual header{width:100%; position: fixed; top:0; left:50%; background:rgba(255, 255, 255, 0.5); transform: translateX(-50%); height:5rem; padding:1rem 1.9rem; line-height: 1; z-index: 9999;}
+.visual header a{color:#36393E;}
+.visual header a:hover{color:#FF4500;}
+
+.visual header h1,.visual header nav,.visual header ul{display:inline-block;}
+.visual header h1{float:left; width:7rem; padding: 0 0 0 1rem;}
+.visual header > nav{float:left;}
+.visual header > ul{float:right;}
+
+.visual header nav ul li
+,.visual header ul li {position:relative; width:10rem; padding:2rem 0 0 0; float:left; text-align: center;}
+header nav ul li:hover .navDropdown
+,.visual header ul li:hover .navDropdown{display: block;}
+
+.visual header ul li .navDropdown{display: none; line-height:1; margin:1.5rem 0 0 0; z-index:999999;}
+.visual header ul li .navDropdown li{box-sizing:content-box; padding:1rem 0; }
+.visual header ul li .navDropdown li:hover{background:#FF4500;}
+.visual header ul li .navDropdown li:hover a{color:#fff;}
+
+#beforeLogin{display:none;}
+#afterLogin{display:block; padding:0 8.5rem 0 0;}
+#afterLogin li ul li{width:8rem;}
+
+#afterLogin .login{padding:0 0 0 0; width:8rem; position:fixed; z-index:999999; cursor:pointer;}
+#afterLogin .login img{width:4rem;}
+
+.visual{position:relative; height:120vh; width:100vw; margin: 0 auto; overflow: hidden; background:url(../img/share_bg.svg) no-repeat bottom; background-size: cover; z-index:9;}
+.visual .visualBackground{height:120vh; width:100vw; background:url(../img/share_bg2.svg) no-repeat bottom; background-size:cover; z-index:99;}
+.visual #shareCamper{position:absolute; bottom:-7%; right:-5%; width:45%; z-index: 999;}
+.visual .shareGrass{position: absolute; bottom:0; left:0; width:100%; z-index:9999;}
+.searching{width:30vw; z-index: 9999 !important; background:rgba(255, 255, 255, 0.5); }
+
+.visualBackground {
+  animation-name: movingBox;
+  animation-duration: 40000ms;
+}
+/* @keyframes movingBox {
+  from {
+    margin-left: -1920px;
+  }
+
+  to {
+  margin-left: -7645px;
+  }
+}
+
+.mainCamper {
+  /* Choose the animation */
+  animation-name: maincamper;
+
+  /* The animation’s duration */
+  animation-duration: 40000ms;
+}
+@keyframes maincamper {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  90% {
+    transform: translate(9100px, 0);
+  }
+
+  100% {
+    transform: translate(8350px, 0);
+  }
+} */
+main{width:100%;}
+
+main header{position:relative; width:100%; padding:12rem 0 0; text-align: center;}
+main header svg{width:15rem;}
+main header svg .cls-1{fill: rgba(255,255,255,1);}
+main header svg .cls-1,
+main header svg .cls-2{stroke:#000;stroke-miterlimit:10;}
+main header svg .cls-2{fill:none;}
+main header h1{font-size:4.0625rem; font-weight:100; text-align: center;}
+main header svg,
+main header h1{display:inline-block;}
+
+main section{width:100%; padding:10rem 0; margin: 0 auto; width:101.5rem;}
+main section  article{border:1px solid #16436A; background:#fff; border-radius:20px; display:inline-block; width:23rem; height:28rem; margin:1.5rem 1rem;}
+main section > article > div{width:23rem; display:inline-block; box-sizing:border-box; cursor:pointer;}
+main section > article > div:first-child{height:14%;}
+main section > article > div:nth-child(2){height:53%;}
+
+.containerTop .location p,
+.containerImg .slideBtn img{width:100%; display:inline;}
+
+.containerTop{padding:1rem 0.65rem 0.65rem 0.65rem;}
+.containerTop>div{display:inline-block;}
+.containerTop .campersIcon{float:left; margin-top:}
+.containerTop .campersIcon img{width:5rem;}
+.containerTop .location{float:right; line-height:3; }
+.containerTop .location img{width:1rem;}
+
+.containerImg{position:relative; width:100%;}
+.containerImg .slide{position:absolute; width:21.7rem; height:14.75rem; padding:0 0.4rem; overflow:hidden;}
+.containerImg .slide .slideBox{position:relative; width:110.5rem; height:14.75rem;}
+.containerImg .slide .slideBox > img{width:initial; display:inline; float:left;}
+.containerImg .slideBtn{position:absolute; top:42%; width:inherit; padding:0 1rem; box-sizing: border-box; z-index: 9999;}
+.containerImg .slideBtn img{ width:1.625rem; cursor:pointer; }
+.containerImg .slideBtn img:first-child{float:left;}
+.containerImg .slideBtn img:nth-child(2){float:right;}
+.containerImg .likeOnimg{position:absolute; bottom:4%; left:0;width:inherit; padding:0 1rem; box-sizing: border-box; z-index: 9999;}
+.containerImg .likeOnimg img{width:1.5rem; float:right;}
+
+.containerBtm{padding:0.2rem 0.625rem 1rem 0.625rem;}
+
+.containerBtm div:nth-child(2) .facilities,
+.containerBtm div:nth-child(2) .facilities img,
+.containerBtm div:nth-child(2) h3,
+.containerBtm div:nth-child(3) .reviewStar,
+.containerBtm div:nth-child(3) p{display: inline-block;}
+
+.containerBtm div:first-child p,
+.containerBtm div:first-child h3{float:left;}
+.containerBtm div:first-child h3{font-size:1.25rem; padding:0 0.4rem;}
+.containerBtm div:first-child p{line-height: 180%;}
+
+.containerBtm div:nth-child(2) {padding:0.625rem 0;}
+.containerBtm div:nth-child(2) .facilities{float:left;}
+.containerBtm div:nth-child(2) .facilities img{width:3.125rem;}
+.containerBtm div:nth-child(2) h3{float:right;}
+.containerBtm div:nth-child(2) h3 img{fill:#FF4E00;}
+
+.containerBtm div:nth-child(3){}
+.containerBtm div:nth-child(3) .reviewStar{float:left;}
+.containerBtm div:nth-child(3) .reviewStar img{width:1.125rem;}
+.containerBtm div:nth-child(3) p{float:right;}
+
+main .pagination{width:100%; text-align: center; padding: 0 0 10rem;}
+main .pagination ul{display: inline-block;}
+main .pagination ul li{float:left; border:1px solid #16436A; padding:0.3rem 0.8rem; margin:0 0.2rem; cursor:pointer;}
+main .pagination ul li a{font-family: 'NotoSansCJKkr-Light'; color:#16436A; font-size:1.5rem; font-weight: 100; }
+
+footer{position:relative; width:100%; padding:1.5rem 3rem; box-sizing: border-box; background: #16436A;}
+footer > div{display:inline-block;}
+.fLogo {width:150px; float:left;}
+.fLogo a{width: 100%;}
+.fLogo a img{width: 100%;}
+.fCont{width: calc(100% - 300px); float:right; margin-top: -5rem;}
+.fCont li{float:right; display:block;;
+  font-family: 'NotoSansCJKkr-Light'; font-size: 0.95em; color: #fff; }
+.fCont li span{font-family: 'NotoSansCJKkr-Light';font-size: 0.95em; color: #fff;padding: 0 5px;}
+.fCont li a {font-family: 'NotoSansCJKkr-Light'; font-size: 1em; color: #fff; cursor: pointer;}

@@ -1,0 +1,119 @@
+@charset "utf-8";
+body{background:#fff;}
+
+header{width:100%; max-width: 1920px; position: fixed; top:0; left:50%; transform: translateX(-50%); height:5rem; padding:1rem 1.9rem; line-height: 1; z-index: 9999;}
+header a{color:#36393E;}
+header a:hover{color:#FF4500;}
+
+header h1, header nav, header ul{display:inline-block;}
+header h1{float:left; width:7rem; padding: 0 0 0 1rem;}
+header >nav{float:left;}
+header > ul{float:right;}
+
+header nav ul li
+,header ul li {position:relative; width:10rem; padding:2rem 0 0 0; float:left; text-align: center;}
+header nav ul li:hover .navDropdown
+,header ul li:hover .navDropdown{display: block;}
+
+.navDropdown{display: none; line-height:1; margin:1.5rem 0 0 0; z-index:999999;}
+.navDropdown li{box-sizing:content-box; padding:1rem 0; }
+.navDropdown li:hover{background:#FF4500;}
+.navDropdown li:hover a{color:#fff;}
+
+#beforeLogin{display:none;}
+#afterLogin{display:block; padding:0 8.5rem 0 0;}
+#afterLogin li ul li{width:8rem;}
+
+.login{padding:0 0 0 0; width:8rem; position:fixed; z-index:999999; cursor:pointer;}
+.login img{width:4rem;}
+
+body .pageTitle{position:relative; width:100%; padding:12rem 0 0; text-align: center;}
+.pageTitle h1{font-size:4.0625rem; font-weight:100; text-align: center;}
+.pageTitle h1 img{width:12rem;}
+.pageTitle ul{ display:inline-block; margin:0 auto; padding:5rem 0 0 0;}
+.pageTitle ul li{float:left; display:inline-block;}
+.pageTitle ul li:first-child input{width:35.5rem; border: 1px solid #16436A; height:2.3rem; border-radius:0.5rem;}
+.pageTitle ul li:nth-child(2){margin:0 1rem;}
+.pageTitle ul li:nth-child(2) button{width:7.5rem; height:2.5rem; border-radius:0.5rem; border: 1px solid #16436A; background:none; color:#16436A; font-size:1.4rem;}
+.pageTitle ul li:nth-child(3){margin-top: -1rem;}
+.pageTitle ul li:nth-child(3) img{width:4rem;}
+.pageTitle ul li:nth-child(3) p{padding-top:0.5rem;}
+
+main{width:100%;}
+main .fillter{position:relative; padding:5rem 0 0 0; text-align: center;}
+main .fillter > div{display:inline-block; text-align:center; cursor:pointer; margin: 0 1rem; width:200px; height:200px; border-radius: 300px; border:1px solid #16436A; box-shadow: 0px 3px 6px rgba(0, 0, 0, .16);  }
+main .fillter div a{width:180px; height:180px; margin:0.5rem 0 0 0; background:#16436A; border-radius:100px; display: inline-block; box-shadow: 0px 3px 6px rgba(0, 0, 0, .16); }
+main .fillter div a img,
+main .fillter div a svg{width:9.375rem; height:7.375rem; padding:1rem 0 0.2rem;}
+main .fillter >div:hover{border:1px solid #FF4500;}
+main .fillter >div:hover a{background:#FF4500;}
+main .fillter div a p{color:#fff;}
+
+main .fillterContainer>div{border:1px solid #16436A; background:#fff; border-radius:20px; width:38.375rem; margin:1.5rem; box-shadow: 0px 3px 6px rgba(0, 0, 0, .16); }
+main .fillterContainer>div>div{width:23rem; display:inline-block; box-sizing:border-box;}
+
+main .fillterContainer{width:100%; max-width:79.1rem;  margin: 0 auto; padding:10rem 0;}
+main .fillterContainer>article{border:1px solid #16436A; background:#fff; border-radius:20px; width:38.375rem; height:50rem; margin:0 auto;}
+main .fillterContainer>article>section{position:relative; width:100%; display:inline-block; box-sizing:border-box;}
+
+.containerTop h3,
+.containerTop p,
+.containerImg .slideBtn img{width:100%; display:inline;}
+
+.containerTop{position: relative; padding: 1.2rem 1.2rem 0.8rem 1.2rem;}
+.containerTop h3 img{width:3rem;}
+.containerTop p{font-size:1.2rem;}
+
+.containerImg{position:relative; padding:0 1.2rem; height:24rem;}
+.containerImg .slide{position:absolute; width:35.975rem; height:24rem; overflow:hidden;}
+.containerImg .slide .slideBox{position:relative; width:179.875rem; height:24.75rem;}
+.containerImg .slide .slideBox > img{width:initial; display:inline; float:left;}
+.containerImg .slideBtn{position: relative; margin-top:30%; padding:0 0.625rem;}
+.containerImg .slideBtn img{width:1.625rem; cursor:pointer; }
+.containerImg .slideBtn img:first-child{float:left;}
+.containerImg .slideBtn img:nth-child(2){float:right;}
+
+.containerBtm{position:relative; padding:1.2rem;}
+.containerBtm div{display:block;}
+.containerBtm>div>div{display:inline-block;}
+
+.containerBtm>div:first-child{}
+.containerBtm .campersIcon{float:left;}
+.containerBtm .campersIcon img{width:9rem;}
+.containerBtm .location{float:right; line-height:5; }
+.containerBtm .location img{width:1.2rem;}
+.containerBtm .location img,
+.containerBtm .location p{display:inline-block;}
+
+.containerBtm>div:nth-child(2){width:90%; padding:1rem 0; margin:0 auto;  }
+.containerBtm>div:nth-child(2) p{text-overflow: ellipsis; overflow:hidden; display: -webkit-box; -webkit-line-clamp: 7; /* 라인수 */-webkit-box-orient: vertical; word-wrap:break-word; line-height: 1.2em; }
+
+.containerBtm>div:nth-child(3){line-height: 1;}
+.containerBtm .facilities,
+.containerBtm .facilities img,
+.containerBtm div:nth-child(3) ul{display: inline-block;}
+.containerBtm .facilities{float:left;}
+.containerBtm .facilities img{width:3.125rem;}
+.containerBtm div:nth-child(3) ul{float:right; margin:-3rem 0 0 0;}
+.containerBtm div:nth-child(3) ul li{float:left; padding:0.3rem; }
+.containerBtm div:nth-child(3) ul li:first-child p{padding:0.5rem 0 0; }
+
+main>section:nth-child(3){width:100%; text-align:center; }
+main>section:nth-child(3) a {width:100%; display: inline-block; }
+main>section:nth-child(3) a img{width:4rem;}
+main>section:nth-child(3) ul{display: inline-block; padding:10rem 0; }
+main>section:nth-child(3) ul li{float:left; padding:0 1rem;}
+main>section:nth-child(3) ul li a button{width:10rem; height:3rem;}
+main>section:nth-child(3) ul li a button:hover{background:#16436A; color:#fff;}
+
+
+footer{position:relative; width:100%; padding:1.5rem 3rem; box-sizing: border-box; background: #16436A;}
+footer > div{display:inline-block;}
+.fLogo {width:150px; float:left;}
+.fLogo a{width: 100%;}
+.fLogo a img{width: 100%;}
+.fCont{width: calc(100% - 300px); float:right; margin-top: -5rem;}
+.fCont li{float:right; display:block;;
+  font-family: 'NotoSansCJKkr-Light'; font-size: 0.95em; color: #fff; }
+.fCont li span{font-family: 'NotoSansCJKkr-Light';font-size: 0.95em; color: #fff;padding: 0 5px;}
+.fCont li a {font-family: 'NotoSansCJKkr-Light'; font-size: 1em; color: #fff; cursor: pointer;}

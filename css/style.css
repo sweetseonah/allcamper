@@ -1,7 +1,7 @@
 @charset "utf-8";
 body{background:#fff;}
 
-header{width:100%; max-width: 1920px; position: fixed; top:0; left:50%; transform: translateX(-50%); height:5rem; padding:1rem 1.9rem; line-height: 1; z-index: 9999;}
+header{width:100%; max-width: 1920px; position: fixed; top:0; left:50%; transform: translateX(-50%); height:5rem; padding:1rem 1.9rem; line-height: 1; z-index: 999999;}
 header a{color:#36393E;}
 header a:hover{color:#FF4500;}
 
@@ -43,6 +43,7 @@ header nav ul li:hover .navDropdown
 .visualBackground{position:absolute; top:0; left:0; background:url(../img/mainbackground.svg) no-repeat bottom; background-size:cover; width:9555px; height:110vh; z-index:9;}
 .mainCamper{position:absolute; top:50%; margin-left:-8192px; background:url(../img/mainCamper.svg) no-repeat; width:8192px;  height:100%; z-index:9999;}
 .mainCloud{position:absolute; top:7%; right:0; margin-right:-8192px; background:url(../img/cloud.svg) no-repeat; width:8192px;  height:100%; z-index:9999;}
+.cloudAfter{position:absolute; top:7%; right:0; margin-right:-8192px; background:url(../img/cloud.svg) no-repeat; width:8192px;  height:100%; z-index:9999;}
 
 .visualBackground {
   animation-name: movingBox;
@@ -74,6 +75,22 @@ header nav ul li:hover .navDropdown
   }
 
 }
+.cloudAfter {
+  animation-name: cloudAfter;
+  animation-duration: 90000ms;
+  animation-delay: 75000ms;
+}
+
+@keyframes cloudAfter {
+  from {
+    margin-right: -8192px;
+  }
+
+  to {
+  margin-right: 8192px;
+  }
+
+}
 .mainCamper {
   /* Choose the animation */
   animation-name: maincamper;
@@ -96,19 +113,19 @@ header nav ul li:hover .navDropdown
 }
 
 main{/*background:rgba(169,225,186,0.4);*/ font-size:16px; }
-main .fillter{position:relative; width:45.5rem; height:13rem; margin:0 auto; padding:10rem 0 0 0; background:url(../img/fillter_bg.svg) no-repeat;}
+main .fillter{position:relative; width:45.5rem; height:13rem; margin:0 auto; padding:10rem 0 0 0;}
 main .fillter > div{display:inline-block; text-align:center; cursor:pointer; width:200px; height:200px; border-radius: 300px; border:1px solid #16436A; box-shadow: 0px 3px 6px rgba(0, 0, 0, .16);  }
 main .fillter > div:nth-child(2){margin:0 3.5rem;}
 main .fillter div a{width:180px; height:180px; margin:0.5rem 0 0 0; background:#16436A; border-radius:100px; display: inline-block; box-shadow: 0px 3px 6px rgba(0, 0, 0, .16); }
-main .fillter >div:hover{border:1px solid #FF4500;}
-main .fillter >div:hover a{background:#FF4500;}
+main .fillter >div:hover{border:1px solid #95C04C;}
+main .fillter >div:hover a{background:#95C04C;}
 main .fillter div a img{width:70%;}
 main .fillter div:first-child a img,
 main .fillter div:nth-child(3) a img{padding:0.7rem 0 0 0;}
 main .fillter div:nth-child(2) a img{padding:0.3rem 0 0 0;}
 main .fillter div a p{color:#fff;}
 
-main .fillterContainer{width:100%; margin:0 auto; max-width:79.1rem; padding:10rem 0; background:url(../img/filltercontainer_bg.svg) no-repeat;}
+main .fillterContainer{width:100%; margin:0 auto; max-width:79.1rem; padding:10rem 0; }
 main .fillterContainer>div{border:1px solid #16436A; background:#fff; border-radius:20px; display:inline-block; width:23rem; height:26.5rem; margin:1.5rem; box-shadow: 0px 3px 6px rgba(0, 0, 0, .16); }
 main .fillterContainer>div>div{width:23rem; display:inline-block; box-sizing:border-box;}
 main .fillterContainer>div>div:first-child{height:14%;}

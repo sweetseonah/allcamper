@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>나의 캠핑카</title>
+      <link rel="stylesheet" href="./css/base.css">
+      <link rel="stylesheet" href="./css/mycamper_sharing.css">
+      <script type="text/javascript" src="./js/main.js"></script>
+      <script type="text/javascript" src="./js/jquery-3.4.1.min.js"></script>
+
+  </head>
+  <body>
+        <div onclick="topFunction()" id="myBtn" title="Go to top">
+          <svg xmlns="http://www.w3.org/2000/svg" width="36.408" height="58.338" viewBox="0 0 36.408 58.338">
+            <g id="page_top" data-name="page top" transform="translate(235.483 228.538) rotate(180)">
+              <g id="Group_242" data-name="Group 242" transform="translate(200.575 171.7)">
+                <g id="Group_241" data-name="Group 241" transform="translate(0 0)">
+                  <path id="Path_364" data-name="Path 364" d="M217.2,171.7h0a3.287,3.287,0,0,0-3.277,3.277l.033,41.223-7.8-7.8a3.263,3.263,0,0,0-4.62,0h0a3.263,3.263,0,0,0,0,4.62l12.813,12.813a4.173,4.173,0,0,0,5.866,0l12.813-12.813a3.263,3.263,0,0,0,0-4.62h0a3.263,3.263,0,0,0-4.62,0l-7.9,7.832-.033-41.256A3.286,3.286,0,0,0,217.2,171.7Z" transform="translate(-200.575 -171.7)" fill="none" stroke="#FF4500" stroke-miterlimit="10" stroke-width="3"/>
+                </g>
+              </g>
+            </g>
+          </svg>
+        </div>
+        <header class="clear">
+                    <h1 class="logo">
+                          <a href="file:///C:/Users/B-UM/Documents/GitHub/allcamper/index.html"><img src="./img/logo.svg" alt="logo"/></a>
+                    </h1>
+                    <nav>
+                          <ul class="clear">
+                              <li><a href="#">Allcamper 소개</a>
+                                  <ul class="navDropdown">
+                                    <li><a href="#">이용방법</a></li>
+                                  </ul>
+                              </li>
+                              <li><a href="#">커뮤니티</a>
+                                  <ul class="navDropdown">
+                                    <li><a href="#">자랑하기</a></li>
+                                    <li><a href="#">사고팔기</a></li>
+                                    <li><a href="#">DIY캠퍼</a></li>
+                                  </ul>
+                              </li>
+                              <li><a href="#">캠핑카여행후기</a></li>
+                              <li><a href="#">캠핑카공유</a></li>
+                          </ul>
+                    </nav>
+                    <ul Id="beforeLogin">
+                          <li><a href="#">회원가입</a></li>
+                          <li><a href="#">로그인</a></li>
+                    </ul>
+                    <ul ID="afterLogin">
+                          <li class="login">
+                              <img src="./img/login.svg" alt="login">
+                              <ul class="navDropdown">
+                                  <li class="mypage"><a href="#">마이페이지</a></li>
+                                  <li class="registerCamper"><a href="#">캠핑카 등록</a></li>
+                                  <li class="sharingCamper"><a href="#">내 캠핑카 공유</a></li>
+                                  <li class="ewallet"><a href="#">전자지갑</a></li>
+                                  <li class="logout"><a href="#">로그아웃</a></li>
+                              </ul>
+                          </li>
+                    </ul>
+        </header>
+        <section class="pageTitle">
+              <h1><img src="./img/mycamper.svg" alt="커뮤니티 아이콘">나의 캠핑카</h1>
+        </section>
+        <main>
+              <section class="fillter">
+                    <div id="community" data-fillter="all">
+                            <a href="file:///C:/Users/B-UM/Documents/GitHub/allcamper/mycamper.html">
+                                  <img src="./img/registering.svg" alt="all cmaper 아이콘"/>
+                                  <p>등록한 캠핑카</p>
+                            </a>
+                    </div>
+                    <div id="review" data-fillter="motorhome">
+                            <a href="file:///C:/Users/B-UM/Documents/GitHub/allcamper/mycamper_sharing.html">
+                                <img src="./img/sharing.svg" alt="모터홈 아이콘"/>
+                                <p>공유한 캠핑카</p>
+                            </a>
+                    </div>
+              </section><!--<div class="fillter">-->
+              <section class="fillterContainer">
+                <article data-fillter="">
+                        <div class="containerTop clear">
+                                <div class="campersIcon">
+                                      <img src="./img/diycamper.svg" alt="차량유형 모터홈 icon"/>
+                                </div>
+                                <div class="location">
+                                      <img src="./img/pin.svg" alt="pin icon"/>
+                                      <p>제부도, 경기도 화성시</p>
+                                </div>
+                        </div>
+                        <div class="containerImg">
+                                <div class="slide">
+                                      <div class="slider slideBox clear">
+                                        <img src="./img/camper1.jpg" width="575.6" alt="캠핑카"/>
+                                        <img src="./img/camper2.jpg" width="575.6" alt="캠핑카"/>
+                                        <img src="./img/camper3.jpg" width="575.6" alt="캠핑카"/>
+                                        <img src="./img/camper4.jpg" width="575.6" alt="캠핑카"/>
+                                        <img src="./img/camper5.jpg" width="575.6" alt="캠핑카"/>
+
+                                      </div>
+                                </div>
+                                <div class="slideBtn clear">
+                                      <img class="preview" src="./img/preview.svg" alt="preview">
+                                      <img class="next" src="./img/next.svg" alt="next">
+                                </div>
+                                <a href="#" class="likeOnimg clear"><img src="./img/heart.svg" alt="heart icon"></a>
+                        </div>
+                        <div class="containerBtm">
+                              <div class="clear">
+                                    <p>from</p>
+                                    <h3>8만원</h3>
+                                    <p>per night</p>
+                              </div>
+                              <div class="clear">
+                                    <div class="facilities">
+                                          <img src="./img/aircon.svg" alt="aircon icon"/>
+                                          <img src="./img/refri.svg" alt="regrigarator icon"/>
+                                          <img src="./img/awaning.svg" alt="awaning icon"/>
+                                          <img src="./img/navi.svg" alt="navi icon"/>
+                                    </div>
+                                    <h3><img src="./img/userimg1.svg" alt="유저 이미지"/></h3>
+                              </div>
+                              <div>
+                                    <div class="reviewStar">
+                                          <img src="./img/star.svg" alt="star icon"/>
+                                          <img src="./img/star.svg" alt="star icon"/>
+                                          <img src="./img/star.svg" alt="star icon"/>
+                                          <img src="./img/star.svg" alt="star icon"/>
+                                          <img src="./img/star.svg" alt="star icon"/>
+                                          <img src="./img/star.svg" alt="star icon"/>
+                                          <img src="./img/star.svg" alt="star icon"/>
+                                    </div>
+                                    <p>Susna_campingholic</p>
+                              </div>
+                        </div>
+                </article>
+              </section><!--<section class="fillterContainer">-->
+              <section>
+                    <a href="#"><img src="./img/plus.svg" alt="plus icon"/></a>
+                    <ul>
+                          <li><a href=""><button>전체선택</button></a></li>
+                          <li><a href=""><button>선택공유</button></a></li>
+                          <li><a href=""><button>정보수정하기</button></a></li>
+                          <li><a href=""><button>선택삭제</button></a></li>
+                    </ul>
+              </section>
+        </main>
+        <footer class="clear">
+              <div class="fLogo">
+                  <a href="index.html"><img src="./img/logo.svg" alt="allcamper logo"></a>
+              </div>
+              <ul class="fCont clear">
+                  <li>
+                      <span>상호명 : 올캠퍼</span>&nbsp;|&nbsp;
+                      <span>대표자 : 변인섭</span>&nbsp;|&nbsp;
+                      <span>개인정보 책임자 : 변인섭</span>
+                  </li>
+                  <li>
+                      <span>사업자 등록번호 : 120-87=95990</span>&nbsp;|&nbsp;
+                      <span><a href="#">사업자정보확인</a></span>&nbsp;|&nbsp;
+                      <span>통신판매업신고번호 : 2019-서울종로-1003</span>&nbsp;|&nbsp;
+                      <span>관광사업자 등록번호 : 제2019-000006호</span>
+                  </li>
+                  <li>
+                      <span>주소 : 서울시 종로구 이화장길 40 율원빌딩 3층</span>
+                  </li>
+                  <li>
+                      <span>이메일문의 : <a href="mailto:soolmeet@b-um.com" target="_top">allcamper@b-um.com</a></span>&nbsp;|&nbsp;
+                      <span><a href="#">이용약관</a></span>&nbsp;|&nbsp;
+                      <span><a href="#">개인정보보호정책</a></span>
+                  </li>
+              </ul>
+          </footer>
+  </body>
+</html>

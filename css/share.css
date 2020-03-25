@@ -29,44 +29,24 @@ header nav ul li:hover .navDropdown
 
 .visual{position:relative; height:120vh; width:100vw; margin: 0 auto; overflow: hidden; background:url(../img/share_bg.svg) no-repeat bottom; background-size: cover; z-index:9;}
 .visual .visualBackground{height:120vh; width:100vw; background:url(../img/share_bg2.svg) no-repeat bottom; background-size:cover; z-index:99;}
-.visual #shareCamper{position:absolute; bottom:-7%; right:-5%; width:45%; z-index: 999;}
-.visual .shareGrass{position: absolute; bottom:0; left:0; width:100%; z-index:9999;}
-.searching{width:30vw; z-index: 9999 !important; background:rgba(255, 255, 255, 0.5); }
+.visual .shareCamper{position:absolute; bottom:-3%; right:-5%; width:45%; z-index: 999;}
+.visual .person{width:13rem; position:absolute; bottom:0; right:18%; z-index: 9999;}
+.visual .shareGrass{position: absolute; bottom:0; left:0; width:100%; z-index:99999;}
 
-.visualBackground {
-  animation-name: movingBox;
-  animation-duration: 40000ms;
-}
-/* @keyframes movingBox {
-  from {
-    margin-left: -1920px;
-  }
+#searching{position:absolute; top:25%; left:50%; margin-left:-20vw; width:40vw; height:55vh; padding:2rem; z-index: 99999 ; background:rgba(255, 255, 255, 0.5); text-align: center; box-sizing: border-box;}
+#searching h1{ font-weight: 100; padding:2rem 0 0; line-height: 1.5; color:#000;}
+#searching div:nth-child(2){padding:5rem 0 3rem;}
+#searching div:nth-child(2) input{width:35%; height:2.5rem; border:1px solid #16436A;}
+#searching div:nth-child(2) input::placeholder{color:#16436A; font-size:0.7rem }
+#searching div:nth-child(2) button:hover{background:#16436A; color:#fff;}
+#searching div:nth-child(3){}
+#searching div:nth-child(3) svg{width:6rem;}
+#searching>div:nth-child(3) p{color:#000;}
+#searching>div:nth-child(3) a:hover svg .cls-1{stroke:#fff;}
+#searching>div:nth-child(3) a:hover svg.cls-2{stroke:#fff;}
+#searching div:nth-child(3) a:hover svg .cls-3{stroke:#fff;}
+#searching div:nth-child(3) a:hover p{color:#fff;}
 
-  to {
-  margin-left: -7645px;
-  }
-}
-
-.mainCamper {
-  /* Choose the animation */
-  animation-name: maincamper;
-
-  /* The animation’s duration */
-  animation-duration: 40000ms;
-}
-@keyframes maincamper {
-  0% {
-    transform: translate(0, 0);
-  }
-
-  90% {
-    transform: translate(9100px, 0);
-  }
-
-  100% {
-    transform: translate(8350px, 0);
-  }
-} */
 main{width:100%;}
 
 main header{position:relative; width:100%; padding:12rem 0 0; text-align: center;}
@@ -133,7 +113,13 @@ main section > article > div:nth-child(2){height:53%;}
 main .pagination{width:100%; text-align: center; padding: 0 0 10rem;}
 main .pagination ul{display: inline-block;}
 main .pagination ul li{float:left; border:1px solid #16436A; padding:0.3rem 0.8rem; margin:0 0.2rem; cursor:pointer;}
+main .pagination ul li:hover {background:#16436A;}
+main .pagination ul li:hover a{color:#fff;}
+main .pagination ul li:nth-child(4):hover{background:none;}
+main .pagination ul li:nth-child(4):hover a{color:#16436A;}
+
 main .pagination ul li a{font-family: 'NotoSansCJKkr-Light'; color:#16436A; font-size:1.5rem; font-weight: 100; }
+
 
 footer{position:relative; width:100%; padding:1.5rem 3rem; box-sizing: border-box; background: #16436A;}
 footer > div{display:inline-block;}

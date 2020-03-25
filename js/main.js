@@ -33,3 +33,10 @@
    document.body.scrollTop = 0;
    document.documentElement.scrollTop = 0;
  }
+
+
+
+ const myPicker = new lightPick({
+      field: document.getElementById('demo'),
+      singleDate: false
+});

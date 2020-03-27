@@ -1,14 +1,15 @@
 @charset "utf-8";
-body{background:#fff;}
+body{background:#F7FBFE;}
 
-header{width:100%; max-width: 1920px; position: fixed; top:0; left:50%; transform: translateX(-50%); height:5rem; padding:1rem 1.9rem; line-height: 1; z-index: 9999;}
+header{width:100%; position: fixed; top:0; left:0;  height:5rem;  padding:1rem 1.9rem;z-index: 999999; background:rgba(255,255,255,0.8); border-bottom:1px solid rgba(22,67,106,0.5);}
+header>div{max-width: 1920px; margin: 0 auto;  line-height: 1;}
 header a{color:#36393E;}
 header a:hover{color:#FF4500;}
 
-header h1, header nav, header ul{display:inline-block;}
-header h1{float:left; width:7rem; padding: 0 0 0 1rem;}
-header >nav{float:left;}
-header > ul{float:right;}
+header div h1, header div nav, header div ul{display:inline-block;}
+header div h1{float:left; width:7rem; padding: 0 0 0 1rem;}
+header div > nav{float:left;}
+header div > ul{float:right;}
 
 header nav ul li
 ,header ul li {position:relative; width:10rem; padding:2rem 0 0 0; float:left; text-align: center;}
@@ -24,29 +25,35 @@ header nav ul li:hover .navDropdown
 #afterLogin{display:block; padding:0 8.5rem 0 0;}
 #afterLogin li ul li{width:8rem;}
 
-.login{padding:0 0 0 0; width:8rem; position:fixed; z-index:999999; cursor:pointer;}
-.login img{width:4rem;}
+#afterLogin .login{padding:0 0 0 0; width:8rem; position:fixed; z-index:999999; cursor:pointer;}
+#afterLogin .login img{width:4rem;}
 
 body .pageTitle{position:relative; width:100%; padding:12rem 0 0; text-align: center;}
-.pageTitle h1{font-size:4.0625rem; font-weight:100; text-align: center;}
+.pageTitle h1{font-size:4.0625rem; font-weight:100; text-align: center; color:#16436A; padding:0 0 5rem;}
 .pageTitle h1 img{width:12rem;}
-.pageTitle ul{ display:inline-block; margin:0 auto; padding:5rem 0 0 0;}
+.pageTitle div{display: inline-block; margin: 0 auto; border:1px solid #95C04C; padding:0.3rem; border-radius: 20px; box-shadow: 0px 3px 6px rgba(0, 0, 0, .16);}
+.pageTitle ul{background: #95C04C; padding: 3rem 2rem 1rem; border-radius: 20px; box-shadow: 0px 3px 6px rgba(0, 0, 0, .16);}
 .pageTitle ul li{float:left; display:inline-block;}
-.pageTitle ul li:first-child input{width:35.5rem; border: 1px solid #16436A; height:2.3rem; border-radius:0.5rem;}
+.pageTitle ul li:first-child input{width:35.5rem; border: 1px solid #fff; height:2.3rem; border-radius:0.5rem;}
 .pageTitle ul li:nth-child(2){margin:0 1rem;}
-.pageTitle ul li:nth-child(2) button{width:7.5rem; height:2.5rem; border-radius:0.5rem; border: 1px solid #16436A; background:none; color:#16436A; font-size:1.4rem;}
-.pageTitle ul li:nth-child(3){margin-top: -1rem;}
-.pageTitle ul li:nth-child(3) img{width:4rem;}
-.pageTitle ul li:nth-child(3) p{padding-top:0.5rem;}
+.pageTitle ul li:nth-child(2) button{width:7.5rem; height:2.5rem; border-radius:0.5rem; border: 1px solid #fff; background:none; color:#fff; font-size:1.4rem;}
+.pageTitle ul li:nth-child(2) button:hover{border: 2px solid #FF4500; font-weight: 700;background:none; color:#FF4500; font-size:1.4rem;}
+.pageTitle ul li:nth-child(3){margin-top: -1rem;margin-top:-2rem; }
+.pageTitle ul li:nth-child(3) svg{width:5rem; }
+.pageTitle ul li:nth-child(3) p{padding-top:0.5rem; color:#fff;}
+.pageTitle ul li:nth-child(3):hover p{color:#FF4500; font-weight: 700;}
+.pageTitle ul li:nth-child(3):hover svg .cls-1,
+.pageTitle ul li:nth-child(3):hover svg .cls-2,
+.pageTitle ul li:nth-child(3):hover svg .cls-3{stroke:#FF4500;}
 
 main{width:100%;}
-main .fillter{position:relative; padding:5rem 0 0 0; text-align: center;}
+main .fillter{position:relative; padding:10rem 0 0 0; text-align: center;}
 main .fillter > div{display:inline-block; text-align:center; cursor:pointer; margin: 0 1rem; width:200px; height:200px; border-radius: 300px; border:1px solid #16436A; box-shadow: 0px 3px 6px rgba(0, 0, 0, .16);  }
 main .fillter div a{width:180px; height:180px; margin:0.5rem 0 0 0; background:#16436A; border-radius:100px; display: inline-block; box-shadow: 0px 3px 6px rgba(0, 0, 0, .16); }
 main .fillter div a img,
 main .fillter div a svg{width:9.375rem; height:7.375rem; padding:1rem 0 0.2rem;}
-main .fillter >div:hover{border:1px solid #FF4500;}
-main .fillter >div:hover a{background:#FF4500;}
+main .fillter >div:hover{border:1px solid #95C04C;}
+main .fillter >div:hover a{background:#95C04C;}
 main .fillter div a p{color:#fff;}
 
 main .fillterContainer>div{border:1px solid #16436A; background:#fff; border-radius:20px; width:38.375rem; margin:1.5rem; box-shadow: 0px 3px 6px rgba(0, 0, 0, .16); }

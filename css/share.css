@@ -1,7 +1,7 @@
 @charset "utf-8";
-body{background:#fff;}
+body{background:#F7FBFE;}
 
-.visual header{width:100%; position: fixed; top:0; left:50%; background:rgba(255, 255, 255, 0.5); transform: translateX(-50%); height:5rem; padding:1rem 1.9rem; line-height: 1; z-index: 9999;}
+.visual header{width:100%; position: fixed; top:0; left:50%; background:rgba(255, 255, 255, 0.5); transform: translateX(-50%); height:5rem; padding:1rem 1.9rem; line-height: 1; z-index: 9999; border-bottom: 1px solid rgba(22,67,106,0.5);}
 .visual header a{color:#36393E;}
 .visual header a:hover{color:#FF4500;}
 
@@ -51,13 +51,13 @@ main{width:100%;}
 
 main header{position:relative; width:100%; padding:12rem 0 0; text-align: center;}
 main header svg{width:15rem;}
-main header svg .cls-1{fill: rgba(255,255,255,1);}
+main header svg .cls-1{fill: #F7FBFE;}
 main header svg .cls-1,
-main header svg .cls-2{stroke:#000;stroke-miterlimit:10;}
+main header svg .cls-2{stroke:#16436A; stroke-miterlimit:10;}
 main header svg .cls-2{fill:none;}
 main header h1{font-size:4.0625rem; font-weight:100; text-align: center;}
 main header svg,
-main header h1{display:inline-block;}
+main header h1{display:inline-block; color:#16436A;}
 
 main section{width:100%; padding:10rem 0; margin: 0 auto; width:101.5rem;}
 main section  article{border:1px solid #16436A; background:#fff; border-radius:20px; display:inline-block; width:23rem; height:28rem; margin:1.5rem 1rem;}
@@ -84,7 +84,7 @@ main section > article > div:nth-child(2){height:53%;}
 .containerImg .slideBtn img:first-child{float:left;}
 .containerImg .slideBtn img:nth-child(2){float:right;}
 .containerImg .likeOnimg{position:absolute; bottom:4%; left:0;width:inherit; padding:0 1rem; box-sizing: border-box; z-index: 9999;}
-.containerImg .likeOnimg img{width:1.5rem; float:right;}
+.containerImg .likeOnimg svg{width:1.5rem; float:right;}
 
 .containerBtm{padding:0.2rem 0.625rem 1rem 0.625rem;}
 

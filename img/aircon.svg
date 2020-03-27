@@ -4,7 +4,7 @@
       .cls-1,
       .cls-2 {
         fill: none;
-        stroke: rgba(149,192,76,0.6);
+        stroke: rgba(22,67,106,0.6);
         stroke-miterlimit: 10;
       }
       .cls-2 {

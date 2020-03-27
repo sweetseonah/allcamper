@@ -42,40 +42,47 @@ body .pageTitle{position:relative; width:100%; padding:12rem 0 0; text-align: ce
 
 main{width:100%;}
 
-main .info{width:70vw; margin:10rem auto; padding:0.3rem; border:1px solid #16436A; border-radius: 20px; box-shadow: 0px 3px 6px rgba(0, 0, 0, .16);}
+main .info{width:70vw; margin:10rem auto; padding:0.3rem; border:1px solid #16436A; border-radius: 20px; box-shadow: 0px 3px 6px rgba(0, 0, 0, .16); color:#16436A;}
 main .info>div{ background:#fff; display:inline-block; text-align:center; border:1px solid #16436A; border-radius: 20px; box-shadow: 0px 3px 6px rgba(0, 0, 0, .16);}
-main .info>div article{display: inline-block; width:50%; box-sizing: border-box; }
+main .info>div article{display: inline-block; width:50%; box-sizing:border-box; }
 main .info>div article:first-child{float:left;}
 main .info>div article:nth-child(2){float:right;}
 
-main .info div .userInfo{
-}
-main .info div .userInfo>div{resize: vertical;}
-/* main .info div .userInfo ul,
-main .info div .userInfo div{width:100%; display: inline-block;} */
-main .info div .userInfo ul:first-child{}
-main .info div .userInfo ul:first-child li{float:left; padding:}
-main .info div .userInfo ul:first-child li svg{width:6rem;}
-main .info div .userInfo ul:first-child li p{}
-main .info div .userInfo div > div{padding:4rem 0;}
-main .info div .userInfo > div img{width:15rem;}
-main .info div .userInfo > div h3{font-size: 2rem;}
-main .info div .userInfo ul:nth-child(3){}
-main .info div .userInfo ul:nth-child(3) li{float:left;}
+main .info .userInfo{padding:3rem 0 2rem 3rem; text-align: center;}
+main .info .userInfo ul:first-child{display: inline-block; }
+main .info .userInfo ul:first-child li{float:left; padding:0 1.5rem;}
+main .info .userInfo ul:first-child li svg{width:6rem;}
+main .info .userInfo ul:first-child li p{color:#16436A; padding:0.5rem 0 0 0;}
+main .info .userInfo ul:first-child li a:hover p{color:#FF4500;}
+main .info .userInfo ul:first-child li a:hover svg .cls-1,
+main .info .userInfo ul:first-child li a:hover svg .cls-2{stroke:#FF4500;}
+main .info .userInfo ul:first-child li:nth-child(2) a:hover svg .cls-1,
+main .info .userInfo ul:first-child li:nth-child(2) a:hover svg .cls-3{stroke:#FF4500;}
+main .info .userInfo div{padding:4rem 0;}
+main .info .userInfo div img{width:17rem;}
+main .info .userInfo div h3{padding:2.5rem 0 0;font-size: 2rem;}
+main .info .userInfo ul:nth-child(3){display: inline-block;}
+main .info .userInfo ul:nth-child(3) li{float:left; padding:0 1.5rem;}
+main .info .userInfo ul:nth-child(3) li:last-child p:first-child{font-size: 1.2rem; margin-top:-0.6rem;}
+main .info .userInfo ul:nth-child(3) li p{font-size: 1.5rem; }
+main .info .userInfo ul:nth-child(3) li p:nth-child(2){padding:1.4rem 0 0;}
+main .info .userInfo ul:nth-child(3) li:last-child p:nth-child(2){padding:1rem 0 0;}
 
-main .info div .camperInfo{padding:2rem 10rem 2rem 0;text-align: center;}
-main .info div .camperInfo img{}
-main .info div .camperInfo ul:nth-child(2){padding:2rem 0;}
-main .info div .camperInfo ul:nth-child(2) li{float:left;}
-main .info div .camperInfo ul:nth-child(2) li:first-child{}
-main .info div .camperInfo ul:nth-child(2) li:first-child svg{width:8rem;}
-main .info div .camperInfo ul:nth-child(2) li:nth-child(2){flat}
-main .info div .camperInfo ul:nth-child(2) li:nth-child(2) p{font-size:1.5rem; color:#16436A;}
-main .info div .camperInfo ul:nth-child(3){}
-main .info div .camperInfo ul:nth-child(3) li{padding:0.2rem 0;}
-main .info div .camperInfo ul:nth-child(3) li p{display: inline-block; width:50%;}
-main .info div .camperInfo ul:nth-child(3) li p:first-child{float:left;}
-main .info div .camperInfo ul:nth-child(3) li p:nth-child(2){float:right;}
+main .info .camperInfo{padding:2rem 3rem 2rem 0; text-align: center;}
+main .info .camperInfo .camperImg {width:100%; padding:1rem 0; border:1px solid #16436A;}
+main .info .camperInfo .camperImg img{width:95%;}
+main .info .camperInfo ul:nth-child(2){display: inline-block; padding:1rem 0 0.5rem;}
+main .info .camperInfo ul:nth-child(2) li{float:left;}
+main .info .camperInfo ul:nth-child(2) li:first-child{padding:0 10rem 0 0;}
+main .info .camperInfo ul:nth-child(2) li:first-child svg{width:7rem;}
+main .info .camperInfo ul:nth-child(2) li:nth-child(2){line-height: 2;}
+main .info .camperInfo ul:nth-child(2) li:nth-child(2) p{font-size:2rem; color:#16436A;}
+main .info .camperInfo ul:nth-child(3){}
+main .info .camperInfo ul:nth-child(3) li{padding:0.2rem 0;}
+main .info .camperInfo ul:nth-child(3) li p{display: inline-block; width:50%; font-size: 0.8rem;}
+main .info .camperInfo ul:nth-child(3) li p:first-child{float:left; color:rgba(22,67,106,0.6);}
+main .info .camperInfo ul:nth-child(3) li p:nth-child(2){float:right;}
+main .info .camperInfo ul:nth-child(3) li:last-child p:nth-child(2){text-overflow: ellipsis; overflow:hidden; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; word-wrap:break-word; }
 
 main .fillter{position:relative; text-align: center;}
 main .fillter > div{display:inline-block; text-align:center; cursor:pointer; margin: 0 1rem; width:200px; height:200px; border-radius: 300px; border:1px solid #16436A; box-shadow: 0px 3px 6px rgba(0, 0, 0, .16);  }

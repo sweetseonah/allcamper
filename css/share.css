@@ -15,7 +15,7 @@ body{background:#F7FBFE;}
 header nav ul li:hover .navDropdown
 ,.visual header ul li:hover .navDropdown{display: block;}
 
-.visual header ul li .navDropdown{display: none; line-height:1; margin:1.5rem 0 0 0; z-index:999999;}
+.visual header ul li .navDropdown{display: none; line-height:1; margin:1.5rem 0 0 0; z-index:99999;}
 .visual header ul li .navDropdown li{box-sizing:content-box; padding:1rem 0; }
 .visual header ul li .navDropdown li:hover{background:#FF4500;}
 .visual header ul li .navDropdown li:hover a{color:#fff;}
@@ -24,28 +24,110 @@ header nav ul li:hover .navDropdown
 #afterLogin{display:block; padding:0 8.5rem 0 0;}
 #afterLogin li ul li{width:8rem;}
 
-#afterLogin .login{padding:0 0 0 0; width:8rem; position:fixed; z-index:999999; cursor:pointer;}
+#afterLogin .login{padding:0 0 0 0; width:8rem; position:fixed; z-index:99999; cursor:pointer;}
 #afterLogin .login img{width:4rem;}
 
 .visual{position:relative; height:120vh; width:100vw; margin: 0 auto; overflow: hidden; background:url(../img/share_bg.svg) no-repeat bottom; background-size: cover; z-index:9;}
-.visual .visualBackground{height:120vh; width:100vw; background:url(../img/share_bg2.svg) no-repeat bottom; background-size:cover; z-index:99;}
-.visual .shareCamper{position:absolute; bottom:-3%; right:-5%; width:45%; z-index: 999;}
-.visual .person{width:13rem; position:absolute; bottom:0; right:18%; z-index: 9999;}
+.visual .star{height:120vh; width:100vw; background:url(../img/share_star.svg) no-repeat bottom; background-size:cover; z-index:99;}
+.visual .forest{position:absolute; bottom:0; left:0; height:120vh; width:100vw; z-index:999;}
+.visual .shareCamper{position:absolute; bottom:-3%; right:-5%; width:40%; z-index:9999;}
 .visual .shareGrass{position: absolute; bottom:0; left:0; width:100%; z-index:99999;}
 
-#searching{position:absolute; top:25%; left:50%; margin-left:-20vw; width:40vw; height:55vh; padding:2rem; z-index: 99999 ; background:rgba(255, 255, 255, 0.5); text-align: center; box-sizing: border-box;}
-#searching h1{ font-weight: 100; padding:2rem 0 0; line-height: 1.5; color:#000;}
-#searching div:nth-child(2){padding:5rem 0 3rem;}
+.visual .star{animation: starRotate 60s infinite ;}
+.visual .shareCamper{animation: shake-left 20s infinite linear;}
+.visual .shareGrass{animation:blowWindy 20s infinite ;}
+
+@keyframes starRotate{
+    0%{
+      opacity: 1;
+      transform:rotate(0deg);
+      height:120vh; width:100vw;
+    }
+    100%{
+      opacity: 0.5;
+      transform:rotate(90deg);
+      width:200vw;
+      height:400vh;
+    }
+}
+@keyframes shake-left {
+    0% {
+      right: -30%;
+      transform: translate(-10%, 0%);
+    }
+   30% {
+      right: -10%;
+      transform: translate(-1%, 0%);
+    }
+    40% {
+      right: 0%;
+      transform: translate(3%, 0%);
+    }
+    50% {
+      right: -10%;
+      transform: translate(0%, 0%);
+    }
+    60% {
+      right: 0%;
+      transform: translate(3%, 0%);
+    }
+    70% {
+      right: -10%;
+      transform: translate(0%, 0%);
+    }
+    80% {
+      right: 0%;
+      transform: translate(3%, 0%);
+    }
+    90% {
+      right: -10%;
+      transform: translate(0%, 0%);
+    }
+    100% {
+      right: -20%;
+      transform: translate(5%, 0%);
+    }
+}
+@keyframes  blowWindy{
+    25% {
+      transform: scale(1, 1.5) translate(-2%, 0%)
+    }
+    50% {
+      transform: scale(1, 2) translate(-1%, 0%); width:120%;
+    }
+    75% {
+      transform: scale(1, 1.5) translate(0%, -2%); width:100%;
+    }
+    100% {
+      transform: scale(1, 2) translate(0%, -1%); width:120%;
+    }
+}
+
+#searching{position:absolute; top:28%; left:50%; transform:translateX(-50%); width:45vw; height:55vh; padding:2rem; z-index: 999999; background:rgba(255, 255, 255, 0.5); text-align: center; box-sizing: border-box;}
+#searching h1{font-size:2.5rem; font-weight: 800; padding:2rem 0 0; line-height: 1.5; color:#95c04c; text-shadow:3px 3px rgba(22,67,106,0.5);}
+#searching div:nth-child(2){margin:3.5rem 1rem;}
 #searching div:nth-child(2) input{width:35%; height:2.5rem; border:1px solid #16436A;}
-#searching div:nth-child(2) input::placeholder{color:#16436A; font-size:0.7rem }
-#searching div:nth-child(2) button:hover{background:#16436A; color:#fff;}
+#searching div:nth-child(2) input::placeholder{color:#16436A;  font-size:0.7rem }
+#searching div:nth-child(2) button:hover{background:#95c04c; border:0px; color:#fff;}
 #searching div:nth-child(3){}
 #searching div:nth-child(3) svg{width:6rem;}
-#searching>div:nth-child(3) p{color:#000;}
-#searching>div:nth-child(3) a:hover svg .cls-1{stroke:#fff;}
-#searching>div:nth-child(3) a:hover svg.cls-2{stroke:#fff;}
-#searching div:nth-child(3) a:hover svg .cls-3{stroke:#fff;}
-#searching div:nth-child(3) a:hover p{color:#fff;}
+#searching>div:nth-child(3) a svg .cls-1,
+#searching>div:nth-child(3) a svg .cls-2{fill:none;}
+#searching>div:nth-child(3) a svg .cls-1,
+#searching>div:nth-child(3) a svg .cls-2,
+#searching>div:nth-child(3) a svg .cls-3{stroke:#16436A;}
+#searching div:nth-child(3) a svg .cls-1{stroke-linejoin:round;}
+#searching div:nth-child(3) a svg .cls-2{fill:none;}
+#searching div:nth-child(3) a svg .cls-2,
+#searching div:nth-child(3) a svg .cls-3{stroke-miterlimit:10;}
+#searching div:nth-child(3) a svg .cls-3{fill:#16436A;}
+#searching div:nth-child(3) a svg .cls-4{fill:#16436A; font-size:42.69px; font-family:MalgunGothic-Semilight, Malgun Gothic;}
+#searching>div:nth-child(3) p{color:#16436A;}
+#searching>div:nth-child(3) a:hover svg .cls-1{stroke:#95c04c;}
+#searching>div:nth-child(3) a:hover svg .cls-2{stroke:#95c04c;}
+#searching div:nth-child(3) a:hover svg .cls-3{fill:#95c04c; stroke:#95c04c;}
+#searching div:nth-child(3) a:hover svg .cls-4{fill:#95c04c; stroke:#95c04c;}
+#searching div:nth-child(3) a:hover p{color:#95c04c; text-shadow:2px 2px rgba(22,67,106,0.5);}
 
 main{width:100%;}
 
@@ -119,7 +201,6 @@ main .pagination ul li:nth-child(4):hover{background:none;}
 main .pagination ul li:nth-child(4):hover a{color:#16436A;}
 
 main .pagination ul li a{font-family: 'NotoSansCJKkr-Light'; color:#16436A; font-size:1.5rem; font-weight: 100; }
-
 
 footer{position:relative; width:100%; padding:1.5rem 3rem; box-sizing: border-box; background: #16436A;}
 footer > div{display:inline-block;}

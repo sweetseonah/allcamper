@@ -27,11 +27,6 @@ header nav ul li:hover .navDropdown
 .login{padding:0 0 0 0; width:8rem; position:fixed; z-index:999999; cursor:pointer;}
 .login img{width:4rem;}
 
-.visual{position:relative; width:100%; padding-top:7rem;}
-.visual ul{width:69.375rem; margin:0 auto;}
-.visual ul li{ text-align: center; width:19rem; height:19rem; border:1px solid; border-radius:18.75rem; float:left; margin:2rem; box-sizing: border-box; line-height:18;}
-
-.visual ul li a svg{width:17rem; display:inline-block;}
 .visual ul li:first-child,
 .visual ul li:nth-child(9){border:1px solid #16436A;}
 .visual ul li:first-child svg .cls-1,
@@ -71,30 +66,34 @@ header nav ul li:hover .navDropdown
 
 .cr1{color:#95C04C;}
 
-main{width:100%; color:#16436A;}
-main article{position:relative; width:100%; display:inline-block; box-sizing:border-box; text-align: center;}
+.visual{position:relative; width:100%; padding-top:7rem;}
+.visual ul{width:69.375rem; height:69rem; margin:0 auto;}
+.visual ul li{ text-align: center; width:19rem; height:19rem; border:1px solid; border-radius:18.75rem; float:left; margin:2rem; box-sizing: border-box; line-height:18;}
+.visual ul li a svg{width:17rem; display:inline-block;}
 
-main .title{position:relative; padding:10rem 0; }
+main{width:100%; color:#16436A; padding:0 0 10rem 0;}
+main article{position:relative;  margin:0 auto; text-align: center; padding:5rem 0;}
+
+main .title{width:62vw; height:50vh;}
 main .title p:first-child{font-size:4rem;}
-main .title h1{padding:3rem 0 ;}
+main .title h1{padding:3rem 0;}
 main .title h1 img{width:52rem;}
-main .title p:nth-child(3){font-size:2rem; }
+main .title p:nth-child(3){font-size:2rem;}
 
-main .mid1{position:relative; width:93.75rem;padding:10rem 0;}
-main .mid1 section{position:relative; display:inline-block; width:100%;}
-main .mid1 .top{background:url('../img/introbg1.svg') top no-repeat; background-size:contain; padding:35rem 0;}
+main .mid1{width:60vw; height:100vh;}
+main .mid1 .mid1Bg{width:60vw; height:100vh; background:url('../img/introbg1.svg') top no-repeat; background-size:contain;}
 main .mid1 .top > div{position:absolute; display:inline-block; width:15rem; height:17rem;}
 main .mid1 .top div p{font-size:2rem; color:#95C04C; padding:0 0 1rem 0;}
 main .mid1 .top div p:last-child{font-size:2rem; color:#95C04C; padding:1rem 0 0  0;}
 main .mid1 .top div svg{display:inline-block; width:15rem;}
-main .mid1 .top div:first-child{top:19rem; left:27%;}
+main .mid1 .top div:first-child{top:19rem; left:50%; transform:translateX(-120%);}
 main .mid1 .top div:first-child svg .cls-1{fill:none;}
-main .mid1 .top div:nth-child(2){top:19rem; right:27%;}
+main .mid1 .top div:nth-child(2){top:19rem; left:50%; transform:translateX(20%);}
 main .mid1 .top div:nth-child(2) svg .cls-1{fill: none;}
 main .mid1 .top div:nth-child(2) svg .cls-1,
 main .mid1 .top div:nth-child(2) svg .cls-2{stroke: #95C04C;stroke-miterlimit: 10;}
 main .mid1 .top div:nth-child(2) svg .cls-2 {fill: #95C04C;}
-main .mid1 .top div:nth-child(3){bottom:10rem; left:50%; transform:translateX(-50%);}
+main .mid1 .top div:nth-child(3){bottom:12rem; left:50%; transform:translateX(-50%);}
 main .mid1 .top div:nth-child(3) svg .cls-1,
 main .mid1 .top div:nth-child(3) svg .cls-2{fill:none;}
 main .mid1 .top div:nth-child(3) svg .cls-1,
@@ -106,16 +105,23 @@ main .mid1 .top div:nth-child(3) svg .cls-3{stroke-miterlimit:10;}
 main .mid1 .top div:nth-child(3) svg .cls-3{fill:#95C04C;}
 main .mid1 .top div:nth-child(3) svg .cls-4{fill:#95C04C; font-size:42.69px; font-family:MalgunGothic-Semilight, Malgun Gothic;}
 
-main .mid1 .bottom{padding-top:5rem;}
-main .mid1 .bottom p{font-size: 2rem ; line-height: 1.2;}
+main .mid1Btm{height:8rem;}
+main .mid1Btm p{font-size: 2rem ; line-height: 1.2;}
 
-main .mid2{padding:10rem 0; height:270vh;}
-main .mid2>div{position:absolute; top:0; left:50%; transform: translateX(-50%); width:70vw; height:95vw; background:url(../img/introbg2.svg) no-repeat top; background-size:contain; z-index: 9;}
-main .mid2 section{width:50%; float:left; padding:10rem 0 0 0; z-index: 99;}
-main .mid2 section ul{padding:0 0 0 20rem;}
-main .mid2 section ul li{width:12rem; background:#fff; border:1px solid #16436A; padding:1rem; box-sizing: border-box;}
+main .mid2{width:90vw; height:200vh;}
+main .mid2 .mid2Bg{position:absolute; width:90vw; height:200vh; background:url(../img/introbg2.svg) no-repeat top; background-size:contain;}
+main .mid2 section{position:absolute; width:100%; }
+main .mid2 ul{position:absolute; width:11rem; top:45vh;}
+main .mid2 section ul:first-child{left:50%; transform: translateX(-220%);}
+main .mid2 section ul:nth-child(2){left:50%; transform: translateX(120%);}
+main .mid2 section ul li{background:#fff; border:1px solid #16436A; padding:1rem; box-sizing: border-box;}
+main .mid2 section ul:first-child li:nth-child(2){margin: 31vh 0 35vh;}
+main .mid2 section ul:nth-child(2) li:nth-child(2){margin: 30vh 0 31vh;}
+main .mid2 section ul li p{ padding:0.3rem 0;}
 
-main .bottom{}
+main .bottom{width:70vw; height:11vh;}
+main .bottom section{display: inline-block;}
+main .bottom section:nth-child(2){margin:0 12vw;}
 
 
 

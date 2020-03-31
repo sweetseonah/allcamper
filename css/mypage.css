@@ -43,7 +43,7 @@ body .pageTitle{position:relative; width:100%; padding:12rem 0 0; text-align: ce
 main{width:100%;}
 
 main .info{width:70vw; margin:10rem auto; padding:0.3rem; border:1px solid #16436A; border-radius: 20px; box-shadow: 0px 3px 6px rgba(0, 0, 0, .16); color:#16436A;}
-main .info>div{ background:#fff; display:inline-block; text-align:center; border:1px solid #16436A; border-radius: 20px; box-shadow: 0px 3px 6px rgba(0, 0, 0, .16);}
+main .info>div{width:100%; background:#fff; display:inline-block; text-align:center; border:1px solid #16436A; border-radius: 20px; box-shadow: 0px 3px 6px rgba(0, 0, 0, .16); box-sizing: border-box;}
 main .info>div article{display: inline-block; width:50%; box-sizing:border-box; }
 main .info>div article:first-child{float:left;}
 main .info>div article:nth-child(2){float:right;}

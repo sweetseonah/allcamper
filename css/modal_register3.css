@@ -6,16 +6,17 @@
 
 .modalTop{width:100%; padding:0.5rem 2rem; box-sizing:border-box; border-bottom:1px solid #16436a; }
 .modalTop h3{float:left; padding:0.3rem 0 0 0;}
-.modalTop h3 img{width:4rem; }
+.modalTop h3 img{width:4rem; }w
 .modalTop a {float:right;}
 .modalTop a svg{width:2rem;}
 
 .modal h1{width:100%; padding:3rem 0; text-align: center;}
 
-.modal .dragDrap{width:80%; padding:1rem; margin:0 auto; background:#ffe291; border-radius: 20px; box-sizing: border-box; text-align: center;}
-.modal .dragDrap .dragdrapBox{width:100%; border-radius: 20px; border:1px dashed #807149; padding:0 0 5rem 0;}
+.modal .dragDrap{width:80%; padding:1rem; margin:0 auto; background:#95c04c; border-radius: 20px; box-sizing: border-box; text-align: center;}
+.modal .dragDrap .dragdrapBox{width:100%; border-radius: 20px; border:1px dashed #fff; padding:0 0 5rem 0;}
 .modal .dragDrap .dragdrapBox svg{width:40%;}
-.modal .dragDrap .dragdrapBox h1{ color:#ff4500;}
+.modal .dragDrap .dragdrapBox h1{color:#fff;}
+.modal .dragDrap .dragdrapBox p{color:#fff;}
 
 .modal .pageIndex{position:absolute; left:1rem; bottom:1rem;}
 .modal .button{position:absolute; left: 50%; transform: translateX(-50%); bottom:4rem;}

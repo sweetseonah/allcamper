@@ -1,8 +1,8 @@
 @charset "utf-8";
 body{background:#fff;}
 
-header{width:100%; max-width: 1920px; position: absolute; top:0; left:50%; transform: translateX(-50%); height:5rem; padding:1rem 1.9rem; line-height: 1; z-index: 999999;}
-header a{color:#36393E;}
+header{width:100%; position: absolute; top:0; left:50%; transform: translateX(-50%); height:5rem; padding:1rem 1.9rem; line-height: 1; z-index: 999999;}
+header a{color:#fff;}
 header a:hover{color:#FF4500;}
 
 header h1, header nav, header ul{display:inline-block;}
@@ -30,7 +30,7 @@ header nav ul li:hover .navDropdown
 /* .open{right:0;} */
 
 .sideMenu{background:#1B5080; width:20vw; height:100vh; position:fixed; top:0; right:-20vw; z-index: 99999; box-sizing: border-box; text-align: center;}
-.sideMenu{//애니메이션 효과
+.sideMenu{
     transition: All 0.2s ease;
     -webkit-transition: All 0.2s ease;
     -moz-transition: All 0.2s ease;
@@ -79,94 +79,87 @@ header nav ul li:hover .navDropdown
 .sideBtm li:hover svg .cls-3 {stroke:#FF4500;}
 .sideBtm li:hover svg .cls-5 {stroke:#FF4500; fill:#FF4500;}
 
-.visual{position:relative; height:110vh; width:100vw; max-width: 1920px; margin: 0 auto; overflow: hidden; }
-.visualBackground{position:absolute; top:0; left:0; background:url(../img/mainbackground.svg) no-repeat bottom; background-size:cover; width:9555px; height:110vh; z-index:9;}
-.mainCamper{position:absolute; top:50%; margin-left:-8192px; background:url(../img/maincamper.svg) no-repeat; width:8192px;  height:100%; z-index:9999;}
-.mainCloud{position:absolute; top:7%; right:0; margin-right:-8192px; background:url(../img/cloud.svg) no-repeat; width:8192px;  height:100%; z-index:9999;}
-.cloudAfter{position:absolute; top:7%; right:0; margin-right:-8192px; background:url(../img/cloud.svg) no-repeat; width:8192px;  height:100%; z-index:9999;}
+.visual{position:relative; height:80vh; width:100vw; max-width: 1920px; margin: 0 auto; overflow: hidden; }
+.slide{position:absolute; top:0; left:0; height:80vh; width:100vw; overflow:hidden;}
+.slide .slideBox{position:absolute; top:0; left:0; height:100%; width:100%; overflow:hidden;}
+.slide .slideBox img{float:left; width:100vw;}
 
-.visualBackground {
-  animation-name: movingBox;
-  animation-duration: 40000ms;
-}
-@keyframes movingBox {
-  from {
-    margin-left: -1920px;
-  }
+.slideTit{position:absolute; background:rgba(255,255,255,0.5); top:30%; left:15rem; z-index:9999; color:#fff; width:25rem; padding:2rem;  }
+.slideTit h1{font-size:3.75rem;}
+.slideTit h1 span{display:block; padding:0.5rem 0 ;}
+.slideTit p{font-size:1.5rem; padding:2rem 0 0; font-size:2rem; }
+.slideTit .date{font-size:1rem;}
+.slideTit .user{font-size:1rem; padding:2em 0 0 ;}
+.slideTit .user img{float:left;width:3rem;}
+.slideTit .user p{float:left; font-size:1rem; margin:-1rem 0 0 1rem ;}
 
-  to {
-  margin-left: -7645px;
-  }
-}
+main{position:relative; width:100%; color:#16436a;}
+main section{position:relative; width:70vw; margin:0 auto;}
 
-.mainCloud {
-  animation-name: cloud;
-  animation-duration: 85000ms;
-}
+.carIcon{padding:5rem 0;}
+.carIcon svg{float:left; width:7rem;}
+.carIcon svg .cls-1 {fill:none;stroke:#16436a;stroke-linejoin:round;}
+.carIcon h1{float:left; padding:1rem 2rem ;}
 
-@keyframes cloud {
+.explain{background:rgba(255,226,145,0.4);}
+.explain div{width:60%; margin:0 auto;  padding: 2rem;}
+.explain ul{width:40%; display:inline-block; padding:0 0 0 3rem;}
+.explain ul li{padding:0.5rem 0;}
+.explain ul li p{padding:0 0.3rem;}
+.explain ul li p:first-child{float:left; color:rgba(22,67,106,0.5);}
+.explain ul li p:nth-child(2){float:right; color:#16436a;}
 
-  from {
-    margin-right: -8192px;
-  }
+.location{}
+.location div{}
 
-  to {
-  margin-right: 8192px;
-  }
+.facility{padding:5rem 0 10rem;}
+.facility h1{font-size:2rem; padding: 0 0 5rem 0;}
+.facility .fIcon{text-align: center; padding:5rem; background:#f7fbfe;}
+.facility .fIcon svg{width:5rem; padding:0 0.5rem;}
+.facility .fIcon svg #refri{fill:#16436a;}
+.facility .fIcon svg #aircon .cls-1,
+.facility .fIcon svg #aircon .cls-2{fill:none;stroke:#16436a;stroke-miterlimit:10;}
+.facility .fIcon svg #aircon .cls-2{stroke-linecap:round;}
+.facility .fIcon svg #awaning .cls-1{fill:none;}
+.facility .fIcon svg #awaning .cls-1,
+.facility .fIcon svg #awaning .cls-2{stroke:#16436a; stroke-linejoin:round;stroke-width:0.75px;}
+.facility .fIcon svg #awaning .cls-2{fill:#fff;}
+.facility .fIcon svg #cooktop path{fill:#16436a;}
+.facility .fIcon svg #heater path{fill:#16436a;}
+.facility .fIcon svg #heater rect{fill:#16436a;}
+.facility .fIcon svg #karaoke path{fill:#c;}
+.facility .fIcon #navi .cls-1,
+.facility .fIcon #navi .cls-2{stroke:#16436a; stroke-miterlimit:10;}
+.facility .fIcon svg #shower path{fill:#16436a;}
+.facility .fIcon svg #restroom path{fill:none;stroke:#16436a;stroke-miterlimit:10;}
+.facility .fIcon svg #restroom rect{fill:none;stroke:#16436a;stroke-miterlimit:10;}
+.facility .fIcon svg #toilet path{fill:#16436a;}
 
-}
-.cloudAfter {
-  animation-name: cloudAfter;
-  animation-duration: 90000ms;
-  animation-delay: 75000ms;
-}
+.text{text-align:center; background:#f7fbfe; padding: 5rem 0;}
+.text div{padding:5rem;}
+.text div h1{font-size:2rem;text-align:left;}
+.text div img{max-width:600px; padding:3rem 0;}
+.text div p{}
 
-@keyframes cloudAfter {
-  from {
-    margin-right: -8192px;
-  }
+.like{padding:2rem;}
+.like ul{float:right;}
+.like ul li{float:left; padding:0 0.3rem;}
+.like ul li:first-child{line-height:2;}
 
-  to {
-  margin-right: 8192px;
-  }
+.comment{padding:2rem 0; border-top:1px solid #16436a; border-bottom:1px solid #16436a; padding:3rem 10rem; box-sizing: border-box;}
+.comment ul{}
+.comment ul li{}
+.comment ul li p{float:left; padding:0.5rem 1rem;}
+.comment .posting{width:60%; padding:2rem 0 0 0;}
+.comment .posting input{width:76%; margin-right:0.5rem; border: 1px solid #16436A; height:2.3rem; border-radius:0.5rem;}
+.comment .posting button:hover{background:#95c04c; color:#fff; border:0px;}
 
-}
-.mainCamper {
-  /* Choose the animation */
-  animation-name: maincamper;
-
-  /* The animation’s duration */
-  animation-duration: 40000ms;
-}
-@keyframes maincamper {
-  0% {
-    transform: translate(0, 0);
-  }
-
-  90% {
-    transform: translate(9100px, 0);
-  }
-
-  100% {
-    transform: translate(8350px, 0);
-  }
-}
-
-main{background: #F7FBFE;width:100%;}
-main .fillter{position:relative; padding:10rem 0 0 0; text-align: center;}
-main .fillter > div{display:inline-block; text-align:center; cursor:pointer; margin: 0 1rem; width:200px; height:200px; border-radius: 300px; border:1px solid #16436A; box-shadow: 0px 3px 6px rgba(0, 0, 0, .16);  }
-main .fillter div a{width:180px; height:180px; margin:0.5rem 0 0 0; background:#16436A; border-radius:100px; display: inline-block; box-shadow: 0px 3px 6px rgba(0, 0, 0, .16); }
-main .fillter div a img,
-main .fillter div a svg{width:9.375rem; height:7.375rem; padding:1.2rem 0 0;}
-main .fillter >div:hover{border:1px solid #95C04C;}
-main .fillter >div:hover a{background:#95C04C;}
-main .fillter div a p{color:#fff;}
-
-main .fillterContainer{width:100%; margin:0 auto; max-width:79.1rem; padding:10rem 0; }
-main .fillterContainer>div{border:1px solid #16436A; background:#fff; border-radius:20px; display:inline-block; width:23rem; height:26.5rem; margin:1.5rem; box-shadow: 0px 3px 6px rgba(0, 0, 0, .16); }
-main .fillterContainer>div>div{width:23rem; display:inline-block; box-sizing:border-box;}
-main .fillterContainer>div>div:first-child{height:14%;}
-main .fillterContainer>div>div:nth-child(2){height:56%;}
+main .relatedPosts{width:100%; margin:0 auto; max-width:79.1rem; padding:10rem 0; }
+main .relatedPosts h2{text-align:center;}
+main .relatedPosts>div{border:1px solid #16436A; background:#fff; border-radius:20px; display:inline-block; width:23rem; height:26.5rem; margin:1.5rem; box-shadow: 0px 3px 6px rgba(0, 0, 0, .16); }
+main .relatedPosts>div>div{width:23rem; display:inline-block; box-sizing:border-box;}
+main .relatedPosts>div>div:first-child{height:14%;}
+main .relatedPosts>div>div:nth-child(2){height:56%;}
 
 .containerTop .location p,
 .containerImg .slideBtn img{width:100%; display:inline;}

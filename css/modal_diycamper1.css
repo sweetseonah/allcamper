@@ -7,13 +7,13 @@
 .modal>a svg{width:2rem;}
 .modal h1{padding:8rem 0 3rem;}
 .modal h1 img{width:8rem;}
-.modal .queT it{font-size:1.5rem; padding:0 0 2rem 0;}
+.modal .queTit{font-size:1.5rem; padding:0 0 2rem 0;}
 .modal ul{display: inline-block; padding:3rem 0;}
-.modal ul li{float:left; cursor: pointer;}
+.modal ul li{float:left; cursor:pointer;}
 .modal ul li:nth-child(2){padding:0 4rem;}
-.modal ul li div {width:14rem; height:11rem; padding:2rem 0; border:2px solid #16436a; box-sizing:border-box; }
-.modal ul li:first-child div svg{width:5rem;}
-.modal ul li:nth-child(2) div svg{width:12rem;}
+.modal ul li div {width:14rem; height:11rem; border:2px solid #16436a; box-sizing:border-box; }
+.modal ul li div svg{width:13rem;}
+
 .modal ul li:first-child div svg .cls-1 {fill: none; stroke: #16436A; stroke-linejoin: round;}
 .modal ul li:nth-child(2) div svg .cls-1,
 .modal ul li:nth-child(2) div svg .cls-2,
@@ -31,6 +31,7 @@
 .modal ul li:nth-child(2):hover div svg .cls-4 {fill: #fff;}
 .modal ul li:nth-child(3):hover div svg .cls-1 {stroke:#fff;}
 .modal ul li p{padding-top:2rem;}
+
 .modal .pageIndex{position:absolute; left:1rem; bottom:1rem;}
 .modal  .button{position:absolute; left: 50%; transform: translateX(-50%); bottom:5rem;}
 .modal .button:hover button{background:#95c04c; color:#fff; border:0px;}

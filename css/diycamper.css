@@ -61,10 +61,10 @@ main .fillter{position:relative; padding:10rem 0 0 0; text-align: center;}
 main .fillter > div{display:inline-block; text-align:center; cursor:pointer; margin: 0 1rem; width:200px; height:200px; border-radius: 300px; border:1px solid #16436A; box-shadow: 0px 3px 6px rgba(0, 0, 0, .16);  }
 main .fillter div a{width:180px; height:180px; margin:0.5rem 0 0 0; background:#16436A; border-radius:100px; display: inline-block; box-shadow: 0px 3px 6px rgba(0, 0, 0, .16); }
 main .fillter div a img,
-main .fillter div a svg{width:9.375rem; height:7.375rem; padding:1rem 0 0.8rem;}
+main .fillter div a svg{width:9.375rem; height:7.375rem; padding:1rem 0 0;}
 main .fillter >div:hover{border:1px solid #95C04C;}
 main .fillter >div:hover a{background:#95C04C;}
-main .fillter div a p{color:#fff;}
+main .fillter div a p{color:#fff; font-size:0.8rem;}
 
 main .fillterContainer>div{border:1px solid #16436A; background:#fff; border-radius:20px; width:38.375rem; margin:1.5rem; box-shadow: 0px 3px 6px rgba(0, 0, 0, .16); }
 main .fillterContainer>div>div{width:23rem; display:inline-block; box-sizing:border-box;}

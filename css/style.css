@@ -164,7 +164,8 @@ main .fillter div a p{color:#fff;}
 
 main .fillterContainer{width:100%; margin:0 auto; max-width:79.1rem; padding:10rem 0; }
 main .fillterContainer>div{border:1px solid #16436A; background:#fff; border-radius:20px; display:inline-block; width:23rem; height:26.5rem; margin:1.5rem; box-shadow: 0px 3px 6px rgba(0, 0, 0, .16); }
-main .fillterContainer>div>div{width:23rem; display:inline-block; box-sizing:border-box;}
+main .fillterContainer>div>a{display:block; cursor:pointer; width:100%; height:100%;}
+main .fillterContainer>div>a>div{width:23rem; display:inline-block; box-sizing:border-box;}
 main .fillterContainer>div>div:first-child{height:14%;}
 main .fillterContainer>div>div:nth-child(2){height:56%;}
 
@@ -182,7 +183,7 @@ main .fillterContainer>div>div:nth-child(2){height:56%;}
 .containerImg .slide{position:absolute; width:21.7rem; height:14.75rem; padding:0 0.4rem; overflow:hidden;}
 .containerImg .slide .slideBox{position:relative; width:110.5rem; height:14.75rem;}
 .containerImg .slide .slideBox > img{width:initial; display:inline; float:left;}
-.containerImg .slideBtn{position:absolute; top:42%; width:inherit; padding:0 1rem; box-sizing: border-box; z-index: 9999;}
+.containerImg .slideBtn{position:absolute; width:100%; top:42%; width:inherit; padding:0 1rem; box-sizing: border-box; z-index: 9999;}
 .containerImg .slideBtn img{ width:1.625rem; cursor:pointer; }
 .containerImg .slideBtn img:first-child{float:left;}
 .containerImg .slideBtn img:nth-child(2){float:right;}

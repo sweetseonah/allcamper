@@ -8,8 +8,8 @@
       <link rel="stylesheet" href="./css/community_detail.css">
       <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
       <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
-      <script type="text/javascript" src="./js/main.js"></script>
-      <script type="text/javascript" src="./js/jquery-3.4.1.js"></script>
+      <script src="./js/main.js" type="text/javascript">
+      </script>
   </head>
   <body>
       <div class="sideMenu" id="sideMenu">
@@ -64,53 +64,58 @@
       </div>
       <div class="visual">
               <header class="clear">
-                    <h1 class="logo">
-                          <a href="file:///C:/Users/B-UM/Documents/GitHub/allcamper/index.html"><img src="./img/logo.svg" alt="logo"/></a>
-                    </h1>
-                    <nav>
-                          <ul class="clear">
-                              <li><a href="file:///C:/Users/B-UM/Documents/GitHub/allcamper/introduction.html">Allcamper 소개</a>
-                                  <ul class="navDropdown">
-                                    <li><a href="#">이용방법</a></li>
-                                  </ul>
-                              </li>
-                              <li><a href="">커뮤니티</a>
-                                  <ul class="navDropdown">
-                                    <li><a href="file:///C:/Users/B-UM/Documents/GitHub/allcamper/community.html">자랑하기</a></li>
-                                    <li><a href="file:///C:/Users/B-UM/Documents/GitHub/allcamper/selling.html">사고팔기</a></li>
-                                    <li><a href="file:///C:/Users/B-UM/Documents/GitHub/allcamper/diycamper.html">DIY캠퍼</a></li>
-                                  </ul>
-                              </li>
-                              <li><a href="file:///C:/Users/B-UM/Documents/GitHub/allcamper/review.html">캠핑카여행후기</a></li>
-                              <li><a href="file:///C:/Users/B-UM/Documents/GitHub/allcamper/share.html">캠핑카공유</a></li>
+                    <div>
+                          <h1 class="logo">
+                                <img src="./img/logo.svg" alt="logo"/>
+                          </h1>
+                          <nav>
+                                <ul class="clear">
+                                    <li><a href="#">Allcamper 소개</a>
+                                        <ul class="navDropdown">
+                                          <li><a href="#">이용방법</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">커뮤니티</a>
+                                        <ul class="navDropdown">
+                                          <li><a href="#">사고팔기</a></li>
+                                          <li><a href="#">DIY캠퍼</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">캠핑카여행후기</a></li>
+                                    <li><a href="#">캠핑카공유</a></li>
+                                </ul>
+                          </nav>
+                          <ul Id="beforeLogin">
+                                <li><a href="#">회원가입</a></li>
+                                <li><a href="#">로그인</a></li>
                           </ul>
-                    </nav>
-                    <ul Id="beforeLogin">
-                          <li><a href="#">회원가입</a></li>
-                          <li><a href="#">로그인</a></li>
-                    </ul>
-                    <ul ID="afterLogin">
-                          <li id="showRight" class="login" >
-                              <img src="./img/login.svg" alt="login">
-                              <ul class="navDropdown">
-                                  <li class="mypage"><a href="file:///C:/Users/B-UM/Documents/GitHub/allcamper/mypage.html">마이페이지</a></li>
-                                  <li class="registerCamper"><a href="file:///C:/Users/B-UM/Documents/GitHub/allcamper/modal_register1.html">캠핑카 등록</a></li>
-                                  <li class="sharingCamper"><a href="file:///C:/Users/B-UM/Documents/GitHub/allcamper/mycamper.html">내 캠핑카 공유</a></li>
-                                  <li class="ewallet"><a href="#">전자지갑</a></li>
-                                  <li class="logout"><a href="#">로그아웃</a></li>
-                              </ul>
-                          </li>
-                    </ul>
+                          <ul ID="afterLogin">
+                                <li class="login">
+                                    <img src="./img/login.svg" alt="login">
+                                    <ul class="navDropdown">
+                                        <li class="mypage"><a href="#">마이페이지</a></li>
+                                        <li class="registerCamper"><a href="#">캠핑카 등록</a></li>
+                                        <li class="sharingCamper"><a href="#">내 캠핑카 공유</a></li>
+                                        <li class="ewallet"><a href="#">전자지갑</a></li>
+                                        <li class="logout"><a href="#">로그아웃</a></li>
+                                    </ul>
+                                </li>
+                          </ul>
+                    </div>
               </header>
               <div class="slide">
-                    <div class="slideBox clear">
+                    <div class="slideBox">
+                          <img src="./img/s1.jpg" alt="캠핑카 사진1" id="lastClone"/>
                           <img src="./img/s1.jpg" alt="캠핑카 사진1"/>
-                          <img src="./img/s2.jpg" alt="캠핑카 사진2"/>
-                          <img src="./img/" alt=""/>
-                          <img src="./img/" alt=""/>
-                          <img src="./img/" alt=""/>
+                          <img src="./img/s1.jpg" alt="캠핑카 사진1"/>
+                          <img src="./img/s1.jpg" alt="캠핑카 사진1"/>
+                          <img src="./img/s1.jpg" alt="캠핑카 사진1"/>
+                          <img src="./img/s1.jpg" alt="캠핑카 사진1"/>
+                          <img src="./img/s1.jpg" alt="캠핑카 사진1" id="firstClone"/>
                     </div>
               </div>
+              <svg id="prevBtn" data-name="레이어 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 47.5 85.71"><path d="M.52,42.91,3.64,39.5l36-39L47,7.31,14.14,42.91,47,78.5l-7.34,6.81-36-39L.52,42.91Z"/></svg>
+              <svg id="nextBtn" data-name="레이어 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 47.5 85.71"><path d="M47,42.91l-3.12,3.4-36,39L.52,78.5,33.36,42.91.52,7.31,7.86.5l36,39L47,42.91Z"/></svg>
               <div class="slideTit">
                     <h1>
                     <span>JJRV 캠핑카</span>

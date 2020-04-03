@@ -1,14 +1,15 @@
 @charset "utf-8";
 body{background:#fff;}
 
-header{width:100%; position: absolute; top:0; left:50%; transform: translateX(-50%); height:5rem; padding:1rem 1.9rem; line-height: 1; z-index: 999999;}
-header a{color:#fff;}
+header{width:100%; position: fixed; top:0; left:0;  height:5rem;  padding:1rem 1.9rem;z-index: 999999; background:rgba(255,255,255,0.8); border-bottom:1px solid rgba(22,67,106,0.5);}
+header>div{max-width: 1920px; margin: 0 auto;  line-height: 1;}
+header a{color:#36393E;}
 header a:hover{color:#FF4500;}
 
-header h1, header nav, header ul{display:inline-block;}
-header h1{float:left; width:7rem; padding: 0 0 0 1rem;}
-header >nav{float:left;}
-header > ul{float:right;}
+header div h1, header div nav, header div ul{display:inline-block;}
+header div h1{float:left; width:7rem; padding: 0 0 0 1rem;}
+header div > nav{float:left;}
+header div > ul{float:right;}
 
 header nav ul li
 ,header ul li {position:relative; width:10rem; padding:2rem 0 0 0; float:left; text-align: center;}
@@ -26,8 +27,6 @@ header nav ul li:hover .navDropdown
 
 #afterLogin .login{padding:0 0 0 0; width:8rem; position:fixed; z-index:999999; cursor:pointer;}
 #afterLogin .login img{width:4rem;}
-
-/* .open{right:0;} */
 
 .sideMenu{background:#1B5080; width:20vw; height:100vh; position:fixed; top:0; right:-20vw; z-index: 99999; box-sizing: border-box; text-align: center;}
 .sideMenu{
@@ -79,12 +78,16 @@ header nav ul li:hover .navDropdown
 .sideBtm li:hover svg .cls-3 {stroke:#FF4500;}
 .sideBtm li:hover svg .cls-5 {stroke:#FF4500; fill:#FF4500;}
 
-.visual{position:relative; height:80vh; width:100vw; max-width: 1920px; margin: 0 auto; overflow: hidden; }
-.slide{position:absolute; top:0; left:0; height:80vh; width:100vw; overflow:hidden;}
-.slide .slideBox{position:absolute; top:0; left:0; height:100%; width:100%; overflow:hidden;}
-.slide .slideBox img{float:left; width:100vw;}
+.visual{position:relative; height:80vh; width:100vw; margin: 0 auto; }
+.slide{height:80vh; width:100vw; overflow:hidden;}
+.slide .slideBox{display:flex; width:100%; height:80vh;}
 
-.slideTit{position:absolute; background:rgba(255,255,255,0.5); top:30%; left:15rem; z-index:9999; color:#fff; width:25rem; padding:2rem;  }
+#prevBtn{position:absolute; top:50%; left:3%; transform:translateY(-50%); width:4rem; cursor:pointer; z-index: 99;}
+#nextBtn{position:absolute; top:50%; right:3%; transform:translateY(-50%); width:4rem;  cursor:pointer; z-index: 99;}
+#prevBtn path,
+#nextBtn path{fill:#fff;}
+
+.slideTit{position:absolute; background:rgba(255,255,255,0.5); top:30%; left:20%; z-index:9999; color:#fff; width:25rem; padding:2rem;  }
 .slideTit h1{font-size:3.75rem;}
 .slideTit h1 span{display:block; padding:0.5rem 0 ;}
 .slideTit p{font-size:1.5rem; padding:2rem 0 0; font-size:2rem; }

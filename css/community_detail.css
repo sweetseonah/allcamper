@@ -97,46 +97,48 @@ header nav ul li:hover .navDropdown
 .slideTit .user p{float:left; font-size:1rem; margin:-1rem 0 0 1rem ;}
 
 main{position:relative; width:100%; color:#16436a;}
-main section{position:relative; width:70vw; margin:0 auto;}
+main>div{position:relative; width:100%; background:#16436a; margin:0 0 5rem 0;}
+main section{position:relative; width:46.875rem; margin:0 auto;}
 
-.carIcon{padding:5rem 0;}
-.carIcon svg{float:left; width:7rem;}
-.carIcon svg .cls-1 {fill:none;stroke:#16436a;stroke-linejoin:round;}
-.carIcon h1{float:left; padding:1rem 2rem ;}
+#rent{position:fixed; top:15rem; right:30rem; width:22.5rem; height:31.25rem; background:#95c04c; z-index:9999;}
 
-.explain{background:rgba(255,226,145,0.4);}
-.explain div{width:60%; margin:0 auto;  padding: 2rem;}
-.explain ul{width:40%; display:inline-block; padding:0 0 0 3rem;}
-.explain ul li{padding:0.5rem 0;}
-.explain ul li p{padding:0 0.3rem;}
-.explain ul li p:first-child{float:left; color:rgba(22,67,106,0.5);}
-.explain ul li p:nth-child(2){float:right; color:#16436a;}
+.carIcon{padding:3rem 0; }
+.carIcon svg{float:left; width:5rem;}
+.carIcon svg .cls-1 {fill:none;stroke:#fff;stroke-linejoin:round;}
+.carIcon h1{float:left; padding:1rem 2rem; color:#fff;}
 
-.location{}
-.location div{}
-
-.facility{padding:5rem 0 10rem;}
-.facility h1{font-size:2rem; padding: 0 0 5rem 0;}
-.facility .fIcon{text-align: center; padding:5rem; background:#f7fbfe;}
-.facility .fIcon svg{width:5rem; padding:0 0.5rem;}
-.facility .fIcon svg #refri{fill:#16436a;}
+.facility{padding:2rem  0;}
+.facility .fIcon{text-align: center; padding:2rem; border:1px solid #fff;}
+.facility .fIcon svg{width:3rem; padding:0 0.5rem;}
+.facility .fIcon svg #refri{fill:#fff;}
 .facility .fIcon svg #aircon .cls-1,
-.facility .fIcon svg #aircon .cls-2{fill:none;stroke:#16436a;stroke-miterlimit:10;}
+.facility .fIcon svg #aircon .cls-2{fill:none;stroke:#fff;stroke-miterlimit:10;}
 .facility .fIcon svg #aircon .cls-2{stroke-linecap:round;}
 .facility .fIcon svg #awaning .cls-1{fill:none;}
 .facility .fIcon svg #awaning .cls-1,
-.facility .fIcon svg #awaning .cls-2{stroke:#16436a; stroke-linejoin:round;stroke-width:0.75px;}
-.facility .fIcon svg #awaning .cls-2{fill:#fff;}
-.facility .fIcon svg #cooktop path{fill:#16436a;}
-.facility .fIcon svg #heater path{fill:#16436a;}
-.facility .fIcon svg #heater rect{fill:#16436a;}
-.facility .fIcon svg #karaoke path{fill:#c;}
+.facility .fIcon svg #awaning .cls-2{stroke:#Fff; stroke-linejoin:round;stroke-width:0.75px;}
+.facility .fIcon svg #awaning .cls-2{fill:none;}
+.facility .fIcon svg #cooktop path{fill:#fff;}
+.facility .fIcon svg #heater path{fill:#fff;}
+.facility .fIcon svg #heater rect{fill:#fff;}
+.facility .fIcon svg #karaoke path{fill:#fff;}
 .facility .fIcon #navi .cls-1,
-.facility .fIcon #navi .cls-2{stroke:#16436a; stroke-miterlimit:10;}
-.facility .fIcon svg #shower path{fill:#16436a;}
-.facility .fIcon svg #restroom path{fill:none;stroke:#16436a;stroke-miterlimit:10;}
-.facility .fIcon svg #restroom rect{fill:none;stroke:#16436a;stroke-miterlimit:10;}
-.facility .fIcon svg #toilet path{fill:#16436a;}
+.facility .fIcon #navi .cls-2{stroke:#fff; stroke-miterlimit:10;}
+.facility .fIcon svg #shower path{fill:#fff;}
+.facility .fIcon svg #restroom path{fill:none;stroke:#fff;stroke-miterlimit:10;}
+.facility .fIcon svg #restroom rect{fill:none;stroke:#fff;stroke-miterlimit:10;}
+.facility .fIcon svg #toilet path{fill:#fff;}
+
+.explain{}
+.explain div{width:100%; margin:0 auto;  padding: 2rem;}
+.explain ul{width:40%; display:inline-block;}
+.explain ul li{padding:0.5rem 0;}
+.explain ul li p{padding:0 0.3rem;}
+.explain ul li p:first-child{float:left; color:#fff;}
+.explain ul li p:nth-child(2){float:right; color:#fff;}
+
+.location{}
+.location div{}
 
 .text{text-align:center; background:#f7fbfe; padding: 5rem 0;}
 .text div{padding:5rem;}

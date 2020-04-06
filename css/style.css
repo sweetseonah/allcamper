@@ -29,7 +29,7 @@ header nav ul li:hover .navDropdown
 
 /* .open{right:0;} */
 
-.sideMenu{background:#1B5080; width:20vw; height:100vh; position:fixed; top:0; right:-20vw; z-index: 99999; box-sizing: border-box; text-align: center;}
+.sideMenu{background:#1B5080; width:20vw; height:100vh; position:fixed; top:0; right:0; z-index: 99999; box-sizing: border-box; text-align: center;}
 .sideMenu{//애니메이션 효과
     transition: All 0.2s ease;
     -webkit-transition: All 0.2s ease;
@@ -83,7 +83,6 @@ header nav ul li:hover .navDropdown
 .visualBackground{position:absolute; top:0; left:0; background:url(../img/mainbackground.svg) no-repeat bottom; background-size:cover; width:9555px; height:110vh; z-index:9;}
 .mainCamper{position:absolute; top:50%; margin-left:-8192px; background:url(../img/maincamper.svg) no-repeat; width:8192px;  height:100%; z-index:9999;}
 .mainCloud{position:absolute; top:7%; right:0; margin-right:-8192px; background:url(../img/cloud.svg) no-repeat; width:8192px;  height:100%; z-index:9999;}
-.cloudAfter{position:absolute; top:7%; right:0; margin-right:-8192px; background:url(../img/cloud.svg) no-repeat; width:8192px;  height:100%; z-index:9999;}
 
 .visualBackground {
   animation-name: movingBox;
@@ -98,12 +97,11 @@ header nav ul li:hover .navDropdown
   margin-left: -7645px;
   }
 }
-
 .mainCloud {
   animation-name: cloud;
   animation-duration: 85000ms;
+  animation-iteration-count: infinite;
 }
-
 @keyframes cloud {
 
   from {
@@ -115,27 +113,8 @@ header nav ul li:hover .navDropdown
   }
 
 }
-.cloudAfter {
-  animation-name: cloudAfter;
-  animation-duration: 90000ms;
-  animation-delay: 75000ms;
-}
-
-@keyframes cloudAfter {
-  from {
-    margin-right: -8192px;
-  }
-
-  to {
-  margin-right: 8192px;
-  }
-
-}
 .mainCamper {
-  /* Choose the animation */
   animation-name: maincamper;
-
-  /* The animation’s duration */
   animation-duration: 40000ms;
 }
 @keyframes maincamper {

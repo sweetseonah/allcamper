@@ -85,7 +85,7 @@ header nav ul li:hover .navDropdown
 #prevBtn{position:absolute; top:50%; left:3%; transform:translateY(-50%); width:4rem; cursor:pointer; z-index: 99;}
 #nextBtn{position:absolute; top:50%; right:3%; transform:translateY(-50%); width:4rem;  cursor:pointer; z-index: 99;}
 #prevBtn path,
-#nextBtn path{fill:#fff;}
+#nextBtn path{fill:rgba(255,255,255,.5);}
 
 .slideTit{position:absolute; background:rgba(255,255,255,0.5); top:30%; left:20%; z-index:9999; color:#fff; width:25rem; padding:2rem;  }
 .slideTit h1{font-size:3.75rem;}
@@ -97,15 +97,15 @@ header nav ul li:hover .navDropdown
 .slideTit .user p{float:left; font-size:1rem; margin:-1rem 0 0 1rem ;}
 
 main{position:relative; width:100%; color:#16436a;}
-main>div{position:relative; width:100%; background:#16436a; margin:0 0 5rem 0;}
+main>div{position:relative; width:100%; background:#16436a; margin:0 0 5rem 0; padding:2rem 0;}
 main section{position:relative; width:46.875rem; margin:0 auto;}
 
-#rent{position:fixed; top:15rem; right:30rem; width:22.5rem; height:31.25rem; background:#95c04c; z-index:9999;}
+#rent{position:absolute;; top:4rem; right:30rem; width:22.5rem; height:31.25rem; background:#95c04c; z-index:9999;}
 
-.carIcon{padding:3rem 0; }
+.carIcon{}
 .carIcon svg{float:left; width:5rem;}
 .carIcon svg .cls-1 {fill:none;stroke:#fff;stroke-linejoin:round;}
-.carIcon h1{float:left; padding:1rem 2rem; color:#fff;}
+.carIcon h1{float:left; padding:0.5rem 2rem; color:#fff;}
 
 .facility{padding:2rem  0;}
 .facility .fIcon{text-align: center; padding:2rem; border:1px solid #fff;}
@@ -130,8 +130,10 @@ main section{position:relative; width:46.875rem; margin:0 auto;}
 .facility .fIcon svg #toilet path{fill:#fff;}
 
 .explain{}
-.explain div{width:100%; margin:0 auto;  padding: 2rem;}
+.explain div{width:100%; margin:0 auto; }
 .explain ul{width:40%; display:inline-block;}
+.explain ul:first-child{padding:0 0 0 3.5rem;}
+.explain ul:nth-child(2){padding:0 0 0 2rem;}
 .explain ul li{padding:0.5rem 0;}
 .explain ul li p{padding:0 0.3rem;}
 .explain ul li p:first-child{float:left; color:#fff;}
@@ -152,15 +154,14 @@ main section{position:relative; width:46.875rem; margin:0 auto;}
 .like ul li:first-child{line-height:2;}
 
 .comment{padding:2rem 0; border-top:1px solid #16436a; border-bottom:1px solid #16436a; padding:3rem 10rem; box-sizing: border-box;}
-.comment ul{}
-.comment ul li{}
+.comment ul{width:100%;}
 .comment ul li p{float:left; padding:0.5rem 1rem;}
-.comment .posting{width:60%; padding:2rem 0 0 0;}
-.comment .posting input{width:76%; margin-right:0.5rem; border: 1px solid #16436A; height:2.3rem; border-radius:0.5rem;}
+.comment .posting{width:100%; padding:2rem 0 0 0;}
+.comment .posting input{width:68%; margin-right:0.5rem; border: 1px solid #16436A; height:2.3rem; border-radius:0.5rem;}
 .comment .posting button:hover{background:#95c04c; color:#fff; border:0px;}
 
 main .relatedPosts{width:100%; margin:0 auto; max-width:79.1rem; padding:10rem 0; }
-main .relatedPosts h2{text-align:center;}
+main .relatedPosts h2{text-align:center; padding:2rem 0; font-size:2rem;}
 main .relatedPosts>div{border:1px solid #16436A; background:#fff; border-radius:20px; display:inline-block; width:23rem; height:26.5rem; margin:1.5rem; box-shadow: 0px 3px 6px rgba(0, 0, 0, .16); }
 main .relatedPosts>div>div{width:23rem; display:inline-block; box-sizing:border-box;}
 main .relatedPosts>div>div:first-child{height:14%;}

@@ -100,29 +100,26 @@ main{position:relative; width:100%; color:#16436a;}
 main>div{position:relative; width:100%; background:#16436a; margin:0 0 5rem 0; padding:2rem 0;}
 main section{position:relative; width:46.875rem; margin:0 auto; box-sizing:border-box;}
 
-#rent{position:absolute; top:4rem; right:30rem; width:22.5rem; height:29rem; background:#95c04c; text-align: center; z-index:9999;}
-#rent h3{width:100%; color:#16436a; font-size: 1.8rem;}
+#rent{position:absolute; top:1.2rem; right:30rem; width:22.5rem; background:#95c04c; text-align: center; z-index:9999;}
+#rent h3{width:100%; color:#16436a; font-size: 1.8rem; padding:0 0 2rem;}
 #rent h3 span{float:right; padding:0 2rem 0 0;}
-#rent section{width:42%; padding:2rem 0; display: inline-block;}
-#rent section:nth-child(2){padding:0 0.5rem 0 0;}
-#rent section input{margin:0.5rem 0 0 0; height:2rem; color:#16436a;}
-#rent .total{background: #fff; width:90%; padding:1rem 1rem 0 ; box-sizing: border-box;}
-#rent .total h4{width:100%; text-align:left; padding-bottom:1rem;}
-#rent .total ul{display: inline-block; margin: 0 auto; padding:2rem 0;}
-#rent .total ul:nth-child(3){border-top: 1px solid #16436a;}
-#rent .total ul li{float:left; padding:0 1rem; display: inline-block;}
-#rent .total ul:nth-child(3) li:nth-child(2){color:#ff4500; font-weight:500; font-size: 1.5rem;}
+#rent ul{width:88%; padding:2rem; margin:0 auto; background:#fff; box-sizing:border-box;}
+#rent ul li{padding:1rem;}
+#rent ul li:first-child{}
+#rent ul li:first-child span{color:#ff4500;}
+#rent ul li:nth-child(2){border-top:1px solid #16436a; border-bottom:1px solid #16436a;}
+#rent ul li p{display: inline-block;}
+#rent ul li p:first-child{color:rgba(22,67,106,.5);}
+#rent ul li p:nth-child(2){padding:0 0 0 1rem; font-weight: 800;}
+#rent ul li:nth-child(3) img{width:1rem;}
+#rent ul li:nth-child(3){}
 #rent button{width:9.375rem; height:2.8125rem; margin:2rem 0 0 ; background:#ff4500; color:#fff; border:0px; border-radius:0px;}
 #rent button:hover{background:#fff; color:#ff4500; border:1px solid #ff4500;}
 
-.carIcon{display: inline-block; float:left;}
+.carIcon{}
 .carIcon svg{float:left; width:5rem;}
 .carIcon svg .cls-1 {fill:none;stroke:#fff;stroke-linejoin:round;}
 .carIcon h1{float:left; padding:0.5rem 2rem; color:#fff;}
-
-.cost{display:inline-block; float:right; color:#fff; text-align:right;}
-.cost span{display:inline-block; float:right;}
-.cost p{font-size: 1.5rem;}
 
 .facility{padding:2rem  0;}
 .facility .fIcon{text-align: center; padding:2rem; border:1px solid #fff;}
@@ -164,8 +161,6 @@ main section{position:relative; width:46.875rem; margin:0 auto; box-sizing:borde
 .shareTime .ui-datepicker td a{display: block; padding:1em; text-align: right; text-decoration: none;}
 
 .shareRule{padding:3rem 0;}
-
-
 
 .location{}
 .location div{}

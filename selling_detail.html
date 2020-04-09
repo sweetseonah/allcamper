@@ -5,25 +5,10 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>allcamper에 오신것을 환영합니다</title>
       <link rel="stylesheet" href="./css/base.css">
-      <link rel="stylesheet" href="./css/share_detail.css">
-      <link rel="stylesheet" href="./css/jquery-ui.css">
+      <link rel="stylesheet" href="./css/selling_detail.css">
       <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
-      <script src="./js/jquery-1.12.4.js"></script>
-      <script src="./js/jquery-ui.js"></script>
-      <script>
-       $( function() {
-             $( "#datepicker").datepicker();
-             $( "#datepicker2").datepicker();
-             $( "#showdate").datepicker();
-             $( "#tabs" ).tabs();
-       } );
-       </script>
-       <script>
-$( function() {
-  $( "#tabs" ).tabs();
-} );
-</script>
-  </head>
+      <script type="text/javascript" src="http://dapi.kakao.com/v2/maps/sdk.js?appkey=a1d4416426cbf061506351b72cf4a4ac"></script>
+      </head>
   <body>
       <div class="sideMenu" id="sideMenu">
             <div class="sideTop clear">
@@ -144,39 +129,19 @@ $( function() {
         </div>
         <main>
               <div id="rent">
-                    <h3 class="clear"><span> 대여하기</span></h3>
-                    <section>
-                      <p>대여일 <input type="text" placeholder="선택해주세요" id="datepicker"></p>
-                    </section>
-                    <section>
-                        <p>반납일 <input type="text" placeholder="선택해주세요" id="datepicker2"></p>
-                    </section>
-                    <section class="total">
-                          <h4><span>8만원 per night</span></h4>
-                          <ul class="clear">
-                                <li>8만원</li>
-                                <li>X</li>
-                                <li>14일</li>
-                          </ul>
-                          <ul class="clear">
-                                <li>total</li>
-                                <li>1,120,000</li>
-                                <li>원</li>
-                          </ul>
-                    </section>
-                    <button type="button" name="button">결제하기</button>
+                    <h3 class="clear"><span>판매하기</span></h3>
+                    <ul>
+                      <li><span>65,000,000</span> 원 </li>
+                      <li><p>배송방법</p><p>직거래</p></li>
+                      <li><img src="./img/pin.svg" alt="pin icon"/><p>제부도, 경기도 화성시</p></li>
+                    </ul>
+                    <button type="button" name="button">구매하기</button>
               </div>
               <div>
-                    <section class="clear">
-                          <div class="carIcon clear">
-                                <svg id="레이어_1" data-name="레이어 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 118.5 60.03"><circle class="cls-1" cx="36.98" cy="48.75" r="7.19"/><circle class="cls-1" cx="36.98" cy="48.75" r="4.62"/><circle class="cls-1" cx="103.49" cy="48.75" r="4.62"/><circle class="cls-1" cx="103.49" cy="48.75" r="7.19"/><path class="cls-1" d="M58.07,46.81H82.2V18.69l22.76.79s.88,0,1.86.05a10.86,10.86,0,0,0,2.44-.16,3.45,3.45,0,0,0,2.36-2.15c1.26-5.29-3.62-9.7-8.18-11.42A19.38,19.38,0,0,0,100.86,5a32.32,32.32,0,0,0-8.07-.83c-1.22,0-2.51,0-3.89,0s-2.84.21-4.39.41l-27.23,3-36.77,1L6.82,8.83s-2.2-.16-2.46,1.84V46.81h25.7"/><line class="cls-1" x1="43.9" y1="46.81" x2="47" y2="46.81"/><polyline class="cls-1" points="6.72 46.81 6.72 49.01 20.35 49.01 24.39 50.79 30.09 50.79"/><polyline class="cls-1" points="43.87 50.79 81.62 50.79 81.62 49.92 81.62 46.81"/><line class="cls-1" x1="81.62" y1="49.9" x2="96.41" y2="49.9"/><path class="cls-1" d="M110.59,49.9h4.34s.1-6,0-7.18a3.14,3.14,0,0,0-1-1.94,5.69,5.69,0,0,0-1-2.68,7.35,7.35,0,0,0-.88-1.1c-1.89-2.2-5-2.83-7.5-4A9.93,9.93,0,0,1,103,32a14.46,14.46,0,0,1-1.42-1.17c-2.53-2.45-4.52-5.44-7.3-7.58a13.62,13.62,0,0,0-1.77-1.18,15.6,15.6,0,0,0-1.66-.6c-2.68-.8-5.18-.95-8.65-1.68h0"/><rect class="cls-1" x="6.4" y="26.19" width="9.44" height="18.67" rx="0.63" ry="0.63"/><rect class="cls-1" x="47" y="14.81" width="11.07" height="34.04" rx="0.63" ry="0.63"/><path class="cls-1" d="M99.82,31.65l-5.56-6.51a6.21,6.21,0,0,0-3.41-2L82.2,21.47H70.45a.63.63,0,0,0-.63.63V32.8a.63.63,0,0,0,.63.63H99.82s1.79.11,1-.73Z"/><path class="cls-1" d="M108.27,15.65l-20.41-.89-4.8-6.11s-.86-1.08,1-1.39c0,0,8.55-1.84,13.85-.47,0,0,7.24,1.1,10.39,5.71,0,0,1.41,2.15.73,2.94C109,15.44,108.9,15.7,108.27,15.65Z"/><path class="cls-1" d="M82.2,41.56H94.79a13.72,13.72,0,0,1,1.88-2,8.46,8.46,0,0,1,5.71-2.27,11.4,11.4,0,0,1,2.11.1c2.1.26,4.35,1.05,5.56,3s2,5.14,5,4.56"/><path class="cls-1" d="M112.1,37H110l1.57,2.83a1.75,1.75,0,0,0,1.42.89l1,.06"/><line class="cls-1" x1="87.31" y1="33.44" x2="87.31" y2="49.9"/>
-                                </svg>
-                                <h1>모터홈</h1>
-                          </div>
-                          <div class="cost">
-                                <span>per night</span>
-                                <p>8만원</p>
-                          </div>
+                    <section  class="carIcon clear">
+                          <svg id="레이어_1" data-name="레이어 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 118.5 60.03"><circle class="cls-1" cx="36.98" cy="48.75" r="7.19"/><circle class="cls-1" cx="36.98" cy="48.75" r="4.62"/><circle class="cls-1" cx="103.49" cy="48.75" r="4.62"/><circle class="cls-1" cx="103.49" cy="48.75" r="7.19"/><path class="cls-1" d="M58.07,46.81H82.2V18.69l22.76.79s.88,0,1.86.05a10.86,10.86,0,0,0,2.44-.16,3.45,3.45,0,0,0,2.36-2.15c1.26-5.29-3.62-9.7-8.18-11.42A19.38,19.38,0,0,0,100.86,5a32.32,32.32,0,0,0-8.07-.83c-1.22,0-2.51,0-3.89,0s-2.84.21-4.39.41l-27.23,3-36.77,1L6.82,8.83s-2.2-.16-2.46,1.84V46.81h25.7"/><line class="cls-1" x1="43.9" y1="46.81" x2="47" y2="46.81"/><polyline class="cls-1" points="6.72 46.81 6.72 49.01 20.35 49.01 24.39 50.79 30.09 50.79"/><polyline class="cls-1" points="43.87 50.79 81.62 50.79 81.62 49.92 81.62 46.81"/><line class="cls-1" x1="81.62" y1="49.9" x2="96.41" y2="49.9"/><path class="cls-1" d="M110.59,49.9h4.34s.1-6,0-7.18a3.14,3.14,0,0,0-1-1.94,5.69,5.69,0,0,0-1-2.68,7.35,7.35,0,0,0-.88-1.1c-1.89-2.2-5-2.83-7.5-4A9.93,9.93,0,0,1,103,32a14.46,14.46,0,0,1-1.42-1.17c-2.53-2.45-4.52-5.44-7.3-7.58a13.62,13.62,0,0,0-1.77-1.18,15.6,15.6,0,0,0-1.66-.6c-2.68-.8-5.18-.95-8.65-1.68h0"/><rect class="cls-1" x="6.4" y="26.19" width="9.44" height="18.67" rx="0.63" ry="0.63"/><rect class="cls-1" x="47" y="14.81" width="11.07" height="34.04" rx="0.63" ry="0.63"/><path class="cls-1" d="M99.82,31.65l-5.56-6.51a6.21,6.21,0,0,0-3.41-2L82.2,21.47H70.45a.63.63,0,0,0-.63.63V32.8a.63.63,0,0,0,.63.63H99.82s1.79.11,1-.73Z"/><path class="cls-1" d="M108.27,15.65l-20.41-.89-4.8-6.11s-.86-1.08,1-1.39c0,0,8.55-1.84,13.85-.47,0,0,7.24,1.1,10.39,5.71,0,0,1.41,2.15.73,2.94C109,15.44,108.9,15.7,108.27,15.65Z"/><path class="cls-1" d="M82.2,41.56H94.79a13.72,13.72,0,0,1,1.88-2,8.46,8.46,0,0,1,5.71-2.27,11.4,11.4,0,0,1,2.11.1c2.1.26,4.35,1.05,5.56,3s2,5.14,5,4.56"/><path class="cls-1" d="M112.1,37H110l1.57,2.83a1.75,1.75,0,0,0,1.42.89l1,.06"/><line class="cls-1" x1="87.31" y1="33.44" x2="87.31" y2="49.9"/>
+                          </svg>
+                          <h1>모터홈</h1>
                     </section>
                     <section class="facility">
                           <div class="fIcon">
@@ -272,30 +237,8 @@ $( function() {
                           </div>
                     </section>
               </div>
-              <section class="shareTime">
-                    <h1>공유가능시간</h1>
-                    <div ID="showdate"></div>
-              </section>
-              <section class="shareRule">
-                    <div id="tabs">
-                          <ul>
-                                <li><a href="#tabs-1">캠핑카 내 지켜야할 규칙 </a></li>
-                                <li><a href="#tabs-2">캠핑카 내 드라이브 규칙</a></li>
-                          </ul>
-                          <div id="tabs-1">
-                                <p>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet massa et lorem. Mauris dapibus lacus auctor risus. Aenean tempor ullamcorper leo. Vivamus sed magna quis ligula eleifend adipiscing. Duis orci. Aliquam sodales tortor vitae ipsum. Aliquam nulla. Duis aliquam molestie erat. Ut et mauris vel pede varius sollicitudin. Sed ut dolor nec orci tincidunt interdum. Phasellus ipsum. Nunc tristique tempus lectus.</p>
-                          </div>
-                          <div id="tabs-2">
-                                <p>Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus id nunc. Duis scelerisque molestie turpis. Sed fringilla, massa eget luctus malesuada, metus eros molestie lectus, ut tempus eros massa ut dolor. Aenean aliquet fringilla sem. Suspendisse sed ligula in ligula suscipit aliquam. Praesent in eros vestibulum mi adipiscing adipiscing. Morbi facilisis. Curabitur ornare consequat nunc. Aenean vel metus. Ut posuere viverra nulla. Aliquam erat volutpat. Pellentesque convallis. Maecenas feugiat, tellus pellentesque pretium posuere, felis lorem euismod felis, eu ornare leo nisi vel felis. Mauris consectetur tortor et purus.</p>
-                          </div>
-                          <div id="tabs-3">
-                                <p>Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem. Vestibulum non ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce sodales. Quisque eu urna vel enim commodo pellentesque. Praesent eu risus hendrerit ligula tempus pretium. Curabitur lorem enim, pretium nec, feugiat nec, luctus a, lacus.</p>
-                                <p>Duis cursus. Maecenas ligula eros, blandit nec, pharetra at, semper at, magna. Nullam ac lacus. Nulla facilisi. Praesent viverra justo vitae neque. Praesent blandit adipiscing velit. Suspendisse potenti. Donec mattis, pede vel pharetra blandit, magna ligula faucibus eros, id euismod lacus dolor eget odio. Nam scelerisque. Donec non libero sed nulla mattis commodo. Ut sagittis. Donec nisi lectus, feugiat porttitor, tempor ac, tempor vitae, pede. Aenean vehicula velit eu tellus interdum rutrum. Maecenas commodo. Pellentesque nec elit. Fusce in lacus. Vivamus a libero vitae lectus hendrerit hendrerit.</p>
-                          </div>
-                    </div>
-              </section>
               <section class="location">
-                    <div id="map"></div>
+                <div id="map" style="width:500px;height:400px;"></div>
               </section>
               <section class="text">
                     <div>
@@ -352,7 +295,6 @@ $( function() {
                     <div class="posting clear">
                           <input type="text" name="" value=""></input>
                           <button>posting</button>
-                          <p>대여일 <input type="text" id="datepicker"></p>
                     </div>
               </section>
               <section class="relatedPosts">

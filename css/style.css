@@ -29,7 +29,7 @@ header nav ul li:hover .navDropdown
 
 /* .open{right:0;} */
 
-.sideMenu{background:#1B5080; width:20vw; height:100vh; position:fixed; top:0; right:0; z-index: 99999; box-sizing: border-box; text-align: center;}
+.sideMenu{background:#1B5080; width:20vw; height:100vh; position:fixed; top:0; right:-20vw; z-index: 99999; box-sizing: border-box; text-align: center;}
 .sideMenu{//애니메이션 효과
     transition: All 0.2s ease;
     -webkit-transition: All 0.2s ease;
@@ -184,7 +184,7 @@ main .fillterContainer>div>div:nth-child(2){height:56%;}
 .containerBtm .reviewStar img{width:1.125rem;}
 .containerBtm p{float:right;}
 
-footer{position:relative; width:100%; padding:1.5rem 3rem; box-sizing: border-box; background: #16436A;}
+footer{position:relative; width:100%; padding:1.5rem 3rem; box-sizing: border-box; background: #36393e;}
 footer > div{display:inline-block;}
 .fLogo {width:150px; float:left;}
 .fLogo a{width: 100%;}
@@ -194,3 +194,70 @@ footer > div{display:inline-block;}
   font-family: 'NotoSansCJKkr-Light'; font-size: 0.95em; color: #fff; }
 .fCont li span{font-family: 'NotoSansCJKkr-Light';font-size: 0.95em; color: #fff;padding: 0 5px;}
 .fCont li a {font-family: 'NotoSansCJKkr-Light'; font-size: 1em; color: #fff; cursor: pointer;}
+
+/*-------------------------------- Respinsive Media Styles --------------------------------*/
+
+@media only screen and (min-width: 1554px) and (max-width: 1920px) {
+  header{max-width:100%;}
+  header h1{padding:0 0 0 2rem;}
+  .visualBackground{position:absolute; top:0; left:0; background:url(../img/mainbackground.svg) no-repeat bottom; background-size:cover; width:7500px; height:110vh; z-index:9;}
+  .mainCamper{position:absolute; top:50%; margin-left:-8192px; background:url(../img/maincamper.svg) no-repeat; width:8192px;  height:100%; z-index:9999;}
+  .mainCloud{position:absolute; top:7%; right:0; margin-right:-8192px; background:url(../img/cloud.svg) no-repeat; width:8192px;  height:100%; z-index:9999;}
+  .sideMenu{background:#1B5080; width:20vw; height:100vh; position:fixed; top:0; right:-20vw; z-index: 99999; box-sizing: border-box; text-align: center;}
+  .sideBtm li:nth-child(2){margin:0 0.5rem;}
+
+  .visualBackground {
+    animation-name: movingBox;
+    animation-duration: 30000ms;
+  }
+  @keyframes movingBox {
+    from {
+      margin-left: -1555px;
+    }
+    to {
+    margin-left: -5000px;
+    }
+  }
+  .mainCamper {
+    animation-name: maincamper;
+    animation-duration: 40000ms;
+  }
+  @keyframes maincamper {
+    0% {
+      transform: translate(0, 0);
+    }
+
+    90% {
+      transform: translate(9100px, 0);
+    }
+
+    100% {
+      transform: translate(8350px, 0);
+    }
+  }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1250px) {
+
+}
+@media only screen and (min-width: 1200px) {
+
+}
+/* Medium Device: 1200px */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+
+}
+@media only screen and (max-width: 991px) {
+
+}
+/* Tablet Device: 768px */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+}
+/* Large Mobile: 480px */
+@media only screen and (max-width: 767px) {
+
+}
+/* Small Mobile: 320px */
+@media only screen and (max-width: 479px) {
+
+}

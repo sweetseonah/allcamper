@@ -359,6 +359,11 @@ button.ui-button::-moz-focus-inner {
 	line-height: 1.8em;
 	text-align: center;
 }
+.ui-datepicker .ui-datepicker-title2 {
+	margin: 0 auto;
+	line-height: 1.8em;
+	text-align: center;
+}
 .ui-datepicker .ui-datepicker-title select {
 	font-size: 1em;
 	margin: 1px 0;
@@ -390,6 +395,15 @@ button.ui-button::-moz-focus-inner {
 	text-align: right;
 	text-decoration: none;
 }
+.ui-datepicker td span,
+.ui-datepicker td a {
+	display: block;
+	padding: .2em;
+	text-align: right;
+	text-decoration: none;
+}
+
+
 .ui-datepicker .ui-datepicker-buttonpane {
 	background-image: none;
 	margin: .7em 0 0 0;

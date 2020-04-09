@@ -100,17 +100,16 @@ main{position:relative; width:100%; color:#16436a;}
 main>div{position:relative; width:100%; background:#95c04c; margin:0 0 5rem 0; padding:2rem 0;}
 main section{position:relative; width:46.875rem; margin:0 auto;}
 
-.carIcon{float:left;}
-.carIcon svg{float:left; width:4rem;}
-.carIcon svg .cls-1 {stroke-width:2; fill:none;stroke:#fff;stroke-miterlimit:10;}
-.carIcon h1{float:left; padding:0.5rem 2rem; color:#fff;}
+main section .carIcon{float:left;}
+main section .carIcon svg{float:left; width:4rem;}
+main section .carIcon svg .cls-1 {stroke-width:2; fill:none;stroke:#fff;stroke-miterlimit:10;}
+main section .carIcon h1{float:left; padding:2rem; color:#fff;}
 
-.location{float:right;}
-.location div{}
-.location img,
-.location p{display: inline-block;}
-.location img{width:1rem;}
-.location p{color:#fff;}
+main section .location{float:right; padding:2.2rem 0 0 0;}
+main section .location img,
+main section .location p{display: inline-block;}
+main section .location img{width:1rem;}
+main section .location p{color:#fff;}
 
 .text{text-align:center; background:#f7fbfe; padding: 5rem 0;}
 .text div{padding:5rem;}
@@ -144,8 +143,9 @@ main .relatedPosts>div>div:nth-child(2){height:56%;}
 .containerTop>div{display:inline-block;}
 .containerTop .campersIcon{float:left; margin-top:}
 .containerTop .campersIcon img{width:5rem;}
-.containerTop .location{float:right; line-height:3; }
+.containerTop .location{float:right; padding: 0.6rem 0 0 0;}
 .containerTop .location img{width:1rem;}
+.containerTop .location p{color:#16436a;}
 
 .containerImg{position:relative; width:100%;}
 .containerImg .slide{position:absolute; width:21.7rem; height:14.75rem; padding:0 0.4rem; overflow:hidden;}

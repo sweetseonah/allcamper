@@ -1,7 +1,7 @@
 @charset "utf-8";
 body{background:#F7FBFE;}
 
-header{width:100%; position: fixed; top:0; left:0;  height:5rem;  padding:1rem 1.9rem;z-index: 999999; background:rgba(255,255,255,0.8); border-bottom:1px solid rgba(22,67,106,0.5);}
+header{width:100%; position: fixed; top:0; left:0; padding:1rem 1.9rem;z-index: 999999; background:rgba(255,255,255,0.8); border-bottom:1px solid rgba(22,67,106,0.5); box-sizing: border-box;}
 header>div{max-width: 1920px; margin: 0 auto;  line-height: 1;}
 header a{color:#36393E;}
 header a:hover{color:#FF4500;}
@@ -25,7 +25,7 @@ header nav ul li:hover .navDropdown
 #afterLogin{display:block; padding:0 8.5rem 0 0;}
 #afterLogin li ul li{width:8rem;}
 
-#afterLogin .login{padding:0 0 0 0; width:8rem; position:fixed; z-index:999999; cursor:pointer;}
+#afterLogin .login{padding:0.5rem 0 0 0; width:8rem; position:fixed; z-index:999999; cursor:pointer;}
 #afterLogin .login img{width:4rem;}
 
 body .pageTitle{position:relative; width:100%; padding:12rem 0 0; text-align: center;}
@@ -129,3 +129,72 @@ footer > div{display:inline-block;}
   font-family: 'NotoSansCJKkr-Light'; font-size: 0.95em; color: #fff; }
 .fCont li span{font-family: 'NotoSansCJKkr-Light';font-size: 0.95em; color: #fff;padding: 0 5px;}
 .fCont li a {font-family: 'NotoSansCJKkr-Light'; font-size: 1em; color: #fff; cursor: pointer;}
+
+/*-------------------------------- Respinsive Media Styles --------------------------------*/
+
+@media only screen and (min-width: 1200px) and (max-width: 1554px) {
+  .fLogo {width:100px;}
+  .fCont{ margin-top: -3.5rem;}
+  .fCont li{font-size: 0.7em;}
+}
+/* Medium Device: 1200px */
+@media only screen and (min-width: 991px) and (max-width: 1199px) {
+  header>div{max-width: 100%;}
+  header div h1{width:5rem; padding: 1rem 0 0 1rem;}
+
+  .pageTitle h1{font-size:3rem;}
+  .pageTitle h1 img{width:10rem;}
+  .pageTitle ul li:first-child input{width:22rem;}
+  .pageTitle ul li:nth-child(3) svg{width:4rem; }
+
+  main{width:100%;}
+  main .fillter{position:relative; padding:10rem 0 0 0; text-align: center;}
+  main .fillter > div{margin: 0 0.4rem; width:180px; height:180px;}
+  main .fillter div a{width:170px; height:170px; margin:0.3rem 0 0 0;}
+  main .fillter div a img,
+  main .fillter div a svg{width:8rem; height:7rem; padding:0.8rem 0 0.2rem;}
+  main .fillter >div:hover{border:1px solid #95C04C;}
+  main .fillter >div:hover a{background:#95C04C;}
+  main .fillter div a p{color:#fff;}
+
+ .fLogo {width:100px;}
+ .fCont {width: calc(100% - 100px); margin-top: -3.5rem;}
+ .fCont li{font-size: 0.5em;}
+}
+/* Tablet Device: 768px */
+@media only screen and (min-width: 768px) and (max-width: 990px) {
+  header>div{max-width: 100%;}
+  header div h1{width:4rem; padding: 1rem 0 0 0;}
+  header nav ul li, header ul li {width: 8rem;}
+
+  #afterLogin {padding:0.2rem 5rem 0 0;}
+  #afterLogin .login{padding:0.5rem 0 0 0; width:8rem; position:fixed; z-index:999999; cursor:pointer;}
+  #afterLogin .login img {width: 3rem;}
+
+  .pageTitle h1{font-size:3rem;}
+  .pageTitle h1 img{width:10rem;}
+  .pageTitle ul {padding:2.4rem 2rem 0.8rem; border-radius:15px;}
+  .pageTitle ul li:first-child input{width:20rem;}
+  .pageTitle ul li:nth-child(3) svg{width:4rem; }
+  .pageTitle ul li:nth-child(3) p {padding-top: 0.2rem;}
+
+  main{width:100%;}
+  main .fillter{position:relative; padding:8rem 0 0 0; text-align: center;}
+  main .fillter > div{margin: 0 0.4rem; width:140px; height:140px;}
+  main .fillter div a{width:130px; height:130px; margin:0.3rem 0 0 0;}
+  main .fillter div a img,
+  main .fillter div a svg{width:7rem; height:5rem; padding:0.8rem 0 0.2rem;}
+
+  main .fillterContainer{padding: 8rem 0;}
+
+ .fCont {width: calc(100% - 100px); margin-top: -3.5rem;}
+ .fCont li{font-size: 0.5em;}
+}
+/* Large Mobile: 480px */
+@media only screen and (max-width: 767px) {
+
+}
+/* Small Mobile: 320px */
+@media only screen and (max-width: 479px) {
+
+}

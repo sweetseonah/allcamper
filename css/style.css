@@ -198,66 +198,400 @@ footer > div{display:inline-block;}
 /*-------------------------------- Respinsive Media Styles --------------------------------*/
 
 @media only screen and (min-width: 1554px) and (max-width: 1920px) {
-  header{max-width:100%;}
+  header{width:100%;}
   header h1{padding:0 0 0 2rem;}
-  .visualBackground{position:absolute; top:0; left:0; background:url(../img/mainbackground.svg) no-repeat bottom; background-size:cover; width:7500px; height:110vh; z-index:9;}
-  .mainCamper{position:absolute; top:50%; margin-left:-8192px; background:url(../img/maincamper.svg) no-repeat; width:8192px;  height:100%; z-index:9999;}
-  .mainCloud{position:absolute; top:7%; right:0; margin-right:-8192px; background:url(../img/cloud.svg) no-repeat; width:8192px;  height:100%; z-index:9999;}
-  .sideMenu{background:#1B5080; width:20vw; height:100vh; position:fixed; top:0; right:-20vw; z-index: 99999; box-sizing: border-box; text-align: center;}
+  .visual{ height:84vh; width:100%; max-width: 1554px;}
+  .visualBackground{left:0;background:url(../img/mainbackground2.svg) no-repeat bottom; width:7740px; height:84vh;}
+  .mainCamper{top:45%; margin-left:-7785px; back ground:url(../img/maincamper.svg) no-repeat; width:7785px;}
   .sideBtm li:nth-child(2){margin:0 0.5rem;}
-
   .visualBackground {
     animation-name: movingBox;
     animation-duration: 30000ms;
   }
   @keyframes movingBox {
     from {
-      margin-left: -1555px;
+      margin-left: -1400px;
     }
     to {
-    margin-left: -5000px;
+    margin-left: -6100px;
+    }
+  }
+  .mainCloud {
+    animation-duration: 65000ms;
+  }
+  .mainCamper {
+    animation-duration: 30000ms;
+  }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1554px) {
+  header{width:100%;}
+  .visual{ height:84vh; width:100%; max-width: 1200px;}
+  .mainCamper{top:60%; margin-left:-6000px; width:6000px;}
+  .visualBackground{left:0;background:url(../img/mainbackground3.svg) no-repeat bottom; width:5986px; height:84vh;}
+  .visualBackground {
+    animation-name: movingBox;
+    animation-duration: 30000ms;
+  }
+  @keyframes movingBox {
+    from {
+      margin-left: -1100px;
+    }
+    to {
+    margin-left: -4000px;
     }
   }
   .mainCamper {
     animation-name: maincamper;
-    animation-duration: 40000ms;
+    animation-duration: 30000ms;
   }
   @keyframes maincamper {
     0% {
       transform: translate(0, 0);
     }
-
-    90% {
-      transform: translate(9100px, 0);
+    80% {
+      transform: translate(6400px, 0);
     }
-
+    90% {
+      transform: translate(6000px, 0);
+    }
     100% {
-      transform: translate(8350px, 0);
+      transform: translate(7400px, 0);
     }
   }
-}
-@media only screen and (min-width: 1200px) and (max-width: 1250px) {
+  main .fillter > div{margin: 0 0.5rem; }
+  main .fillter div a{ margin:0.5rem 0 0 0;}
 
-}
-@media only screen and (min-width: 1200px) {
+  main .fillterContainer{max-width:58rem;}
+  main .fillterContainer>div{width:18rem; height:20rem; margin:0.5rem;}
+  main .fillterContainer>div>a>div{width:23rem}
+  main .fillterContainer>div>div:first-child{height:12%;}
+  main .fillterContainer>div>div:nth-child(2){height:56%;}
 
+  .containerTop {padding:0.5rem;}
+  .containerTop .location img{width:0.8rem;}
+  .containerTop .location p{font-size: 0.8rem;}
+
+  .containerImg .slide{width:16.8rem; height:11.5rem; padding:0 0.4rem;}
+  .containerImg .slideBtn{padding:0 0.8rem;}
+  .containerImg .slideBtn img{width:1.5rem;}
+
+  .containerBtm{padding:0.5rem;}
+  .containerBtm>div:first-child{margin-bottom:0.4rem;}
+  .containerBtm .facilities{padding:0.4rem 0 0 0;}
+  .containerBtm .facilities img{width:2rem;}
+  .containerBtm .reviewStar img{width:1rem;}
+  .containerBtm p{font-size:0.8rem; line-height: 1.5;}
+
+  .fCont li{font-size: 0.5em;}
 }
 /* Medium Device: 1200px */
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
+@media only screen and (min-width: 991px) and (max-width: 1199px) {
+  header{width:100%;}
+  header h1{width:5rem;}
+  header nav ul li, header ul li{padding:1rem 0 0 0; width:9rem;}
+  #afterLogin .login img {width: 3rem;}
+  .visual{ height:64vh; width:100%; max-width: 991px;}
+  .mainCamper{top:55%; margin-left:-5000px; width:5000px;}
+  .visualBackground{left:0;background:url(../img/mainbackground4.svg) no-repeat bottom; width:4954px; height:64vh;}
+  .visualBackground {
+    animation-name: movingBox;
+    animation-duration: 30000ms;
+  }
+  @keyframes movingBox {
+    from {
+      margin-left: -993px;
+    }
+    to {
+    margin-left: -3500px;
+    }
+  }
+  .mainCamper {
+    animation-name: maincamper;
+    animation-duration: 30000ms;
+  }
+  @keyframes maincamper {
+    0% {
+      transform: translate(0, 0);
+    }
+    80% {
+      transform: translate(5200px, 0);
+    }
+    90% {
+      transform: translate(4900px, 0);
+    }
+    100% {
+      transform: translate(6000px, 0);
+    }
+  }
+  main .fillter > div{margin: 0 0.5rem; width:180px; height:180px;}
+  main .fillter div a{ margin:0.5rem 0 0 0; width:160px; height:160px;}
+  main .fillter div a img {padding:0.5rem 0 0 0;}
+  main .fillter div a p{font-size: 0.8rem}
+  main .fillterContainer{max-width:58rem;}
+  main .fillterContainer>div{width:18rem; height:20rem; margin:0.5rem;}
+  main .fillterContainer>div>a>div{width:23rem}
+  main .fillterContainer>div>div:first-child{height:12%;}
+  main .fillterContainer>div>div:nth-child(2){height:56%;}
 
-}
-@media only screen and (max-width: 991px) {
+  .containerTop {padding:0.5rem;}
+  .containerTop .location img{width:0.8rem;}
+  .containerTop .location p{font-size: 0.8rem;}
 
+  .containerImg .slide{width:16.8rem; height:11.5rem; padding:0 0.4rem;}
+  .containerImg .slideBtn{padding:0 0.8rem;}
+  .containerImg .slideBtn img{width:1.5rem;}
+
+  .containerBtm{padding:0.5rem;}
+  .containerBtm>div:first-child{margin-bottom:0.4rem;}
+  .containerBtm .facilities{padding:0.4rem 0 0 0;}
+  .containerBtm .facilities img{width:2rem;}
+  .containerBtm .reviewStar img{width:1rem;}
+  .containerBtm p{font-size:0.8rem; line-height: 1.5;}
+
+  .fCont li{font-size: 0.5em;}
 }
 /* Tablet Device: 768px */
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (min-width: 768px) and (max-width: 990px) {
+  header{width:100%;}
+  header h1{width:5rem;}
+  header nav ul li, header ul li{padding:1rem 0 0 0; width:8rem;}
+  #afterLogin .login img {width: 3rem;}
+  .visual{ height:56vh; width:100%; max-width: 768px;}
+  .mainCamper{top:60%; margin-left:-4000px; width:4000px;}
+  .mainCloud{top:10%;}
+  .visualBackground{left:0;background:url(../img/mainbackground5.svg) no-repeat bottom; width:3829px; height:56vh;}
+  .visualBackground {
+    animation-name: movingBox;
+    animation-duration: 30000ms;
+  }
+  @keyframes movingBox {
+    from {
+      margin-left: -768px;
+    }
+    to {
+    margin-left: -2800px;
+    }
+  }
+  .mainCamper {
+    animation-name: maincamper;
+    animation-duration: 30000ms;
+  }
+  .mainCloud {
+    animation-name: cloud;
+    animation-duration: 85000ms;
+    animation-iteration-count: infinite;
+  }
+  @keyframes cloud {
 
+    from {
+      margin-right: -8192px;
+    }
+    to {
+    margin-right: 8192px;
+    }
+  }
+  @keyframes maincamper {
+    0% {
+      transform: translate(0, 0);
+    }
+    80% {
+      transform: translate(4500px, 0);
+    }
+    90% {
+      transform: translate(4200px, 0);
+    }
+    100% {
+      transform: translate(5000px, 0);
+    }
+  }
+  main .fillter > div{margin: 0 0.5rem; width:160px; height:160px;}
+  main .fillter div a{ margin:0.5rem 0 0 0; width:140px; height:140px;}
+  main .fillter div a img {padding:0.8rem 0 0 0; width:6rem; height:6rem;}
+  main .fillter div a p{font-size: 0.8rem}
+  main .fillterContainer{max-width:38.6rem;}
+  main .fillterContainer>div{width:18rem; height:20rem; margin:0.5rem;}
+  main .fillterContainer>div>a>div{width:23rem}
+  main .fillterContainer>div>div:first-child{height:12%;}
+  main .fillterContainer>div>div:nth-child(2){height:56%;}
+
+  .containerTop {padding:0.5rem;}
+  .containerTop .location img{width:0.8rem;}
+  .containerTop .location p{font-size: 0.8rem;}
+
+  .containerImg .slide{width:16.8rem; height:11.5rem; padding:0 0.4rem;}
+  .containerImg .slideBtn{padding:0 0.8rem;}
+  .containerImg .slideBtn img{width:1.5rem;}
+
+  .containerBtm{padding:0.5rem;}
+  .containerBtm>div:first-child{margin-bottom:0.4rem;}
+  .containerBtm .facilities{padding:0.4rem 0 0 0;}
+  .containerBtm .facilities img{width:2rem;}
+  .containerBtm .reviewStar img{width:1rem;}
+  .containerBtm p{font-size:0.8rem; line-height: 1.5;}
+
+  .fLogo{width:100px; padding:1rem 0 0 0;}
+  .fCont li{font-size: 0.5em;}
 }
 /* Large Mobile: 480px */
 @media only screen and (max-width: 767px) {
+  header{width:100%; height:3rem;}
+  header h1{width:4rem; padding:0.2rem 0 0 1rem;}
+  header>nav,
+  header>ul{display: none;}
+  header nav ul li, header ul li{padding:1rem 0 0 0; width:8rem;}
+  #afterLogin .login {width:12rem;}
+  #afterLogin .login img {width: 3rem;}
+  .visual{ height:45vh; width:100%; max-width: 480px;}
+  .mainCamper{top:60%; margin-left:-2500px; width:2500px;}
+  .visualBackground{left:0;background:url(../img/mainbackground6.svg) no-repeat bottom; width: 2396px; height:45vh;}
+  .mainCloud{top:20%; margin-right:-5500px; width:5500px;}
+  .visualBackground {
+    animation-name: movingBox;
+    animation-duration: 30000ms;
+  }
+  @keyframes movingBox {
+    from {
+      margin-left: -480px;
+    }
+    to {
+    margin-left: -1800px;
+    }
+  }
+  .mainCloud {
+    animation-name: cloud;
+    animation-duration: 85000ms;
+    animation-iteration-count: infinite;
+  }
+  @keyframes cloud {
+    from {
+      margin-right: -5500px;
+    }
 
+    to {
+    margin-right: 5500px;
+    }
+  }
+  .mainCamper {
+    animation-name: maincamper;
+    animation-duration: 30000ms;
+  }
+  @keyframes maincamper {
+    0% {
+      transform: translate(0, 0);
+    }
+    80% {
+      transform: translate(2600px, 0);
+    }
+    90% {
+      transform: translate(2500px, 0);
+    }
+    100% {
+      transform: translate(3000px, 0);
+    }
+  }
+  main .fillter > div{margin: 0 0.2rem; width:120px; height:120px;}
+  main .fillter div a{ margin:0.3rem 0 0 0; width:110px; height:110px;}
+  main .fillter div a img {padding:0.4rem 0 0 0; width:5rem; height:5rem;}
+  main .fillter div a p{font-size: 0.6rem}
+  main .fillterContainer{max-width:19rem;}
+  main .fillterContainer>div{width:18rem; height:20rem; margin:0.5rem;}
+  main .fillterContainer>div>a>div{width:23rem}
+  main .fillterContainer>div>div:first-child{height:12%;}
+  main .fillterContainer>div>div:nth-child(2){height:56%;}
+
+  .containerTop {padding:0.5rem;}
+  .containerTop .location img{width:0.8rem;}
+  .containerTop .location p{font-size: 0.8rem;}
+
+  .containerImg .slide{width:16.8rem; height:11.5rem; padding:0 0.4rem;}
+  .containerImg .slideBtn{padding:0 0.8rem;}
+  .containerImg .slideBtn img{width:1.5rem;}
+
+  .containerBtm{padding:0.5rem;}
+  .containerBtm>div:first-child{margin-bottom:0.4rem;}
+  .containerBtm .facilities{padding:0.4rem 0 0 0;}
+  .containerBtm .facilities img{width:2rem;}
+  .containerBtm .reviewStar img{width:1rem;}
+  .containerBtm p{font-size:0.8rem; line-height: 1.5;}
+
+  footer{display: none;}
 }
 /* Small Mobile: 320px */
 @media only screen and (max-width: 479px) {
+  header{width:100%; height:3rem;}
+  .visual{ height:35vh; width:100%; max-width: 320px;}
+  .mainCamper{top:60%; margin-left:-1800px; width:1800px;}
+  .visualBackground{left:0;background:url(../img/mainbackground6.svg) no-repeat bottom; width: 1598px; height:35vh;}
+  .mainCloud{top:25%; margin-right:-4500px; width:4500px;}
+  .visualBackground {
+    animation-name: movingBox;
+    animation-duration: 30000ms;
+  }
+  @keyframes movingBox {
+    from {
+      margin-left: -320px;
+    }
+    to {
+    margin-left: -1200px;
+    }
+  }
+  .mainCloud {
+    animation-name: cloud;
+    animation-duration: 50000ms;
+    animation-iteration-count: infinite;
+  }
+  @keyframes cloud {
+    from {
+      margin-right: -4500px;
+    }
+    to {
+    margin-right: 4500px;
+    }
+  }
+  .mainCamper {
+    animation-name: maincamper;
+    animation-duration: 30000ms;
+  }
+  @keyframes maincamper {
+    0% {
+      transform: translate(0, 0);
+    }
+    80% {
+      transform: translate(1900px, 0);
+    }
+    90% {
+      transform: translate(1800px, 0);
+    }
+    100% {
+      transform: translate(2300px, 0);
+    }
+  }
+  main .fillter{width:122px;margin:0 auto; padding:3rem 0 0 0;}
+  main .fillter > div{margin: 0.5rem 0.2rem; width:120px; height:120px;}
+  main .fillter div a{ margin:0.3rem 0 0 0; width:110px; height:110px;}
+  main .fillter div a img {padding:0.4rem 0 0 0; width:5rem; height:5rem;}
+  main .fillter div a p{font-size: 0.6rem}
+  main .fillterContainer{max-width:19rem; padding:3rem 0;}
+  main .fillterContainer>div{width:18rem; height:20rem; margin:0.5rem;}
+  main .fillterContainer>div>a>div{width:23rem}
+  main .fillterContainer>div>div:first-child{height:12%;}
+  main .fillterContainer>div>div:nth-child(2){height:56%;}
 
+  .containerTop {padding:0.5rem;}
+  .containerTop .location img{width:0.8rem;}
+  .containerTop .location p{font-size: 0.8rem;}
+
+  .containerImg .slide{width:16.8rem; height:11.5rem; padding:0 0.4rem;}
+  .containerImg .slideBtn{padding:0 0.8rem;}
+  .containerImg .slideBtn img{width:1.5rem;}
+
+  .containerBtm{padding:0.5rem;}
+  .containerBtm>div:first-child{margin-bottom:0.4rem;}
+  .containerBtm .facilities{padding:0.4rem 0 0 0;}
+  .containerBtm .facilities img{width:2rem;}
+  .containerBtm .reviewStar img{width:1rem;}
+  .containerBtm p{font-size:0.8rem; line-height: 1.5;}
+
+  footer{display: none;}
+}
 }

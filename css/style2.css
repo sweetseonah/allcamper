@@ -39,12 +39,24 @@ header nav ul li:hover .navDropdown
   margin-left: -7645px;
   }
 }
+.mainCloud {
+  animation-name: cloud;
+  animation-duration: 85000ms;
+  animation-iteration-count: infinite;
+}
+@keyframes cloud {
 
+  from {
+    margin-right: -8192px;
+  }
+
+  to {
+  margin-right: 8192px;
+  }
+
+}
 .mainCamper {
-  /* Choose the animation */
   animation-name: maincamper;
-
-  /* The animation’s duration */
   animation-duration: 40000ms;
 }
 @keyframes maincamper {

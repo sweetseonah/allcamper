@@ -119,23 +119,25 @@ main .fillterContainer>article>section{position:relative; width:100%; display:in
 .containerBtm .posting input{width:76%; margin-right:0.5rem; border: 1px solid #16436A; height:2.3rem; border-radius:0.5rem;}
 .containerBtm .posting button:hover{background:#95c04c; color:#fff; border:0px;}
 
-footer{position:relative; width:100%; padding:1.5rem 3rem; box-sizing: border-box; background: #16436A;}
+footer{position:relative; width:100%; padding:1.5rem 3rem; box-sizing: border-box; background:#16436A;}
 footer > div{display:inline-block;}
-.fLogo {width:150px; float:left;}
+.fLogo {width:110px; float:left;}
 .fLogo a{width: 100%;}
 .fLogo a img{width: 100%;}
-.fCont{width: calc(100% - 300px); float:right; margin-top: -5rem;}
-.fCont li{float:right; display:block;;
-  font-family: 'NotoSansCJKkr-Light'; font-size: 0.95em; color: #fff; }
-.fCont li span{font-family: 'NotoSansCJKkr-Light';font-size: 0.95em; color: #fff;padding: 0 5px;}
-.fCont li a {font-family: 'NotoSansCJKkr-Light'; font-size: 1em; color: #fff; cursor: pointer;}
+.fCont{width: 100rem; float:right; margin-top: -3.5rem;}
+.fCont p{float:right; display:inline-block; font-family: 'NotoSansCJKkr-Light'; font-size: 0.95em; color: #fff; }
+.fCont p span{font-family: 'NotoSansCJKkr-Light';font-size: 0.95em; color: #fff;padding: 0 5px;}
+.fCont p a {font-family: 'NotoSansCJKkr-Light'; font-size: 1em; color: #fff; cursor: pointer;}
 
 /*-------------------------------- Respinsive Media Styles --------------------------------*/
-
-@media only screen and (min-width: 1200px) and (max-width: 1554px) {
+@media only screen and (min-width: 1554px) and (max-width: 1920px) {
   .fLogo {width:100px;}
-  .fCont{ margin-top: -3.5rem;}
-  .fCont li{font-size: 0.7em;}
+  .fCont{width: 80rem;}
+}
+@media only screen and (min-width: 1200px) and (max-width: 1554px) {
+  #afterLogin .login{width:11rem;}
+  .fLogo {width:90px;}
+  .fCont{width: 60rem;}
 }
 /* Medium Device: 1200px */
 @media only screen and (min-width: 991px) and (max-width: 1199px) {
@@ -157,9 +159,8 @@ footer > div{display:inline-block;}
   main .fillter >div:hover a{background:#95C04C;}
   main .fillter div a p{color:#fff;}
 
- .fLogo {width:100px;}
- .fCont {width: calc(100% - 100px); margin-top: -3.5rem;}
- .fCont li{font-size: 0.5em;}
+  .fLogo {width:90px;}
+  .fCont{width: 50rem;}
 }
 /* Tablet Device: 768px */
 @media only screen and (min-width: 768px) and (max-width: 990px) {
@@ -178,7 +179,6 @@ footer > div{display:inline-block;}
   .pageTitle ul li:nth-child(3) svg{width:4rem; }
   .pageTitle ul li:nth-child(3) p {padding-top: 0.2rem;}
 
-  main{width:100%;}
   main .fillter{position:relative; padding:8rem 0 0 0; text-align: center;}
   main .fillter > div{margin: 0 0.4rem; width:140px; height:140px;}
   main .fillter div a{width:130px; height:130px; margin:0.3rem 0 0 0;}
@@ -187,14 +187,26 @@ footer > div{display:inline-block;}
 
   main .fillterContainer{padding: 8rem 0;}
 
- .fCont {width: calc(100% - 100px); margin-top: -3.5rem;}
- .fCont li{font-size: 0.5em;}
+  footer{padding:2rem;}
+  .fLogo {width:90px;}
+  .fCont{width: 36rem;}
+  .fCont p span,
+  .fCont p a {font-size: 0.5em; }
 }
 /* Large Mobile: 480px */
 @media only screen and (max-width: 767px) {
-
+  footer{padding:1rem;}
+  .fLogo {width:90px;}
+  .fCont{width: 20rem;}
+  .fCont p span,
+  .fCont p a {font-size: 0.5em; }
 }
 /* Small Mobile: 320px */
 @media only screen and (max-width: 479px) {
-
+  footer{padding:1rem;}
+  .fLogo {width:75px;}
+  .fCont{width: 14rem;}
+  .fCont p {display: block;}
+  .fCont p span,
+  .fCont p a {font-size: 0.5em; }
 }

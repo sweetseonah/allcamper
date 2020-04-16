@@ -131,32 +131,6 @@ header nav ul li:hover .navDropdown
   }
 }
 
-#searching{position:absolute; top:28%; left:50%; transform:translateX(-50%); width:45vw; height:55vh; padding:2rem; z-index: 999999; background:rgba(255, 255, 255, 0.5); text-align: center; box-sizing: border-box;}
-#searching h1{font-size:2.5rem; font-weight: 800; padding:2rem 0 0; line-height: 1.5; color:#36393e; text-shadow:3px 3px rgba(149,192,76,0.2);}
-#searching div:nth-child(2){margin:3.5rem 1rem;}
-#searching div:nth-child(2) input{width:35%; height:2.5rem; border:1px solid #16436A;}
-#searching div:nth-child(2) input::placeholder{color:#16436A;  font-size:0.7rem }
-#searching div:nth-child(2) button:hover{background:#95c04c; border:0px; color:#fff;}
-#searching div:nth-child(3){}
-#searching div:nth-child(3) svg{width:6rem;}
-#searching>div:nth-child(3) a svg .cls-1,
-#searching>div:nth-child(3) a svg .cls-2{fill:none;}
-#searching>div:nth-child(3) a svg .cls-1,
-#searching>div:nth-child(3) a svg .cls-2,
-#searching>div:nth-child(3) a svg .cls-3{stroke:#16436A;}
-#searching div:nth-child(3) a svg .cls-1{stroke-linejoin:round;}
-#searching div:nth-child(3) a svg .cls-2{fill:none;}
-#searching div:nth-child(3) a svg .cls-2,
-#searching div:nth-child(3) a svg .cls-3{stroke-miterlimit:10;}
-#searching div:nth-child(3) a svg .cls-3{fill:#16436A;}
-#searching div:nth-child(3) a svg .cls-4{fill:#16436A; font-size:42.69px; font-family:MalgunGothic-Semilight, Malgun Gothic;}
-#searching>div:nth-child(3) p{color:#16436A;}
-#searching>div:nth-child(3) a:hover svg .cls-1{stroke:#95c04c;}
-#searching>div:nth-child(3) a:hover svg .cls-2{stroke:#95c04c;}
-#searching div:nth-child(3) a:hover svg .cls-3{fill:#95c04c; stroke:#95c04c;}
-#searching div:nth-child(3) a:hover svg .cls-4{fill:#95c04c; stroke:#95c04c;}
-#searching div:nth-child(3) a:hover p{color:#95c04c; text-shadow:2px 2px rgba(22,67,106,0.5);}
-
 main{background: #F7FBFE;width:100%;}
 main .fillter{position:relative; padding:10rem 0 0 0; text-align: center;}
 main .fillter > div{display:inline-block; text-align:center; cursor:pointer; margin: 0 1rem; width:200px; height:200px; border-radius: 300px; border:1px solid #16436A; box-shadow: 0px 3px 6px rgba(0, 0, 0, .16);  }

@@ -1,9 +1,8 @@
 @charset "utf-8";
 body{background:#fff;}
 
-header h1{float:left; width:7rem; padding: 0 0 0 1rem;}
-.visual{ width:100vw; height:130vh; position:relative; background:url(../img/visualbackground2.svg) no-repeat; background-size:cover; z-index:9; overflow: hidden;}
-.mainVisual{ width:100vw; height:130vh; position:relative; background:url(../img/visualbackground2.svg) no-repeat; background-size:contain; z-index:9;}
+.visual{ width:100vw; height:130vh; position:relative; background:url(../img/visualbackground.svg) no-repeat; background-size:cover; z-index:9; overflow: hidden;}
+.mainVisual{ width:100vw; height:130vh; position:relative; background:url(../img/visualbackground.svg) no-repeat; background-size:contain; z-index:9;}
 .mainMountain{position:absolute; left:0; bottom:0; margin-right:-8000px; background:url(../img/mainmountain.svg) no-repeat; width:8000px; height:24rem; z-index:99;}
 .mainCamper{position:absolute; bottom:0; left:50%; transform: translateX(-50%); background:url(../img/maincamper.svg) no-repeat; width:40rem; height:25rem;z-index:999;}
 
@@ -14,7 +13,6 @@ header nav ul li
 ,header ul li {position:relative; width:10rem; padding:2rem 0 0 0; float:left; text-align: center;}
 header nav ul li a
 ,header ul li a{color:#fff;}
-
 header nav{position: absolute; top:4rem; left:50%; transform: translateX(-50%); line-height: 1;}
 header nav ul li:nth-child(3){padding:0.5rem 0 0 0;}
 header nav ul li:nth-child(3) img{width:6rem;}
@@ -100,9 +98,10 @@ header ul li:hover .navDropdown{display: block;}
 
 #mainTitle{position:absolute; top:40%; left:50%; transform:translateX(-50%); width:45vw; height:55vh; padding:2rem; z-index: 999999; text-align: center; box-sizing: border-box;}
 #mainTitle p{font-size:2.5rem; font-weight: 800; padding:2rem 0 0; line-height: 1.5; color:#fff;}
-#mainTitle p:first-child{position:absolute; top:-1rem; right:18rem;}
-#mainTitle p:nth-child(3){padding:3rem 0;}
-#mainTitle h1 img{width:40rem;}
+#mainTitle div{position:relative; display: inline-block;}
+#mainTitle div p{position:absolute; top:-3rem; right:2rem;}
+#mainTitle>p{padding:3rem 0;}
+#mainTitle div img{width:40rem;}
 #mainTitle button{border:1px solid #95C04C; color:#95C04C; width:16rem; height:4rem; border-radius:10rem;}
 #mainTitle button:hover{background:#95C04C; color:#fff;}
 
@@ -220,6 +219,7 @@ main section:nth-child(2) ul li p{color:#fff;}
 main section:nth-child(2) div:last-child{position:absolute; right:28%; margin-top: -2rem;}
 main section:nth-child(2) div:last-child button{border:1px solid #95C04C; color:#95C04C; width:15rem; height:3.5rem; border-radius:10rem;}
 main section:nth-child(2) div:last-child button:hover{background:#95C04C; color:#fff;}
+.s768{display: inline-block;}
 
 main section:nth-child(2) ul li:first-child svg .cls-1,
 main section:nth-child(2) ul li:first-child svg .cls-2 {fill: none;}
@@ -274,7 +274,7 @@ main section:nth-child(3) ul li:nth-child(2) div:nth-child(3) svg .cls-2 {stroke
 
 main section:nth-child(5){background:url('../img/section5bg.svg') no-repeat bottom; background-size:cover; padding:5rem 0 12rem;}
 main section:nth-child(5) div{display: inline-block; text-align:left;}
-main section:nth-child(5) div p{color:#fff;  left; font-size: 1.8rem;}
+main section:nth-child(5) div p{color:#fff; line-height: 1.8; font-size: 1.8rem;}
 main section:nth-child(5) div p:nth-child(2){padding:3rem 0;}
 main section:nth-child(5) div button{border:1px solid #95C04C; color:#95C04C; width:15rem; height:3.5rem; border-radius:10rem;}
 main section:nth-child(5) div button:hover{background:#95C04C; color:#fff;}
@@ -290,360 +290,161 @@ footer > div{display:inline-block;}
 .fCont p a {font-family: 'NotoSansCJKkr-Light'; font-size: 1em; color: #fff; cursor: pointer;}
 
 /*-------------------------------- Respinsive Media Styles --------------------------------*/
-/*
-@media only screen and (min-width: 1554px) and (max-width: 1920px) {
-  header{max-width:100%;}
-  header h1{padding:0 0 0 2rem;}
-  .visual{ height:95vh; width:100%; max-width: 1554px;}
-  .visualBackground{left:0;background:url(../img/mainbackground2.svg) no-repeat bottom; width:7368px; height:95vh;}
-  .mainCloud{top:10%;}
-  .mainCamper{top:45%; margin-left:-7785px; background:url(../img/maincamper.svg) no-repeat; width:7785px;}
-  .sideBtm li:nth-child(2){margin:0 0.5rem;}
-  .visualBackground {
-    animation-name: movingBox;
-    animation-duration: 30000ms;
-  }
-  @keyframes movingBox {
-    from {
-      margin-left: -1540px;
-    }
-    to {
-    margin-left: -5800px;
-    }
-  }
-  .mainCloud {
-    animation-duration: 65000ms;
-  }
-  .mainCamper {
-    animation-duration: 30000ms;
-  }
 
-  main .fillterContainer{max-width:79rem;}
-  main .fillterContainer>article{padding:1rem; margin:1rem 0.5rem;}
-
+@media only screen and (min-width: 1555px) and (max-width: 1920px) {
+  header nav ul li, header ul li{width: 9rem;}
+  .visual{ height:80vh;}
+  .mainVisual{height:80vh;}
+  @keyframes skyRotate{
+      0%{
+        opacity:1;
+        height:120vh; width:120vw;
+      }
+      100%{
+        opacity: 0.2;
+        width:250vw; height:200vh;
+      }
+  }
+  #mainTitle{top:22%;}
   .fLogo {width:100px;}
   .fCont{width: 80rem;}
 }
 @media only screen and (min-width: 1200px) and (max-width: 1554px) {
-  header{width:100%;}
-  .visual{ height:88vh; width:100%; max-width: 1200px;}
-  .mainCamper{top:60%; margin-left:-6000px; width:6000px;}
-  .mainCloud{top:11%;}
-  .visualBackground{left:0;background:url(../img/mainbackground3.svg) no-repeat bottom; width:5986px; height:88vh;}
-  .visualBackground {
-    animation-name: movingBox;
-    animation-duration: 30000ms;
-  }
-  @keyframes movingBox {
-    from {
-      margin-left: -1100px;
-    }
-    to {
-    margin-left: -4000px;
-    }
-  }
-  .mainCamper {
-    animation-name: maincamper;
-    animation-duration: 30000ms;
-  }
-  @keyframes maincamper {
-    0% {
-      transform: translate(0, 0);
-    }
-    80% {
-      transform: translate(6400px, 0);
-    }
-    90% {
-      transform: translate(6000px, 0);
-    }
-    100% {
-      transform: translate(7400px, 0);
-    }
-  }
-  main .fillter > div {margin:0 0.5rem;}
-  main .fillterContainer{max-width:68.8rem;}
-  main .fillterContainer>article{width:20rem; padding:0.8rem; margin:1rem 0.5rem;}
-  .containerImg .slide {width:20rem;}
-  .containerImg .likeOnimg {bottom:1.2rem; right:0;}
+  header nav ul li, header ul li{width: 7rem;}
+  main section:first-child .fillterContainer>div,
+  main section:nth-child(4) .fillterContainer>div{width:21rem; margin:0 0.5rem;}
+  main section:first-child .fillterContainer>div>div,
+  main section:nth-child(4) .fillterContainer>div>div{width:21rem;}
+  main section:first-child .fillterContainer>p,
+   main section:nth-child(4) .fillterContainer>p{padding: 0 0 1rem 5rem;}
+
+  .containerImg .slide{width:19.8rem;}
+  .containerImg .likeOnimg{right:0;}
+  .containerBtm div:nth-child(3) p{font-size: 0.8rem;}
+
+  main section:nth-child(2) h1{font-size: 2.8rem;}
+  main section:nth-child(2) div:last-child{right:7%;}
+
+  main section:nth-child(3) ul li:nth-child(2){padding:0 5rem;}
+
   .fLogo {width:90px;}
   .fCont{width: 60rem;}
 }
-/* Medium Device: 1200px /
+/* Medium Device: 1200px */
 @media only screen and (min-width: 991px) and (max-width: 1199px) {
-  header{width:100%;}
-  header h1{width:5rem;}
-  header nav ul li, header ul li{padding:1rem 0 0 0; width:9rem;}
-  #afterLogin .login img {width: 3rem;}
-  .visual{ height:75vh; width:100%; max-width: 991px;}
-  .mainCamper{top:55%; margin-left:-5000px; width:5000px;}
-  .mainCloud{top:12%;}
-  .visualBackground{left:0;background:url(../img/mainbackground4.svg) no-repeat bottom; width:4954px; height:75vh;}
-  .visualBackground {
-    animation-name: movingBox;
-    animation-duration: 30000ms;
-  }
-  @keyframes movingBox {
-    from {
-      margin-left: -993px;
-    }
-    to {
-    margin-left: -3500px;
-    }
-  }
-  .mainCamper {
-    animation-name: maincamper;
-    animation-duration: 30000ms;
-  }
-  @keyframes maincamper {
-    0% {
-      transform: translate(0, 0);
-    }
-    80% {
-      transform: translate(5200px, 0);
-    }
-    90% {
-      transform: translate(4900px, 0);
-    }
-    100% {
-      transform: translate(6000px, 0);
-    }
-  }
-  main .fillter > div {margin:0 0.5rem; width:180px; height:180px;}
-  main .fillter > div > a{width:160px; height:160px; margin:0.6rem 0 0 0;}
-  main .fillter div a img, main .fillter div a svg {width: 8rem; height: 7rem; padding: 0.5rem 0 0;}
-  main .fillterContainer{max-width:45.8rem;}
-  main .fillterContainer>article{width:20rem; padding:0.8rem; margin:1rem 0.5rem;}
-  .containerImg .slide {width:20rem;}
-  .containerImg .likeOnimg {bottom:1.2rem; right:0;}
+  main section:first-child .fillterContainer>div,
+  main section:nth-child(4) .fillterContainer>div{width:18rem; height:22rem; margin:0 0.3rem;}
+  main section:first-child .fillterContainer>div>div,
+  main section:nth-child(4) .fillterContainer>div>div{width:18rem;}
+  main section:first-child .fillterContainer>p,
+  main section:nth-child(4) .fillterContainer>p{padding: 0 0 1rem 5rem;}
+  .containerTop {padding: 0.5rem;}
+  .containerImg .slide{width:16.8rem; height:11rem;}
+  .containerImg .likeOnimg{right:0;}
+  .containerBtm div:nth-child(3) p{font-size: 0.5rem;}
+  .containerBtm {padding: 0.2rem 0.5rem 0.5rem 0.5rem;}
+  .containerBtm div:nth-child(2) {padding: 0.2rem 0;}
+  main section:nth-child(2) h1{font-size: 2.2rem;}
+  main section:nth-child(2) div:last-child{right:7%;}
+
+  main section:nth-child(3) ul li:nth-child(2){padding:0 5rem;}
+  main section:first-child .fillterContainer>div>div:first-child,
+  main section:nth-child(4) .fillterContainer>div>div:first-child{height:15%;}
+  main section:first-child .fillterContainer>div>div:nth-child(2),
+  main section:nth-child(4) .fillterContainer>div>div:nth-child(2){height:50%;}
+
   .fLogo {width:90px;}
   .fCont{width: 50rem;}
 }
-/* Tablet Device: 768px /
+/* Tablet Device: 768px */
 @media only screen and (min-width: 768px) and (max-width: 990px) {
-  header{width:100%; padding:1rem 0.5rem;}
-  header h1{width:5rem;}
-  header nav ul li, header ul li{padding:1rem 0 0 0; width:8rem;}
-  #afterLogin .login{width:11rem;}
-  #afterLogin .login img {width: 3rem;}
-  .visual{ height:56vh; width:100%; max-width: 768px;}
-  .mainCamper{top:60%; margin-left:-4000px; width:4000px;}
-  .mainCloud{top:10%;}
-  .visualBackground{left:0;background:url(../img/mainbackground5.svg) no-repeat bottom; width:3829px; height:56vh;}
-  .visualBackground {
-    animation-name: movingBox;
-    animation-duration: 30000ms;
-  }
-  @keyframes movingBox {
-    from {
-      margin-left: -768px;
-    }
-    to {
-    margin-left: -2800px;
-    }
-  }
-  .mainCamper {
-    animation-name: maincamper;
-    animation-duration: 30000ms;
-  }
-  .mainCloud {
-    animation-name: cloud;
-    animation-duration: 85000ms;
-    animation-iteration-count: infinite;
-  }
-  @keyframes cloud {
+#mainTitle {width: 100vw;}
+  main section:first-child .fillterContainer,
+  main section:nth-child(4) .fillterContainer{max-width: 100%;}
 
-    from {
-      margin-right: -8192px;
-    }
-    to {
-    margin-right: 8192px;
-    }
-  }
-  @keyframes maincamper {
-    0% {
-      transform: translate(0, 0);
-    }
-    80% {
-      transform: translate(4500px, 0);
-    }
-    90% {
-      transform: translate(4200px, 0);
-    }
-    100% {
-      transform: translate(5000px, 0);
-    }
-  }
-  main .fillter > div {margin:0 0.5rem; width:160px; height:160px;}
-  main .fillter > div > a{width:150px; height:150px; margin:0.3rem 0 0 0;}
-  main .fillter > div > a> p{font-size:0.8rem;}
-  main .fillter div a img, main .fillter div a svg {width: 7rem; height: 6rem; padding: 0.7rem 0 0;}
-  main .fillterContainer{max-width:44.6rem;}
-  main .fillterContainer>article{width:20rem; padding:0.8rem; margin:0.8rem 0.2rem;}
-  .containerImg .slide {width:20rem;}
-  .containerImg .likeOnimg {bottom:1.2rem; right:0;}
+  main section:nth-child(2) ul li{width:100vw;}
+  main section:nth-child(2) ul li:nth-child(2){padding:3rem 0;}
+  main section:nth-child(2) div:last-child{right:50%; transform:translateX(50%);}
+  main section:nth-child(2) ul li h3{font-size: 1.5rem;}
+  main section:nth-child(2) ul li p span{font-size:1rem;}
+  .s768{display: block; line-height:1.5;}
+
+  main section:nth-child(3) ul li{width:100%;}
+  main section:nth-child(3) ul li:first-child,
+  main section:nth-child(3) ul li:nth-child(3){padding:0rem 0 0 0;}
+  main section:nth-child(3) ul li:nth-child(2){padding:5rem 0;}
+  main section:nth-child(3) ul li div p:first-child{padding:0 0 5rem 0;}
+  main section:nth-child(3) ul li div svg{width:7rem; padding:2rem 0;}
+  main section:nth-child(3) ul li:nth-child(2)>p{padding:3rem 0;}
+  main section:nth-child(3) ul li:nth-child(2) div:nth-child(3) p span{padding:0.7rem 1rem; border:1px solid #A9E1BA; border-radius: 10rem;}
+  main section:nth-child(3) ul li:nth-child(3) div img{width:10rem; padding:0 0 2rem 0;}
+
+  main section:nth-child(5){background:url('../img/section5bg_768.svg') no-repeat bottom; background-size:cover; padding:5rem 0 12rem;}
+  main section:nth-child(5) div{display: inline-block; text-align:left;}
+  main section:nth-child(5) div p{color:#fff; line-height: 1.8; font-size: 1.8rem;}
+  main section:nth-child(5) div p:nth-child(2){padding:3rem 0;}
+  main section:nth-child(5) div button{border:1px solid #95C04C; color:#95C04C; width:15rem; height:3.5rem; border-radius:10rem;}
+  main section:nth-child(5) div button:hover{background:#95C04C; color:#fff;}
+
   footer{padding:2rem;}
   .fLogo {width:90px;}
   .fCont{width: 36rem;}
   .fCont p span,
   .fCont p a {font-size: 0.5em; }
 }
-/* Large Mobile: 480px /
+/* Large Mobile: 480px */
 @media only screen and (max-width: 767px) {
-  header{width:100%; height:3rem;}
-  header h1{width:4rem; padding:0.2rem 0 0 1rem;}
-  header>nav,
-  header>ul{display: none;}
-  header nav ul li, header ul li{padding:1rem 0 0 0; width:8rem;}
-  #afterLogin .login {width:12rem;}
-  #afterLogin .login img {width: 3rem;}
-  .visual{ height:45vh; width:100%; max-width: 480px;}
-  .mainCamper{top:60%; margin-left:-2500px; width:2500px;}
-  .visualBackground{left:0;background:url(../img/mainbackground6.svg) no-repeat bottom; width: 2396px; height:45vh;}
-  .mainCloud{top:20%; margin-right:-5500px; width:5500px;}
-  .visualBackground {
-    animation-name: movingBox;
-    animation-duration: 30000ms;
-  }
-  @keyframes movingBox {
-    from {
-      margin-left: -480px;
-    }
-    to {
-    margin-left: -1800px;
-    }
-  }
-  .mainCloud {
-    animation-name: cloud;
-    animation-duration: 85000ms;
-    animation-iteration-count: infinite;
-  }
-  @keyframes cloud {
-    from {
-      margin-right: -5500px;
-    }
+  #mainTitle {width: 100vw;}
+    main section:first-child h1 svg,
+    main section:nth-child(4) h1 svg{width: 8rem;}
+    main section:first-child > div:nth-child(2) h1,
+    main section:nth-child(4) > div:nth-child(2) h1{font-size: 2rem;}
+    main section:first-child > div:nth-child(2) p,
+    main section:nth-child(4) > div:nth-child(2) p{font-size: 1rem; padding: 1rem 0 0;}
+    main section:first-child .fillterContainer,
+    main section:nth-child(4) .fillterContainer{max-width: 100%;}
+    main section:first-child .fillterContainer > p,
+    main section:nth-child(4) .fillterContainer > p{padding: 0 0 1rem 3rem;}
+    main section:nth-child(2) h1{font-size: 2rem;}
+    main section:nth-child(2) ul li{width:100vw;}
+    main section:nth-child(2) ul li:nth-child(2){padding:3rem 0;}
+    main section:nth-child(2) div:last-child{right:50%; transform:translateX(50%);}
+    main section:nth-child(2) ul li h3{font-size: 1.5rem;}
+    main section:nth-child(2) ul li p span{font-size:1rem;}
+    .s768{display: inline; line-height:1.5;}
+    .s480{display: block; line-height:2;}
 
-    to {
-    margin-right: 5500px;
-    }
-  }
-  .mainCamper {
-    animation-name: maincamper;
-    animation-duration: 30000ms;
-  }
-  @keyframes maincamper {
-    0% {
-      transform: translate(0, 0);
-    }
-    80% {
-      transform: translate(2600px, 0);
-    }
-    90% {
-      transform: translate(2500px, 0);
-    }
-    100% {
-      transform: translate(3000px, 0);
-    }
-  }
-  main .fillter > div {margin:0 0.5rem; width:130px; height:130px;}
-  main .fillter > div > a{width:120px; height:120px; margin:0.2rem 0 0 0;}
-  main .fillter > div > a> p{font-size:0.8rem;}
-  main .fillter div a img, main .fillter div a svg {width: 7rem; height: 6rem; padding: 0.7rem 0 0;}
-  main .fillterContainer {max-width: 100%; text-align: center;}
-  main .fillterContainer>article{width:20rem; padding:0.8rem; margin:0.8rem 0.2rem;}
-  .containerImg .slide {width:20rem;}
-  .containerImg .likeOnimg {bottom:1.2rem; right:0;}
+    main section:nth-child(3) ul li{width:100%;}
+    main section:nth-child(3) ul li:first-child,
+    main section:nth-child(3) ul li:nth-child(3){padding:0rem 0 0 0;}
+    main section:nth-child(3) ul li:nth-child(2){padding:5rem 0;}
+    main section:nth-child(3) ul li div p:first-child{padding:0 0 5rem 0;}
+    main section:nth-child(3) ul li div svg{width:7rem; padding:2rem 0;}
+    main section:nth-child(3) ul li:nth-child(2)>p{padding:3rem 0;}
+    main section:nth-child(3) ul li:nth-child(2) div:nth-child(3) p span{padding:0.7rem 1rem; border:1px solid #A9E1BA; border-radius: 10rem;}
+    main section:nth-child(3) ul li:nth-child(3) div img{width:10rem; padding:0 0 2rem 0;}
+
+    main section:nth-child(5){background:url('../img/section5bg_768.svg') no-repeat bottom; background-size:cover; padding:5rem 0 12rem;}
+    main section:nth-child(5) div{display: inline-block; text-align:left;}
+    main section:nth-child(5) div p{color:#fff; line-height: 1.8; font-size: 1.2rem;}
+    main section:nth-child(5) div p:nth-child(2){padding:3rem 0;}
+    main section:nth-child(5) div button{border:1px solid #95C04C; color:#95C04C; width:15rem; height:3.5rem; border-radius:10rem;}
+    main section:nth-child(5) div button:hover{background:#95C04C; color:#fff;}
+
   footer{padding:1rem;}
   .fLogo {width:90px;}
   .fCont{width: 20rem;}
   .fCont p span,
   .fCont p a {font-size: 0.5em; }
 }
-/* Small Mobile: 320px /
+/* Small Mobile: 320px */
 @media only screen and (max-width: 479px) {
-  header{width:100%; height:3rem;}
-  .visual{ height:35vh; width:100%; max-width: 320px;}
-  .mainCamper{top:60%; margin-left:-1800px; width:1800px;}
-  .visualBackground{left:0;background:url(../img/mainbackground6.svg) no-repeat bottom; width: 1598px; height:35vh;}
-  .mainCloud{top:25%; margin-right:-4500px; width:4500px;}
-  .visualBackground {
-    animation-name: movingBox;
-    animation-duration: 30000ms;
-  }
-  @keyframes movingBox {
-    from {
-      margin-left: -320px;
-    }
-    to {
-    margin-left: -1200px;
-    }
-  }
-  .mainCloud {
-    animation-name: cloud;
-    animation-duration: 50000ms;
-    animation-iteration-count: infinite;
-  }
-  @keyframes cloud {
-    from {
-      margin-right: -4500px;
-    }
-    to {
-    margin-right: 4500px;
-    }
-  }
-  .mainCamper {
-    animation-name: maincamper;
-    animation-duration: 30000ms;
-  }
-  @keyframes maincamper {
-    0% {
-      transform: translate(0, 0);
-    }
-    80% {
-      transform: translate(1900px, 0);
-    }
-    90% {
-      transform: translate(1800px, 0);
-    }
-    100% {
-      transform: translate(2300px, 0);
-    }
-  }
-  main .fillter{padding:4rem 0 0 0;}
-  main .fillter > div{margin: 0.5rem 0.2rem; width:80px; height:80px;}
-  main .fillter div a{ margin:0.3rem 0 0 0; width:70px; height:70px;}
-  main .fillter div a img {padding:0.4rem 0 0 0; width:4rem; height:4rem;}
-  main .fillter ul{width:16.5rem; margin:1rem auto;}
-  main .fillter ul li{float:left; color:#16436A;}
-  main .fillter ul li:nth-child(2){padding:0 1rem;}
-
   .sAll{display: none;}
   .s320{display: block;}
-
-  main .fillterContainer{max-width:19rem; padding:3rem 0;}
-  main .fillterContainer>div{width:18rem; height:20rem; margin:0.5rem;}
-  main .fillterContainer>div>a>div{width:23rem}
-  main .fillterContainer>div>div:first-child{height:12%;}
-  main .fillterContainer>div>div:nth-child(2){height:56%;}
-
-  .containerTop {padding:0.5rem;}
-  .containerTop .location img{width:0.8rem;}
-  .containerTop .location p{font-size: 0.8rem;}
-
-  .containerImg .slide{width:16.8rem; height:11.5rem; padding:0 0.4rem;}
-  .containerImg .slideBtn{padding:0 0.8rem;}
-  .containerImg .slideBtn img{width:1.5rem;}
-
-  .containerBtm{padding:0.5rem;}
-  .containerBtm>div:first-child{margin-bottom:0.4rem;}
-  .containerBtm .facilities{padding:0.4rem 0 0 0;}
-  .containerBtm .facilities img{width:2rem;}
-  .containerBtm .reviewStar img{width:1rem;}
-  .containerBtm p{font-size:0.8rem; line-height: 1.5;}
-
   footer{padding:1rem;}
   .fLogo {width:75px;}
   .fCont{width: 14rem;}
   .fCont p {display: block;}
   .fCont p span,
   .fCont p a {font-size: 0.5em; }
-} */
+}

@@ -6,123 +6,166 @@
       <title>allcamper에 오신것을 환영합니다</title>
       <link rel="stylesheet" href="./css/base.css">
       <link rel="stylesheet" href="./css/review.css">
-      <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-      <link rel="icon" href="/favicon.ico" type="image/x-icon">
+      <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+      <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
       <script type="text/javascript" src="./js/main.js"></script>
-      <script type="text/javascript" src="./js/jquery-3.4.1.min.js"></script>
+      <script type="text/javascript" src="./js/jquery-3.4.1.js"></script>
   </head>
   <body>
-        <div onclick="topFunction()" id="myBtn" title="Go to top">
-          <svg xmlns="http://www.w3.org/2000/svg" width="36.408" height="58.338" viewBox="0 0 36.408 58.338">
-            <g id="page_top" data-name="page top" transform="translate(235.483 228.538) rotate(180)">
-              <g id="Group_242" data-name="Group 242" transform="translate(200.575 171.7)">
-                <g id="Group_241" data-name="Group 241" transform="translate(0 0)">
-                  <path id="Path_364" data-name="Path 364" d="M217.2,171.7h0a3.287,3.287,0,0,0-3.277,3.277l.033,41.223-7.8-7.8a3.263,3.263,0,0,0-4.62,0h0a3.263,3.263,0,0,0,0,4.62l12.813,12.813a4.173,4.173,0,0,0,5.866,0l12.813-12.813a3.263,3.263,0,0,0,0-4.62h0a3.263,3.263,0,0,0-4.62,0l-7.9,7.832-.033-41.256A3.286,3.286,0,0,0,217.2,171.7Z" transform="translate(-200.575 -171.7)" fill="none" stroke="#FF4500" stroke-miterlimit="10" stroke-width="3"/>
-                </g>
-              </g>
-            </g>
-          </svg>
-        </div>
-        <header class="clear">
-              <div>
-                    <h1 class="logo">
-                          <img src="./img/logo.svg" alt="logo"/>
-                    </h1>
-                    <nav>
-                          <ul class="clear">
-                              <li><a href="#">Allcamper 소개</a>
-                                  <ul class="navDropdown">
-                                    <li><a href="#">이용방법</a></li>
-                                  </ul>
-                              </li>
-                              <li><a href="#">커뮤니티</a>
-                                  <ul class="navDropdown">
-                                    <li><a href="#">사고팔기</a></li>
-                                    <li><a href="#">DIY캠퍼</a></li>
-                                  </ul>
-                              </li>
-                              <li><a href="#">캠핑카여행후기</a></li>
-                              <li><a href="#">캠핑카공유</a></li>
-                          </ul>
-                    </nav>
-                    <ul Id="beforeLogin">
-                          <li><a href="#">회원가입</a></li>
-                          <li><a href="#">로그인</a></li>
-                    </ul>
-                    <ul ID="afterLogin">
-                          <li class="login">
-                              <img src="./img/login.svg" alt="login">
-                              <ul class="navDropdown">
-                                  <li class="mypage"><a href="#">마이페이지</a></li>
-                                  <li class="registerCamper"><a href="#">캠핑카 등록</a></li>
-                                  <li class="sharingCamper"><a href="#">내 캠핑카 공유</a></li>
+      <div class="sideMenu" id="sideMenu">
+            <div class="sideTop clear">
+                  <h3><a href="#"><img src="./img/logout.svg" alt="로그아웃 아이콘"></a></h3>
+                  <a href="file:///C:/Users/B-UM/Documents/GitHub/allcamper/mypage.html"><button>My page 가기</button></a>
+            </div>
+            <div class="sideUser">
+                  <h3><img src="./img/side_user.svg" alt="유저 이미지"></h3>
+                  <p>Susan_campingholic</p>
+                  <ul class="clear">
+                        <li>
+                              <p>car</p>
+                              <p>1</p>
+                        </li>
+                        <li>
+                              <p>post</p>
+                              <p>50</p>
+                        </li>
+                        <li>
+                              <p>like</p>
+                              <p>1100</p>
+                        </li>
+                  </ul>
+            </div>
+            <div class="sideCamper">
+                  <h3><img src="./img/side_camper.svg" alt="캠퍼 이미지"></h3>
+                  <ul class="clear">
+                        <li><img src="./img/caravan.svg" alt="차량유형 카라반"></li>
+                        <li>
+                           <p>로드형 카라반 adora_502UL</p>
+                        </li>
+                  </ul>
+            </div>
+            <ul class="sideBtm clear">
+                  <li><a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 85 85"><defs><style>.cls-1,.cls-2,.cls-3{fill:none;stroke:#Fff;stroke-linejoin:round;}.cls-2,.cls-3{stroke-linecap:round;}.cls-2{stroke-dasharray:5 7;}</style></defs><title>register</title><g id="캠핑카등록"><line class="cls-1" x1="34.01" y1="71.17" x2="58.51" y2="71.78"/><path class="cls-1" d="M25.81,71.1l-5.13-.23c-.33,0-.28-1.51-.28-1.51a.31.31,0,0,1,.22-.33c-.55-1.4,1.12-11.42,1.12-11.42a1.49,1.49,0,0,1,1.57-1.46L51.92,56a3.06,3.06,0,0,1,1.12.51l7.61,5.15,5.77,2.57c2.52,1.07,2.12,3.08,2.12,3.08,1.29,1,1,3.53,1,4s-.62.56-.62.56H66.36"/><circle class="cls-1" cx="29.92" cy="70.76" r="4.1"/><circle class="cls-1" cx="62.44" cy="70.76" r="4.06"/><path class="cls-1" d="M51.51,56.81,44,56.88l-21.19.19c-.16,0-.29.18-.29.4l-.45,3.32c0,.23.13.41.28.41l21.82.22,3.2,0L57.58,62,59.1,62s.25-.25-.42-.59l-6.41-4.38A1.4,1.4,0,0,0,51.51,56.81Z"/><polyline class="cls-1" points="31.45 56.97 31.26 61.28 30.84 66.77"/><line class="cls-1" x1="38.9" y1="56.93" x2="38.84" y2="61.37"/><polyline class="cls-1" points="46.77 56.86 46.95 61.37 47.27 71.47"/><circle class="cls-1" cx="30" cy="70.82" r="2.28"/><circle class="cls-1" cx="62.47" cy="70.82" r="2.28"/><path class="cls-1" d="M22.57,56.24V52.52a.45.45,0,0,1,.37-.4l28.38-6.86a.45.45,0,0,1,.44.4L51.86,56"/><line class="cls-1" x1="28.17" y1="50.86" x2="24.88" y2="56.14"/><polyline class="cls-1" points="38.3 56.05 43.32 47.2 43.33 56.04 39.17 54.53"/><path class="cls-1" d="M22.59,54.54a5.22,5.22,0,0,1,2.58-2.41l.57-.23c.24-.07.49-.14.74-.19s.5-.11.75-.15l.76-.11.77-.07c.54-.05,1.08-.08,1.63-.1l.77,0h1.55l.8,0c2.37.08,4.91.38,6.89,1.88q.36.27.63.51a5.77,5.77,0,0,1,.79.85Z"/><line class="cls-1" x1="24.36" y1="51.78" x2="26.77" y2="56.13"/><rect class="cls-1" x="5.23" y="4.75" width="75.65" height="75.65" rx="4.25" ry="4.25"/><line class="cls-2" x1="10.05" y1="41.3" x2="74.65" y2="41.3"/><rect class="cls-1" x="17.7" y="12.4" width="22.1" height="21.25"/><line class="cls-3" x1="47.03" y1="13.25" x2="69.55" y2="13.25"/><line class="cls-3" x1="47.03" y1="20.05" x2="69.55" y2="20.05"/><line class="cls-3" x1="47.03" y1="26" x2="69.55" y2="26"/><line class="cls-3" x1="47.02" y1="32.8" x2="69.55" y2="32.8"/></g>
+                        </svg>
+                        <p>캠핑카등록</p></a>
+                  </li>
+                  <li><a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><style>.cls-1,.cls-2,.cls-3,.cls-4{fill:none;}.cls-1,.cls-2,.cls-3,.cls-4,.cls-5{stroke:#fff;}.cls-1,.cls-2,.cls-3{stroke-linejoin:round;}.cls-2,.cls-3,.cls-4{stroke-width:2px;}.cls-3{stroke-dasharray:2.99 2.99;}.cls-4,.cls-5{stroke-miterlimit:10;}.cls-5{fill:#fff;}</style></defs><title>selling</title><g id="사고팔기"><path class="cls-1" d="M38.14,68.66a5.89,5.89,0,1,1-7-7.81"/><path class="cls-1" d="M36.35,67.28a3.78,3.78,0,1,1-4-4.5"/><circle class="cls-1" cx="87.16" cy="66.55" r="3.78"/><circle class="cls-1" cx="87.16" cy="66.55" r="5.89"/><path class="cls-1" d="M37.08,33.19l-17.94.51-11.22.13s-1.81-.13-2,1.51V65H27"/><path class="cls-1" d="M70.84,42l17.53.61s.72,0,1.52,0a9.23,9.23,0,0,0,2-.13,2.86,2.86,0,0,0,1.94-1.76c1-4.34-3-8-6.71-9.37A17.81,17.81,0,0,0,85,30.67,26.94,26.94,0,0,0,78.39,30c-1,0-2.06,0-3.19,0s-2.33.17-3.6.34l-10,1.12"/><polyline class="cls-1" points="67.17 64.96 69.7 64.96 69.7 61.36"/><polyline class="cls-1" points="7.83 64.96 7.83 66.77 19.01 66.77 22.32 68.23 26.99 68.23"/><polyline class="cls-1" points="63.63 68.23 69.23 68.23 69.23 67.51 69.23 64.96"/><line class="cls-1" x1="69.23" y1="67.5" x2="81.36" y2="67.5"/><path class="cls-1" d="M93,67.5h3.55s.09-4.9,0-5.89A2.54,2.54,0,0,0,95.76,60a4.71,4.71,0,0,0-.82-2.2,5.58,5.58,0,0,0-.73-.9c-1.55-1.81-4.08-2.32-6.15-3.31a9.28,9.28,0,0,1-1.29-.76,11.82,11.82,0,0,1-1.16-1c-2.08-2-3.71-4.46-6-6.22a12.26,12.26,0,0,0-1.46-1,12.78,12.78,0,0,0-1.35-.49,49.56,49.56,0,0,0-5.52-1.08"/><path class="cls-1" d="M72.3,54H84.15s1.46.08.82-.61l-.82-.86L79.59,47.2a5,5,0,0,0-2.79-1.67l-5-1"/><path class="cls-1" d="M91.07,39.42l-16.72-.73-3.94-5s-.71-.88.8-1.14c0,0,7-1.5,11.35-.39,0,0,5.93.91,8.51,4.69,0,0,1.16,1.76.61,2.41C91.68,39.25,91.59,39.46,91.07,39.42Z"/><path class="cls-1" d="M94.21,56.92H92.49l1.29,2.32a1.44,1.44,0,0,0,1.16.73l.82.05"/><rect class="cls-1" x="9.07" y="36.69" width="11" height="8" rx="1" ry="1"/><path class="cls-2" d="M83.34,71.56c-.27.42-.55.84-.84,1.24"/><path class="cls-3" d="M80.7,75.19a39.5,39.5,0,0,1-61.4-.33"/><path class="cls-2" d="M18.39,73.68c-.3-.4-.59-.81-.87-1.22"/><polyline class="cls-4" points="82.86 21.99 82.25 26.95 77.29 26.34"/><path class="cls-2" d="M16.33,29.72a39.51,39.51,0,0,1,64.5-4.41"/><circle class="cls-1" cx="50.59" cy="50.53" r="21.98"/><path class="cls-5" d="M44.64,56.81a7.82,7.82,0,0,0,2.45,1.38,8.12,8.12,0,0,0,2.83.56q4.56,0,4.56-3.49a2.61,2.61,0,0,0-.39-1.42,4,4,0,0,0-1.15-1.16A18.77,18.77,0,0,0,50,51.19a11.6,11.6,0,0,1-4.15-2.55,4.84,4.84,0,0,1-1.16-3.33,4.93,4.93,0,0,1,2-4,7.69,7.69,0,0,1,5-1.58,9.71,9.71,0,0,1,4.54,1V43.2a8.87,8.87,0,0,0-4.81-1.45,4.8,4.8,0,0,0-3.1,1,3,3,0,0,0-1.16,2.44A3.07,3.07,0,0,0,48,47.41a10.87,10.87,0,0,0,3.34,1.86,13.51,13.51,0,0,1,4.41,2.63,4.62,4.62,0,0,1,1.18,3.25,4.89,4.89,0,0,1-2,4.09,8.33,8.33,0,0,1-5.22,1.54,9.3,9.3,0,0,1-5-1.31Z"/><rect class="cls-5" x="50.5" y="34.24" width="1.37" height="5.5"/><rect class="cls-5" x="50.5" y="58.97" width="1.37" height="5.5"/><polyline class="cls-4" points="13.81 72.28 15.96 67.9 20.34 70.06"/></g>
+                        </svg>
+                        <p>캠핑카팔기</p></a>
+                  </li>
+                  <li><a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><style>.cls-1,.cls-2,.cls-3,.cls-4{fill:none;}.cls-1,.cls-2,.cls-3,.cls-4,.cls-5{stroke:#fff;}.cls-1,.cls-2,.cls-3{stroke-linejoin:round;}.cls-2,.cls-3,.cls-4{stroke-width:2px;}.cls-3{stroke-dasharray:2.99 2.99;}.cls-4,.cls-5{stroke-miterlimit:10;}.cls-5{fill:#fff;}</style></defs><title>selling</title><g id="사고팔기"><path class="cls-1" d="M38.14,68.66a5.89,5.89,0,1,1-7-7.81"/><path class="cls-1" d="M36.35,67.28a3.78,3.78,0,1,1-4-4.5"/><circle class="cls-1" cx="87.16" cy="66.55" r="3.78"/><circle class="cls-1" cx="87.16" cy="66.55" r="5.89"/><path class="cls-1" d="M37.08,33.19l-17.94.51-11.22.13s-1.81-.13-2,1.51V65H27"/><path class="cls-1" d="M70.84,42l17.53.61s.72,0,1.52,0a9.23,9.23,0,0,0,2-.13,2.86,2.86,0,0,0,1.94-1.76c1-4.34-3-8-6.71-9.37A17.81,17.81,0,0,0,85,30.67,26.94,26.94,0,0,0,78.39,30c-1,0-2.06,0-3.19,0s-2.33.17-3.6.34l-10,1.12"/><polyline class="cls-1" points="67.17 64.96 69.7 64.96 69.7 61.36"/><polyline class="cls-1" points="7.83 64.96 7.83 66.77 19.01 66.77 22.32 68.23 26.99 68.23"/><polyline class="cls-1" points="63.63 68.23 69.23 68.23 69.23 67.51 69.23 64.96"/><line class="cls-1" x1="69.23" y1="67.5" x2="81.36" y2="67.5"/><path class="cls-1" d="M93,67.5h3.55s.09-4.9,0-5.89A2.54,2.54,0,0,0,95.76,60a4.71,4.71,0,0,0-.82-2.2,5.58,5.58,0,0,0-.73-.9c-1.55-1.81-4.08-2.32-6.15-3.31a9.28,9.28,0,0,1-1.29-.76,11.82,11.82,0,0,1-1.16-1c-2.08-2-3.71-4.46-6-6.22a12.26,12.26,0,0,0-1.46-1,12.78,12.78,0,0,0-1.35-.49,49.56,49.56,0,0,0-5.52-1.08"/><path class="cls-1" d="M72.3,54H84.15s1.46.08.82-.61l-.82-.86L79.59,47.2a5,5,0,0,0-2.79-1.67l-5-1"/><path class="cls-1" d="M91.07,39.42l-16.72-.73-3.94-5s-.71-.88.8-1.14c0,0,7-1.5,11.35-.39,0,0,5.93.91,8.51,4.69,0,0,1.16,1.76.61,2.41C91.68,39.25,91.59,39.46,91.07,39.42Z"/><path class="cls-1" d="M94.21,56.92H92.49l1.29,2.32a1.44,1.44,0,0,0,1.16.73l.82.05"/><rect class="cls-1" x="9.07" y="36.69" width="11" height="8" rx="1" ry="1"/><path class="cls-2" d="M83.34,71.56c-.27.42-.55.84-.84,1.24"/><path class="cls-3" d="M80.7,75.19a39.5,39.5,0,0,1-61.4-.33"/><path class="cls-2" d="M18.39,73.68c-.3-.4-.59-.81-.87-1.22"/><polyline class="cls-4" points="82.86 21.99 82.25 26.95 77.29 26.34"/><path class="cls-2" d="M16.33,29.72a39.51,39.51,0,0,1,64.5-4.41"/><circle class="cls-1" cx="50.59" cy="50.53" r="21.98"/><path class="cls-5" d="M44.64,56.81a7.82,7.82,0,0,0,2.45,1.38,8.12,8.12,0,0,0,2.83.56q4.56,0,4.56-3.49a2.61,2.61,0,0,0-.39-1.42,4,4,0,0,0-1.15-1.16A18.77,18.77,0,0,0,50,51.19a11.6,11.6,0,0,1-4.15-2.55,4.84,4.84,0,0,1-1.16-3.33,4.93,4.93,0,0,1,2-4,7.69,7.69,0,0,1,5-1.58,9.71,9.71,0,0,1,4.54,1V43.2a8.87,8.87,0,0,0-4.81-1.45,4.8,4.8,0,0,0-3.1,1,3,3,0,0,0-1.16,2.44A3.07,3.07,0,0,0,48,47.41a10.87,10.87,0,0,0,3.34,1.86,13.51,13.51,0,0,1,4.41,2.63,4.62,4.62,0,0,1,1.18,3.25,4.89,4.89,0,0,1-2,4.09,8.33,8.33,0,0,1-5.22,1.54,9.3,9.3,0,0,1-5-1.31Z"/><rect class="cls-5" x="50.5" y="34.24" width="1.37" height="5.5"/><rect class="cls-5" x="50.5" y="58.97" width="1.37" height="5.5"/><polyline class="cls-4" points="13.81 72.28 15.96 67.9 20.34 70.06"/></g>
+                        </svg>
+                        <p>캠핑카공유</p></a>
+                  </li>
+            </ul>
+      </div>
+      <div class="visual">
+            <header class="clear">
+                  <nav>
+                        <ul class="clear">
+                            <li><a href="file:///C:/Users/B-UM/Documents/GitHub/allcamper/introduction.html">Allcamper소개</a></li>
+                            <li><a href="">커뮤니티</a></li>
+                            <li><a href="file:///C:/Users/B-UM/Documents/GitHub/allcamper/index.html"><img src="./img/logo.svg" alt="logo"/></a></li>
+                            <li><a href="file:///C:/Users/B-UM/Documents/GitHub/allcamper/review.html">캠핑카공유</a></li>
+                            <li><a href="file:///C:/Users/B-UM/Documents/GitHub/allcamper/share.html">사고팔기</a></li>
+                        </ul>
+                  </nav>
+                  <ul Id="beforeLogin" class="clear">
+                        <li><a href="#">회원가입</a></li>
+                        <li><a href="#">로그인</a></li>
+                  </ul>
+                  <ul ID="afterLogin" class="clear">
+                        <li id="showRight" class="login" >
+                            <img src="./img/login.svg" alt="login">
+                            <ul class="navDropdown">
+                                  <li class="mypage"><a href="file:///C:/Users/B-UM/Documents/GitHub/allcamper/mypage.html">마이페이지</a></li>
+                                  <li class="registerCamper"><a href="file:///C:/Users/B-UM/Documents/GitHub/allcamper/modal_register1.html">캠핑카 등록</a></li>
+                                  <li class="sharingCamper"><a href="file:///C:/Users/B-UM/Documents/GitHub/allcamper/mycamper.html">내 캠핑카 공유</a></li>
                                   <li class="ewallet"><a href="#">전자지갑</a></li>
                                   <li class="logout"><a href="#">로그아웃</a></li>
-                              </ul>
-                          </li>
-                    </ul>
-              </div>
-        </header>
-        <section class="pageTitle">
-              <h1>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
-                      <g id="마이페이지">
-                      <polyline class="c1" points="57.07 33.17 63.07 23.17 70.07 33.17"/>
-                      <polyline class="c1" points="67.07 28.67 79.07 9.17 91.57 28.67"/>
-                      <polygon class="c2" points="46.92 14.91 14.77 74.17 79.07 74.17 46.92 14.91"/>
-                      <line class="c2" x1="47.07" y1="73.17" x2="47.07" y2="15.17"/>
-                      <rect class="c2" x="36.47" y="84.19" width="20.15" height="3.42" transform="translate(-27.23 21.85) rotate(-20.59)"/>
-                      <rect class="c2" x="36.47" y="84.19" width="20.15" height="3.42" transform="translate(59.9 182.67) rotate(-159.41)"/>
-                      <path class="c2" d="M52.86,75.48a6,6,0,0,1-11.94,0c0-3.3,6-11.2,6-11.2S52.86,72.18,52.86,75.48Z"/>
-                      <path class="c2" d="M51,77.18a4.16,4.16,0,0,1-8.31,0c0-2.15,4.16-7.3,4.16-7.3S51,75,51,77.18Z"/>
-                      <path class="c1" d="M15.07,74.17c34-9,32-58,32-58s-2,49,32,58"/>
-                      <path class="c1" d="M28.51,27.64a9.44,9.44,0,0,1-3.59-15.71,9.45,9.45,0,1,0,8,16.1A9.45,9.45,0,0,1,28.51,27.64Z"/>
-                      <line class="c1" x1="19.07" y1="79.17" x2="33.07" y2="79.17"/>
-                      <line class="c1" x1="26.07" y1="83.17" x2="33.07" y2="83.17"/>
-                      <line class="c1" x1="29.57" y1="87.17" x2="33.57" y2="87.17"/>
-                      <line class="c1" x1="74.57" y1="79.17" x2="60.57" y2="79.17"/>
-                      <line class="c1" x1="67.57" y1="83.17" x2="60.57" y2="83.17"/>
-                      <line class="c1" x1="64.07" y1="87.17" x2="60.07" y2="87.17"/>
-                      <polyline class="c1" points="73.71 17.88 75.07 21.17 79.07 16.17 82.07 21.17 84.04 16.91"/>
-                      <polyline class="c1" points="60.07 28.17 62.07 30.17 63.07 28.17 65.07 30.17 66.34 27.83"/>
-                    </g>
-                  </svg>
-                    캠핑카여행후기
-              </h1>
-              <div>
-                    <ul class="clear">
-                          <li><input type="text" name="" value=""></input></li>
-                          <li><button>search</button></li>
-                          <li>
-                                <a href="file:///C:/Users/B-UM/Documents/GitHub/allcamper/modal_post1.html" rel="">
-                                      <svg id="레이어_1" data-name="레이어 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><defs><style>.cls-1{fill:none;stroke:#fff;stroke-miterlimit:10;}</style></defs><title>writepost</title><path class="cls-1" d="M49.91,28.16V59.24A3.72,3.72,0,0,1,46.2,63H4.72A3.72,3.72,0,0,1,1,59.24V17.76a3.71,3.71,0,0,1,3.7-3.7H37.07"/><path class="cls-1" d="M17.65,57H9.75a2.82,2.82,0,0,1-2.81-2.8v-8"/><path class="cls-1" d="M32.87,57h7.9a2.81,2.81,0,0,0,2.81-2.8v-8"/><path class="cls-1" d="M35.11,43,59.43,18.64l.21-.24,1.28-1.28a7.14,7.14,0,0,0,0-10.07l-3.4-3.41a7.15,7.15,0,0,0-10.08,0L46.16,4.93c-.16.15-.3.31-.44.47l-8.65,8.66L21.64,29.49,21,41.22s.25,2.47,2.47,2.47Z"/><path class="cls-1" d="M17.65,20.31H9.75a2.82,2.82,0,0,0-2.81,2.8v8"/><line class="cls-1" x1="45.55" y1="5.58" x2="59.02" y2="19.05"/><line class="cls-1" x1="42.03" y1="9.1" x2="55.5" y2="22.57"/><line class="cls-1" x1="21.26" y1="36.67" x2="28.18" y2="43.39"/><line class="cls-1" x1="21.75" y1="29.38" x2="35.21" y2="42.86"/></svg>
-                                      <p>여행후기쓰기</p>
-                                </a>
-                          </li>
-                    </ul>
-              </div>
-        </section>
+                            </ul>
+                        </li>
+                  </ul>
+            </header>
+            <div class="visualBackground">
+            </div>
+            <div class="mainCamper">
+            </div>
+            <div class="mainCloud">
+            </div>
+        </div>
         <main>
-              <section class="fillter">
-                    <div id="reviewAll" data-fillter="all">
-                            <a href="">
-                                  <img src="./img/review_all.svg" alt="all location 아이콘"/>
-                                  <p>All</p>
-                            </a>
+              <section class="communityMenu">
+                    <ul>
+                          <li><a href="">자랑하기</a>
+                          <li><a href="">캠핑카여행후기</a>
+                          <li><a href="">DIY캠퍼</a></li>
+                    </ul>
+              </section>
+              <section class="pageTitle">
+                    <h1>
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+                          <g id="마이페이지">
+                          <polyline class="c1" points="57.07 33.17 63.07 23.17 70.07 33.17"/>
+                          <polyline class="c1" points="67.07 28.67 79.07 9.17 91.57 28.67"/>
+                          <polygon class="c2" points="46.92 14.91 14.77 74.17 79.07 74.17 46.92 14.91"/>
+                          <line class="c2" x1="47.07" y1="73.17" x2="47.07" y2="15.17"/>
+                          <rect class="c2" x="36.47" y="84.19" width="20.15" height="3.42" transform="translate(-27.23 21.85) rotate(-20.59)"/>
+                          <rect class="c2" x="36.47" y="84.19" width="20.15" height="3.42" transform="translate(59.9 182.67) rotate(-159.41)"/>
+                          <path class="c2" d="M52.86,75.48a6,6,0,0,1-11.94,0c0-3.3,6-11.2,6-11.2S52.86,72.18,52.86,75.48Z"/>
+                          <path class="c2" d="M51,77.18a4.16,4.16,0,0,1-8.31,0c0-2.15,4.16-7.3,4.16-7.3S51,75,51,77.18Z"/>
+                          <path class="c1" d="M15.07,74.17c34-9,32-58,32-58s-2,49,32,58"/>
+                          <path class="c1" d="M28.51,27.64a9.44,9.44,0,0,1-3.59-15.71,9.45,9.45,0,1,0,8,16.1A9.45,9.45,0,0,1,28.51,27.64Z"/>
+                          <line class="c1" x1="19.07" y1="79.17" x2="33.07" y2="79.17"/>
+                          <line class="c1" x1="26.07" y1="83.17" x2="33.07" y2="83.17"/>
+                          <line class="c1" x1="29.57" y1="87.17" x2="33.57" y2="87.17"/>
+                          <line class="c1" x1="74.57" y1="79.17" x2="60.57" y2="79.17"/>
+                          <line class="c1" x1="67.57" y1="83.17" x2="60.57" y2="83.17"/>
+                          <line class="c1" x1="64.07" y1="87.17" x2="60.07" y2="87.17"/>
+                          <polyline class="c1" points="73.71 17.88 75.07 21.17 79.07 16.17 82.07 21.17 84.04 16.91"/>
+                          <polyline class="c1" points="60.07 28.17 62.07 30.17 63.07 28.17 65.07 30.17 66.34 27.83"/>
+                          </g>
+                          </svg>
+                          캠핑카여행후기
+                    </h1>
+              </section>
+              <section class="fixedSide">
+                    <div class="searchingBar">
+                          <ul class="clear">
+                                <li><input type="text" name="" value=""></input></li>
+                                <li><button>search</button></li>
+                                <li>
+                                      <a href="file:///C:/Users/B-UM/Documents/GitHub/allcamper/modal_post1.html" rel="">
+                                            <svg id="레이어_1" data-name="레이어 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><defs><style>.cls-1{fill:none;stroke:#fff;stroke-miterlimit:10;}</style></defs><title>writepost</title><path class="cls-1" d="M49.91,28.16V59.24A3.72,3.72,0,0,1,46.2,63H4.72A3.72,3.72,0,0,1,1,59.24V17.76a3.71,3.71,0,0,1,3.7-3.7H37.07"/><path class="cls-1" d="M17.65,57H9.75a2.82,2.82,0,0,1-2.81-2.8v-8"/><path class="cls-1" d="M32.87,57h7.9a2.81,2.81,0,0,0,2.81-2.8v-8"/><path class="cls-1" d="M35.11,43,59.43,18.64l.21-.24,1.28-1.28a7.14,7.14,0,0,0,0-10.07l-3.4-3.41a7.15,7.15,0,0,0-10.08,0L46.16,4.93c-.16.15-.3.31-.44.47l-8.65,8.66L21.64,29.49,21,41.22s.25,2.47,2.47,2.47Z"/><path class="cls-1" d="M17.65,20.31H9.75a2.82,2.82,0,0,0-2.81,2.8v8"/><line class="cls-1" x1="45.55" y1="5.58" x2="59.02" y2="19.05"/><line class="cls-1" x1="42.03" y1="9.1" x2="55.5" y2="22.57"/><line class="cls-1" x1="21.26" y1="36.67" x2="28.18" y2="43.39"/><line class="cls-1" x1="21.75" y1="29.38" x2="35.21" y2="42.86"/></svg>
+                                            <p>여행후기쓰기</p>
+                                      </a>
+                                </li>
+                          </ul>
                     </div>
-                    <div id="domesitc" data-fillter="domestic">
-                            <a href="">
-                                <img src="./img/domestic.svg" alt="국내 지역 아이콘"/>
-                                <p>국내</p>
-                            </a>
+                    <div class="fillter">
+                          <div id="community" data-fillter="all">
+                                  <a href="">
+                                        <img src="./img/review_all.svg" alt="all location 아이콘"/>
+                                        <p>All</p>
+                                  </a>
+                          </div>
+                          <div id="review" data-fillter="motorhome">
+                                  <a href="">
+                                      <img src="./img/domestic.svg" alt="국내 지역 아이콘"/>
+                                      <p>해외</p>
+                                  </a>
+                          </div>
+                          <div id="share" data-fillter="caravan">
+                                  <a href="">
+                                      <img src="./img/abroad.svg" alt="해외 지역 아이콘"/>
+                                        <p>국내</p>
+                                  </a>
+                          </div>
                     </div>
-                    <div id="abroad" data-fillter="abroad">
-                            <a href="">
-                                  <img src="./img/abroad.svg" alt="해외 지역 아이콘"/>
-                                  <p>해외</p>
-                            </a>
-                    </div>
-              </section><!--<div class="fillter">-->
+              </section>
               <section class="fillterContainer">
                       <article data-fillter="community">
                               <section class="containerTop">
@@ -151,8 +194,17 @@
                               </section>
                               <section class="containerBtm">
                                     <div class="clear">
-                                            <div class="articleTit">
-                                                <h2>첫 캠핑카 여행 후기</h2>
+                                            <div class="campersIcon">
+                                                  <img src="./img/diycamper.svg" alt="차량유형 모터홈 icon"/>
+                                            </div>
+                                            <div class="facilities">
+                                                  <img src="./img/aircon.svg" alt="aircon icon"/>
+                                                  <img src="./img/refri.svg" alt="regrigarator icon"/>
+                                                  <img src="./img/awaning.svg" alt="awaning icon"/>
+                                                  <img src="./img/navi.svg" alt="navi icon"/>
+                                                  <img src="./img/karaoke.svg" alt="karaoke icon"/>
+                                                  <img src="./img/restroom.svg" alt="restroom icon"/>
+                                                  <img src="./img/toilet.svg" alt="toilet icon"/>
                                             </div>
                                     </div>
                                     <div>
@@ -161,29 +213,12 @@
                                     <div class="clear">
                                           <div class="location">
                                                 <img src="./img/pin.svg" alt="pin icon"/>
-                                                <p>Mount Cook National Park, New Zealand</p>
+                                                <p>제부도, 경기도 화성시</p>
                                           </div>
                                           <ul class="clear">
                                                 <li><p>좋아요 10개</p></li>
-                                                <li><svg xmlns="http://www.w3.org/2000/svg" width="24.861" height="28.412" viewBox="0 0 24.861 28.412">
-                                                  <path
-                                                    id="Icon_awesome-share-alt"
-                                                    data-name="Icon awesome-share-alt"
-                                                    d="M19.533,17.758a5.3,5.3,0,0,0-3.318,1.16l-5.687-3.555a5.358,5.358,0,0,0,0-2.313L16.216,9.5a5.318,5.318,0,1,0-1.883-3.011L8.645,10.038a5.327,5.327,0,1,0,0,8.336l5.687,3.555a5.328,5.328,0,1,0,5.2-4.171Z"
-                                                    fill="#95C04C"/>
-                                                </svg></li>
-                                                <li><svg xmlns="http://www.w3.org/2000/svg" width="30.226" height="26.747" viewBox="0 0 30.226 26.747">
-                                                  <path
-                                                    id="Icon_feather-heart"
-                                                    data-name="Icon feather-heart"
-                                                    d="M27.45,6.6a7.164,7.164,0,0,0-10.133,0L15.936,7.977,14.555,6.6A7.165,7.165,0,1,0,4.422,16.73L5.8,18.111,15.936,28.244,26.069,18.111,27.45,16.73a7.164,7.164,0,0,0,0-10.133Z"
-                                                    transform="translate(-0.823 -2.997)"
-                                                    fill="none"
-                                                    stroke="#95C04C"
-                                                    stroke-linecap="round"
-                                                    stroke-linejoin="round"
-                                                    stroke-width="3"/>
-                                                </svg></li>
+                                                <li><img src="./img/link.svg" alt="link icon"></li>
+                                                <li><img src="./img/heart.svg" alt="heart icon"></li>
                                           </ul>
                                     </div>
                                     <div class="br"></div>
@@ -235,8 +270,17 @@
                               </section>
                               <section class="containerBtm">
                                     <div class="clear">
-                                            <div class="articleTit">
-                                                <h2>첫 캠핑카 여행 후기</h2>
+                                            <div class="campersIcon">
+                                                  <img src="./img/diycamper.svg" alt="차량유형 모터홈 icon"/>
+                                            </div>
+                                            <div class="facilities">
+                                                  <img src="./img/aircon.svg" alt="aircon icon"/>
+                                                  <img src="./img/refri.svg" alt="regrigarator icon"/>
+                                                  <img src="./img/awaning.svg" alt="awaning icon"/>
+                                                  <img src="./img/navi.svg" alt="navi icon"/>
+                                                  <img src="./img/karaoke.svg" alt="karaoke icon"/>
+                                                  <img src="./img/restroom.svg" alt="restroom icon"/>
+                                                  <img src="./img/toilet.svg" alt="toilet icon"/>
                                             </div>
                                     </div>
                                     <div>
@@ -245,29 +289,12 @@
                                     <div class="clear">
                                           <div class="location">
                                                 <img src="./img/pin.svg" alt="pin icon"/>
-                                                <p>Mount Cook National Park, New Zealand</p>
+                                                <p>제부도, 경기도 화성시</p>
                                           </div>
                                           <ul class="clear">
                                                 <li><p>좋아요 10개</p></li>
-                                                <li><svg xmlns="http://www.w3.org/2000/svg" width="24.861" height="28.412" viewBox="0 0 24.861 28.412">
-                                                  <path
-                                                    id="Icon_awesome-share-alt"
-                                                    data-name="Icon awesome-share-alt"
-                                                    d="M19.533,17.758a5.3,5.3,0,0,0-3.318,1.16l-5.687-3.555a5.358,5.358,0,0,0,0-2.313L16.216,9.5a5.318,5.318,0,1,0-1.883-3.011L8.645,10.038a5.327,5.327,0,1,0,0,8.336l5.687,3.555a5.328,5.328,0,1,0,5.2-4.171Z"
-                                                    fill="#95C04C"/>
-                                                </svg></li>
-                                                <li><svg xmlns="http://www.w3.org/2000/svg" width="30.226" height="26.747" viewBox="0 0 30.226 26.747">
-                                                  <path
-                                                    id="Icon_feather-heart"
-                                                    data-name="Icon feather-heart"
-                                                    d="M27.45,6.6a7.164,7.164,0,0,0-10.133,0L15.936,7.977,14.555,6.6A7.165,7.165,0,1,0,4.422,16.73L5.8,18.111,15.936,28.244,26.069,18.111,27.45,16.73a7.164,7.164,0,0,0,0-10.133Z"
-                                                    transform="translate(-0.823 -2.997)"
-                                                    fill="none"
-                                                    stroke="#95C04C"
-                                                    stroke-linecap="round"
-                                                    stroke-linejoin="round"
-                                                    stroke-width="3"/>
-                                                </svg></li>
+                                                <li><img src="./img/link.svg" alt="link icon"></li>
+                                                <li><img src="./img/heart.svg" alt="heart icon"></li>
                                           </ul>
                                     </div>
                                     <div class="br"></div>
@@ -319,8 +346,17 @@
                               </section>
                               <section class="containerBtm">
                                     <div class="clear">
-                                            <div class="articleTit">
-                                                <h2>첫 캠핑카 여행 후기</h2>
+                                            <div class="campersIcon">
+                                                  <img src="./img/diycamper.svg" alt="차량유형 모터홈 icon"/>
+                                            </div>
+                                            <div class="facilities">
+                                                  <img src="./img/aircon.svg" alt="aircon icon"/>
+                                                  <img src="./img/refri.svg" alt="regrigarator icon"/>
+                                                  <img src="./img/awaning.svg" alt="awaning icon"/>
+                                                  <img src="./img/navi.svg" alt="navi icon"/>
+                                                  <img src="./img/karaoke.svg" alt="karaoke icon"/>
+                                                  <img src="./img/restroom.svg" alt="restroom icon"/>
+                                                  <img src="./img/toilet.svg" alt="toilet icon"/>
                                             </div>
                                     </div>
                                     <div>
@@ -329,29 +365,12 @@
                                     <div class="clear">
                                           <div class="location">
                                                 <img src="./img/pin.svg" alt="pin icon"/>
-                                                <p>Mount Cook National Park, New Zealand</p>
+                                                <p>제부도, 경기도 화성시</p>
                                           </div>
                                           <ul class="clear">
                                                 <li><p>좋아요 10개</p></li>
-                                                <li><svg xmlns="http://www.w3.org/2000/svg" width="24.861" height="28.412" viewBox="0 0 24.861 28.412">
-                                                  <path
-                                                    id="Icon_awesome-share-alt"
-                                                    data-name="Icon awesome-share-alt"
-                                                    d="M19.533,17.758a5.3,5.3,0,0,0-3.318,1.16l-5.687-3.555a5.358,5.358,0,0,0,0-2.313L16.216,9.5a5.318,5.318,0,1,0-1.883-3.011L8.645,10.038a5.327,5.327,0,1,0,0,8.336l5.687,3.555a5.328,5.328,0,1,0,5.2-4.171Z"
-                                                    fill="#95C04C"/>
-                                                </svg></li>
-                                                <li><svg xmlns="http://www.w3.org/2000/svg" width="30.226" height="26.747" viewBox="0 0 30.226 26.747">
-                                                  <path
-                                                    id="Icon_feather-heart"
-                                                    data-name="Icon feather-heart"
-                                                    d="M27.45,6.6a7.164,7.164,0,0,0-10.133,0L15.936,7.977,14.555,6.6A7.165,7.165,0,1,0,4.422,16.73L5.8,18.111,15.936,28.244,26.069,18.111,27.45,16.73a7.164,7.164,0,0,0,0-10.133Z"
-                                                    transform="translate(-0.823 -2.997)"
-                                                    fill="none"
-                                                    stroke="#95C04C"
-                                                    stroke-linecap="round"
-                                                    stroke-linejoin="round"
-                                                    stroke-width="3"/>
-                                                </svg></li>
+                                                <li><img src="./img/link.svg" alt="link icon"></li>
+                                                <li><img src="./img/heart.svg" alt="heart icon"></li>
                                           </ul>
                                     </div>
                                     <div class="br"></div>
@@ -382,27 +401,19 @@
               <div class="fLogo">
                   <a href="index.html"><img src="./img/logo.svg" alt="allcamper logo"></a>
               </div>
-              <ul class="fCont clear">
-                  <li>
-                      <span>상호명 : 올캠퍼</span>&nbsp;|&nbsp;
-                      <span>대표자 : 변인섭</span>&nbsp;|&nbsp;
-                      <span>개인정보 책임자 : 변인섭</span>
-                  </li>
-                  <li>
-                      <span>사업자 등록번호 : 120-87=95990</span>&nbsp;|&nbsp;
-                      <span><a href="#">사업자정보확인</a></span>&nbsp;|&nbsp;
-                      <span>통신판매업신고번호 : 2019-서울종로-1003</span>&nbsp;|&nbsp;
-                      <span>관광사업자 등록번호 : 제2019-000006호</span>
-                  </li>
-                  <li>
-                      <span>주소 : 서울시 종로구 이화장길 40 율원빌딩 3층</span>
-                  </li>
-                  <li>
-                      <span>이메일문의 : <a href="mailto:soolmeet@b-um.com" target="_top">allcamper@b-um.com</a></span>&nbsp;|&nbsp;
-                      <span><a href="#">이용약관</a></span>&nbsp;|&nbsp;
-                      <span><a href="#">개인정보보호정책</a></span>
-                  </li>
-              </ul>
+              <div class="fCont clear">
+                      <p><span>상호명 : 올캠퍼</span>&nbsp;|&nbsp;</p>
+                      <p><span>대표자 : 변인섭</span>&nbsp;|&nbsp;</p>
+                      <p><span>개인정보 책임자 : 변인섭</span></p>
+                      <p><span>사업자 등록번호 : 120-87=95990</span>&nbsp;|&nbsp;</p>
+                      <p><span><a href="#">사업자정보확인</a></span>&nbsp;|&nbsp;</p>
+                      <p><span>통신판매업신고번호 : 2019-서울종로-1003</span>&nbsp;|&nbsp;</p>
+                      <p><span>관광사업자 등록번호 : 제2019-000006호</span></p>
+                      <p><span>주소 : 서울시 종로구 이화장길 40 율원빌딩 3층</span></p>
+                      <p><span>이메일문의 : <a href="mailto:soolmeet@b-um.com" target="_top">allcamper@b-um.com</a></span>&nbsp;|&nbsp;</p>
+                      <p><span><a href="#">이용약관</a></span>&nbsp;|&nbsp;</p>
+                      <p><span><a href="#">개인정보보호정책</a></span></p>
+              </div>
           </footer>
   </body>
 </html>

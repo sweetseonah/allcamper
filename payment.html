@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>allcamper에 오신것을 환영합니다</title>
+      <link rel="stylesheet" href="./css/base.css">
+      <link rel="stylesheet" href="./css/payment.css">
+      <link rel="stylesheet" href="./css/jquery-ui.css">
+      <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+      <script src="./js/jquery-1.12.4.js"></script>
+      <script src="./js/jquery-ui.js"></script>
+  </head>
+  <body>
+        <header class="clear">
+              <nav>
+                    <ul class="clear">
+                        <li><a href="file:///C:/Users/B-UM/Documents/GitHub/allcamper/introduction.html">Allcamper소개</a></li>
+                        <li><a href="file:///C:/Users/B-UM/Documents/GitHub/allcamper/community.html">커뮤니티</a></li>
+                        <li><a href="file:///C:/Users/B-UM/Documents/GitHub/allcamper/index.html"><img src="./img/logo.svg" alt="logo"/></a></li>
+                        <li><a href="file:///C:/Users/B-UM/Documents/GitHub/allcamper/review.html">캠핑카공유</a></li>
+                        <li><a href="file:///C:/Users/B-UM/Documents/GitHub/allcamper/share.html">사고팔기</a></li>
+                    </ul>
+              </nav>
+              <ul Id="beforeLogin" class="clear">
+                    <li><a href="#">회원가입</a></li>
+                    <li><a href="#">로그인</a></li>
+              </ul>
+              <ul ID="afterLogin" class="clear">
+                    <li id="showRight" class="login" >
+                        <img src="./img/login.svg" alt="login">
+                        <ul class="navDropdown">
+                              <li class="mypage"><a href="file:///C:/Users/B-UM/Documents/GitHub/allcamper/mypage.html">마이페이지</a></li>
+                              <li class="registerCamper"><a href="file:///C:/Users/B-UM/Documents/GitHub/allcamper/modal_register1.html">캠핑카 등록</a></li>
+                              <li class="sharingCamper"><a href="file:///C:/Users/B-UM/Documents/GitHub/allcamper/mycamper.html">내 캠핑카 공유</a></li>
+                              <li class="ewallet"><a href="#">전자지갑</a></li>
+                              <li class="logout"><a href="#">로그아웃</a></li>
+                        </ul>
+                    </li>
+              </ul>
+        </header>
+        <main>
+              <div id="rent">
+                    <h3 class="clear"><span> 대여하기</span></h3>
+                    <section>
+                      <p>대여일 <input type="text" placeholder="선택해주세요" id="datepicker"></p>
+                    </section>
+                    <section>
+                        <p>반납일 <input type="text" placeholder="선택해주세요" id="datepicker2"></p>
+                    </section>
+                    <section class="total">
+                          <h4><span>8만원 per night</span></h4>
+                          <ul class="clear">
+                                <li>8만원</li>
+                                <li>X</li>
+                                <li>14일</li>
+                          </ul>
+                          <ul class="clear">
+                                <li>total</li>
+                                <li>1,120,000</li>
+                                <li>원</li>
+                          </ul>
+                    </section>
+                    <button type="button" name="button">결제하기</button>
+              </div>
+              <section>
+                    <h1>
+                          <img src="./img/allcamper.svg" alt="" />
+                          결제하기
+                    </h1>
+              </section>
+              <section>
+                    <article>
+                          <div class="title">
+                                <p>
+                                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50"><g id="logout"><rect class="cls-1" x="2.47" y="9.1" width="37.11" height="27.1" rx="9.28" ry="9.28"/><rect class="cls-2" x="1.88" y="36.19" width="47.12" height="2.36" rx="1.16" ry="1.16"/><rect class="cls-2" x="10.71" y="17.52" width="9.42" height="6.13" rx="1.41" ry="1.41"/><rect class="cls-2" x="24.85" y="17.34" width="7.66" height="18.26" rx="1.73" ry="1.73"/><circle class="cls-3" cx="17.78" cy="37.37" r="5.89"/></g>
+                                      </svg>
+                                </p>
+                                <h3>주문자 기본정보</h3>
+                          </div>
+                          <div class="content">
+                                <ul>
+                                  <li>
+                                    <p>이름</p>
+                                    <input type="text">
+                                  </li>
+                                  <li>
+                                    <p>이메일</p>
+                                    <input type="text">
+                                  </li>
+                                  <li>
+                                    <p>핸드폰번호</p>
+                                    <input type="text">
+                                  </li>
+                                  <li>
+                                    <p>생년월일</p>
+                                    <input type="text">
+                                  </li>
+                                  <li>
+                                    <p>주소</p>
+                                    <input type="text">
+                                  </li>
+                                </ul>
+                          </div>
+                    </article>
+                    <article>
+                      <div class="title">
+                            <p>
+                                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+                                    <defs>
+                                      <style>
+                                        .cls-1,
+                                        .cls-2 {
+                                          fill: none;
+                                          stroke: #000;
+                                        }
+                                        .cls-1 {
+                                          stroke-linejoin: round;
+                                        }
+                                        .cls-2 {
+                                          stroke-miterlimit: 10;
+                                        }
+                                      </style>
+                                    </defs>
+                                    <title>allcampertoken</title>
+                                    <g id="EOS전자지갑"><polygon class="cls-2" points="74 69.73 50.03 91.38 26.06 69.73 37.53 30.38 50.03 8.73 62.53 30.38 74 69.73"/><polygon class="cls-2" points="50.5 25.67 26.5 69.67 73.5 69.67 50.5 25.67"/><polyline class="cls-1" points="37.5 30.67 49.68 91.07 62.5 30.67"/><line class="cls-1" x1="50.5" y1="9.67" x2="50.5" y2="25.67"/></g>
+                                  </svg>
+                            </p>
+                            <h3>올캠퍼토큰으로 결제하기</h3>
+                      </div>
+                      <div class="content">
+                            <section>
+                                  <p>현재 나의 보유 토큰</p>
+                                  <div class="">
+                                        <h3>40,000<span>TOKEN</span></h3>
+                                        <div class="">
+
+                                        </div>
+                                  </div>
+                            </section>
+                            <section>
+                                  <h3>부족한 토큰</h3>
+                                  <input type="text" name="" value="">
+                            </section>
+                            <section>
+                                  <h3>충전금액</h3>
+                                  <input type="text" name="" value="">
+                                  <p>1 Token = 1 Won</p>
+                                  <div class="">
+                                        <button type="button" name="button">+3만원</button>
+                                        <button type="button" name="button">+5만원</button>
+                                        <button type="button" name="button">+10만원</button>
+                                        <button type="button" name="button">+100만원</button>
+                                  </div>
+                            </section>
+                            <section>
+                                  <h3>충전수단</h3>
+                                  <div class="box">
+                                        <select>
+                                              <option>기업은행 317****1017</option>
+                                              <option>국민은행 100****1878</option>
+                                        </select>
+                                  </div>
+                                  <div class="">
+                                        <p>
+                                              <svg xmlns="http://www.w3.org/2000/svg" width="86.297" height="86.297" viewBox="0 0 86.297 86.297">
+                                              <g id="Icon_feather-plus-circle" data-name="Icon feather-plus-circle" transform="translate(-0.5 -0.5)">
+                                              <path id="Path_6160" data-name="Path 6160" d="M84.3,43.648A40.648,40.648,0,1,1,43.648,3,40.648,40.648,0,0,1,84.3,43.648Z" fill="none" stroke="#16436a" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+                                              <path id="Path_6161" data-name="Path 6161" d="M18,12V44.519" transform="translate(25.648 15.389)" fill="none" stroke="#16436a" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+                                              <path id="Path_6162" data-name="Path 6162" d="M12,18H44.519" transform="translate(15.389 25.648)" fill="none" stroke="#16436a" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+                                              </g>
+                                              </svg>
+                                        </p>
+                                        <p>새로운 계좌 등록하기</p>
+                                  </div>
+                            </section>
+                      </div>
+                    </article>
+                    <article>
+                          <div class="title">
+                                <p>
+                                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90.88 56.5"><defs><style>.cls-1{fill:none;stroke:#000;stroke-miterlimit:10;}.cls-2{fill:#fff;}</style></defs><title>credit</title><g id="결제정보"><rect class="cls-1" x="2.85" y="2.78" width="85.15" height="50.37" rx="1.2" ry="1.2"/><circle cx="11.85" cy="16.29" r="4.24"/><path d="M17.84,20.78a4.49,4.49,0,1,1,4.49-4.49A4.5,4.5,0,0,1,17.84,20.78Z"/><path class="cls-2" d="M17.84,12.05a4.24,4.24,0,1,1-4.24,4.24,4.24,4.24,0,0,1,4.24-4.24m0-.5a4.74,4.74,0,1,0,4.74,4.74,4.75,4.75,0,0,0-4.74-4.74Z"/><rect x="7.65" y="28.88" width="44.97" height="3.6"/><rect x="8.25" y="40.28" width="21.59" height="3.6"/><path d="M65.08,36.87a9.88,9.88,0,0,0,3,1.71,10.22,10.22,0,0,0,3.5.68q5.63,0,5.63-4.3a3.25,3.25,0,0,0-.48-1.76,4.88,4.88,0,0,0-1.41-1.43,24.06,24.06,0,0,0-3.64-1.84,14.39,14.39,0,0,1-5.12-3.15,6,6,0,0,1-1.43-4.11,6.1,6.1,0,0,1,2.42-5,9.52,9.52,0,0,1,6.16-1.95A12.07,12.07,0,0,1,79.33,17v3.07a10.81,10.81,0,0,0-5.93-1.8,5.9,5.9,0,0,0-3.83,1.17,3.72,3.72,0,0,0-1.44,3,3.79,3.79,0,0,0,1.05,2.8,13.21,13.21,0,0,0,4.12,2.3,16.2,16.2,0,0,1,5.45,3.25,5.68,5.68,0,0,1,1.45,4,6,6,0,0,1-2.47,5.06,10.29,10.29,0,0,1-6.44,1.89,11.5,11.5,0,0,1-6.21-1.61Z"/><rect x="72.32" y="9.6" width="1.7" height="6.19"/><rect x="72.32" y="39.54" width="1.7" height="6.79"/></g>
+                                      </svg>
+                                </p>
+                                <h3>신용카드 결제하기</h3>
+                          </div>
+                          <div class="content">
+                                <section>
+                                      <h3>카드번호</h3>
+                                      <div class="">
+                                            <span><input type="tel" placeholder="0000" titile="카드번호 첫번째자리 입력" maxlength="4" value=""></span>
+                                            <span><input type="tel" placeholder="0000" titile="카드번호 두번째자리 입력" maxlength="4" value=""></span>
+                                            <span><input type="tel" placeholder="0000" titile="카드번호 세번째자리 입력" maxlength="4" value=""></span>
+                                            <span><input type="tel" placeholder="0000" titile="카드번호 네번째자리 입력" maxlength="4" value=""></span>
+                                      </div>
+                                </section>
+                                <section>
+                                      <h3>유효기간</h3>
+                                      <input type="password" placeholder="MMYY" value="">
+                                </section>
+                                <section>
+                                      <h3>CVC</h3>
+                                      <input type="password" placeholder="카드 뒷면 3자리 숫자" value="">
+                                </section>
+                                <section>
+                                      <h3>카드 비밀번호</h3>
+                                      <input type="password" placeholder="비밀번호 앞 2자리 숫자" value="">
+                                </section>
+                          </div>
+                    </article>
+                    <article>
+                          <div class="title">
+                                <p>
+                                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90.88 56.5"><defs><style>.cls-1{fill:none;stroke:#000;stroke-miterlimit:10;}.cls-2{fill:#fff;}</style></defs><title>credit</title><g id="결제정보"><rect class="cls-1" x="2.85" y="2.78" width="85.15" height="50.37" rx="1.2" ry="1.2"/><circle cx="11.85" cy="16.29" r="4.24"/><path d="M17.84,20.78a4.49,4.49,0,1,1,4.49-4.49A4.5,4.5,0,0,1,17.84,20.78Z"/><path class="cls-2" d="M17.84,12.05a4.24,4.24,0,1,1-4.24,4.24,4.24,4.24,0,0,1,4.24-4.24m0-.5a4.74,4.74,0,1,0,4.74,4.74,4.75,4.75,0,0,0-4.74-4.74Z"/><rect x="7.65" y="28.88" width="44.97" height="3.6"/><rect x="8.25" y="40.28" width="21.59" height="3.6"/><path d="M65.08,36.87a9.88,9.88,0,0,0,3,1.71,10.22,10.22,0,0,0,3.5.68q5.63,0,5.63-4.3a3.25,3.25,0,0,0-.48-1.76,4.88,4.88,0,0,0-1.41-1.43,24.06,24.06,0,0,0-3.64-1.84,14.39,14.39,0,0,1-5.12-3.15,6,6,0,0,1-1.43-4.11,6.1,6.1,0,0,1,2.42-5,9.52,9.52,0,0,1,6.16-1.95A12.07,12.07,0,0,1,79.33,17v3.07a10.81,10.81,0,0,0-5.93-1.8,5.9,5.9,0,0,0-3.83,1.17,3.72,3.72,0,0,0-1.44,3,3.79,3.79,0,0,0,1.05,2.8,13.21,13.21,0,0,0,4.12,2.3,16.2,16.2,0,0,1,5.45,3.25,5.68,5.68,0,0,1,1.45,4,6,6,0,0,1-2.47,5.06,10.29,10.29,0,0,1-6.44,1.89,11.5,11.5,0,0,1-6.21-1.61Z"/><rect x="72.32" y="9.6" width="1.7" height="6.19"/><rect x="72.32" y="39.54" width="1.7" height="6.79"/></g>
+                                      </svg>
+                                </p>
+                                <h3>전체 약관 동의</h3>
+                          </div>
+                          <div class="content">
+
+                          </div>
+                    </article>
+                    <button type="button" name="button">결제하기</button>
+              </section>
+        </main>
+        <footer class="clear">
+              <div class="fLogo">
+                  <a href="index.html"><img src="./img/logo.svg" alt="allcamper logo"></a>
+              </div>
+              <ul class="fCont clear">
+                  <li>
+                      <span>상호명 : 올캠퍼</span>&nbsp;|&nbsp;
+                      <span>대표자 : 변인섭</span>&nbsp;|&nbsp;
+                      <span>개인정보 책임자 : 변인섭</span>
+                  </li>
+                  <li>
+                      <span>사업자 등록번호 : 120-87=95990</span>&nbsp;|&nbsp;
+                      <span><a href="#">사업자정보확인</a></span>&nbsp;|&nbsp;
+                      <span>통신판매업신고번호 : 2019-서울종로-1003</span>&nbsp;|&nbsp;
+                      <span>관광사업자 등록번호 : 제2019-000006호</span>
+                  </li>
+                  <li>
+                      <span>주소 : 서울시 종로구 이화장길 40 율원빌딩 3층</span>
+                  </li>
+                  <li>
+                      <span>이메일문의 : <a href="mailto:soolmeet@b-um.com" target="_top">allcamper@b-um.com</a></span>&nbsp;|&nbsp;
+                      <span><a href="#">이용약관</a></span>&nbsp;|&nbsp;
+                      <span><a href="#">개인정보보호정책</a></span>
+                  </li>
+              </ul>
+          </footer>
+  </body>
+</html>

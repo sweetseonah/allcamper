@@ -1,1 +1,19 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><style>.cls-1,.cls-2{fill:none;stroke:#000;}.cls-1{stroke-linejoin:round;}.cls-2{stroke-miterlimit:10;}</style></defs><title>allcampertoken</title><g id="EOS전자지갑"><circle class="cls-1" cx="50.26" cy="50.28" r="48"/><polygon class="cls-2" points="74 69.73 50.03 91.38 26.06 69.73 37.53 30.38 50.03 8.73 62.53 30.38 74 69.73"/><polygon class="cls-2" points="50.5 25.67 26.5 69.67 73.5 69.67 50.5 25.67"/><polyline class="cls-1" points="37.5 30.67 49.68 91.07 62.5 30.67"/><line class="cls-1" x1="50.5" y1="9.67" x2="50.5" y2="25.67"/></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <style>
+      .cls-1,
+      .cls-2 {
+        fill: none;
+        stroke: #000;
+      }
+      .cls-1 {
+        stroke-linejoin: round;
+      }
+      .cls-2 {
+        stroke-miterlimit: 10;
+      }
+    </style>
+  </defs>
+  <title>allcampertoken</title>
+  <g id="EOS전자지갑"><circle class="cls-1" cx="50.26" cy="50.28" r="48"/><polygon class="cls-2" points="74 69.73 50.03 91.38 26.06 69.73 37.53 30.38 50.03 8.73 62.53 30.38 74 69.73"/><polygon class="cls-2" points="50.5 25.67 26.5 69.67 73.5 69.67 50.5 25.67"/><polyline class="cls-1" points="37.5 30.67 49.68 91.07 62.5 30.67"/><line class="cls-1" x1="50.5" y1="9.67" x2="50.5" y2="25.67"/></g>
+</svg>

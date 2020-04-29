@@ -1,20 +1,19 @@
 @charset "utf-8";
 body{background:#fff;}
 
-header{width:100%; position: fixed; top:0; left:0;  height:5rem;  padding:1rem 1.9rem;z-index: 999999; background:rgba(255,255,255,0.8); border-bottom:1px solid rgba(22,67,106,0.5);}
-header>div{max-width: 1920px; margin: 0 auto;  line-height: 1;}
-header a{color:#36393E;}
-header a:hover{color:#FF4500;}
-
-header div h1, header div nav, header div ul{display:inline-block;}
-header div h1{float:left; width:7rem; padding: 0 0 0 1rem;}
-header div > nav{float:left;}
-header div > ul{float:right;}
-
+header{width:100%; position: fixed; top:0; left:0;  height:7rem;  padding:1rem 1.9rem;z-index: 999999; background:rgba(255,255,255,0.8); border-bottom:1px solid rgba(22,67,106,0.5); box-sizing: border-box; }
+header nav,
+header ul{display:inline-block;}
 header nav ul li
 ,header ul li {position:relative; width:10rem; padding:2rem 0 0 0; float:left; text-align: center;}
-header nav ul li:hover .navDropdown
-,header ul li:hover .navDropdown{display: block;}
+header nav ul li a{color:#16436A;}
+header ul li a{color:#fff;}
+header nav{position: absolute; top:1rem; left:50%; transform: translateX(-50%); line-height: 1;}
+header nav ul li:nth-child(3){padding:0.5rem 0 0 0;}
+header nav ul li:nth-child(3) img{width:6rem;}
+
+header > ul{position:absolute; top:1rem; right:1rem; padding:;}
+header ul li:hover .navDropdown{display: block;}
 
 .navDropdown{display: none; line-height:1; margin:1.5rem 0 0 0; z-index:999999;}
 .navDropdown li{box-sizing:content-box; padding:1rem 0; }

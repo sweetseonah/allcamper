@@ -1,0 +1,55 @@
+@charset "utf-8";
+
+.modalBg{position:relative; width:100vw; height:100vh; background:rgba(0,0,0,0.5); padding:2.5rem 0;}
+.modal{position:relative; margin:0 auto; width:60vw; height:90vh; background:#fff; text-align: center; color:#16436a;}
+.modal>a{position:absolute; top:0.5rem; right:1rem;}
+.modal>a svg{width:2rem;}
+.modal h1{padding:5rem 0;}
+.modal h1 svg{width:7rem;}
+
+.modal article{width:100%; padding:2rem 8rem; box-sizing: border-box;}
+.modal article:nth-child(3){text-align: right;}
+.modal article:nth-child(3)>p{display: inline-block; border:1px solid #16436A; padding:0.5rem;}
+.modal article:nth-child(3)>div{width:80%; margin:0 auto; text-align: center;}
+.modal article:nth-child(3)>div div{display: inline-block;}
+.modal article:nth-child(3)>div button{width:inherit; height:inherit; border-radius: 0.5rem; border:0px; background: none; color: #16436A; font-size: 1.4rem; cursor: pointer;}
+
+.inputArea{display: inline-block; width:25%; height:5rem; position:relative; padding:5px 0; border:1px solid #16436a; border-radius:20px; text-align: left; vertical-align:middle; }
+.inputAmout{display: inline-block; border:0px; line-height: 1.5; font-size:28px; font-weight:600; color:#16436a;}
+.inputArea input[type=tel],
+.inputArea input[type=text],
+.inputArea input[type=password],
+.inputArea textarea{width:70%; height: 2rem; font-size: 1rem; border:0px; border:0px; background-color:transparent; text-indent: 1rem; border-radius: 0px; transition: all 0.5s;}
+.btnDelete{display: inline-block; cursor:pointer; border:0; width:7%; height:2rem; background-color:transparent;}
+.btnDelete svg{width:1.5rem; height:1.5rem;}
+
+.modal article:nth-child(4){width:100%; text-align: right;}
+.modal article:nth-child(4) div svg{width:15rem;}
+.modal article:nth-child(4) a{}
+.modal article:nth-child(4) a button{width:12rem; height:3.5rem;border-radius: 0px;}
+
+.prpgressBox{position:relative; width:100%; text-align:right;}
+.progressBar{position:relative; display: inline-block; width:80%; height:2rem; padding:0.4rem 0 0 0.5rem; border:1px solid #16436A; border-radius: 20px; box-sizing: border-box;}
+.progress{width:60%; height:1rem; background:#16436A; border-radius: 20px;}
+.progressNum{position:relative; width:100%;}
+.progressNum > div{position:absolute; display: inline-block; text-align:center;}
+.progressNum > div > span{display: inline-block; width:1px; height:3rem; background:#16436A;}
+.progressNum .zero{left:18%;}
+.progressNum .current{left:62%;}
+/* .progressNum .limit{left:90%;} */
+
+.modal article:nth-child(4) div p{display:inline-block;}
+.modal article:nth-child(4) div h2{display:inline-block;}
+
+.modal article:nth-child(5){width:70%; text-align:right;}
+
+footer{position:relative; width:100%; padding:1.5rem 3rem; box-sizing: border-box; background: #16436A;}
+footer > div{display:inline-block;}
+.fLogo {width:150px; float:left;}
+.fLogo a{width: 100%;}
+.fLogo a img{width: 100%;}
+.fCont{width: calc(100% - 300px); float:right; margin-top: -5rem;}
+.fCont li{float:right; display:block;;
+  font-family: 'NotoSansCJKkr-Light'; font-size: 0.95em; color: #fff; }
+.fCont li span{font-family: 'NotoSansCJKkr-Light';font-size: 0.95em; color: #fff;padding: 0 5px;}
+.fCont li a {font-family: 'NotoSansCJKkr-Light'; font-size: 1em; color: #fff; cursor: pointer;}

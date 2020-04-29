@@ -1,16 +1,5 @@
 @charset "utf-8";
 body{background:#fff;}
-input[type=tel],
-input[type=time],
-input[type=text],
-input[type=password],
-input[type=search],
-input[type=email],
-input[type=file],
-input[type=url],
-input[type=number],
-input[type=date],
-textarea{width:80%;height: 2rem; font-size: 1rem; border:0px; border-bottom: 1px solid #16436a; background: none; text-indent: 1rem; border-radius: 0px; transition: all 0.5s; vertical-align: middle;}
 
 header{position:relative; width:100%; z-index: 999999; box-sizing: border-box; }
 header nav,
@@ -63,7 +52,7 @@ main section:nth-child(2) h1 img{width:20rem;}
 
 main>section:nth-child(3){background:#F7FBFE; padding: 3rem 0;}
 main section:nth-child(3) article{padding:1rem 0;}
-main section:nth-child(3) article div{width:80%; margin: 0 auto; box-sizing: border-box;}
+main section:nth-child(3) article>div{width:80%; margin: 0 auto; box-sizing: border-box;}
 main section:nth-child(3) article .title{text-align: left; padding:0 0 1rem 0;}
 main section:nth-child(3) article .content{background:#fff; padding:2rem;}
 
@@ -76,7 +65,17 @@ main section:nth-child(3) article:first-child .content ul{width:100%;}
 main section:nth-child(3) article:first-child .content ul li{text-align: right; padding:0 0 1rem 0;}
 main section:nth-child(3) article:first-child .content ul li:last-child{padding:0 0 0 0;}
 main section:nth-child(3) article:first-child .content ul li p{display: inline-block; padding: 0 1rem 0 0;}
-main section:nth-child(3) article:first-child .content ul li input{display: inline-block;}
+main section:nth-child(3) article:first-child .content ul li .inputArea{ border:1px solid #16436a; border-radius:5px;}
+
+.inputArea{display: inline-block; width:82%; position:relative; padding:5px 0; border-bottom:1px solid #16436a; text-align: left; vertical-align:middle; }
+.inputAmout{display: inline-block; border:0px; line-height: 34px; font-size:28px; font-weight:600; color:#16436a;}
+.inputArea input[type=tel],
+.inputArea input[type=text],
+.inputArea input[type=password],
+.inputArea textarea{width:90%; height: 2rem; font-size: 1rem; border:0px; border:0px; background-color:transparent; text-indent: 1rem; border-radius: 0px; transition: all 0.5s;}
+.btnDelete{display: inline-block; cursor:pointer; border:0; width:7%; height:2rem; background-color:transparent;}
+.btnDelete svg{width:1.5rem; height:1.5rem;}
+
 
 main section:nth-child(3) article:first-child .content {}
 

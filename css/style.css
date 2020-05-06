@@ -1,10 +1,4 @@
 @charset "utf-8";
-body{background:#fff;}
-
-.visual{ width:100vw; height:130vh; position:relative; background:url(../img/visualbackground.svg) no-repeat; background-size:cover; z-index:9; overflow: hidden;}
-.mainVisual{ width:100vw; height:130vh; position:relative; background:url(../img/visualbackground.svg) no-repeat; background-size:contain; z-index:9;}
-.mainMountain{position:absolute; left:0; bottom:0; margin-right:-8000px; background:url(../img/mainmountain.svg) no-repeat; width:8000px; height:24rem; z-index:99;}
-.mainCamper{position:absolute; bottom:0; left:50%; transform: translateX(-50%); background:url(../img/maincamper.svg) no-repeat; width:40rem; height:25rem;z-index:999;}
 
 header{position:relative; width:100%; z-index: 999999; box-sizing: border-box; }
 header nav,
@@ -31,8 +25,7 @@ header ul li:hover .navDropdown{display: block;}
 
 #afterLogin .login{padding:0 0 0 0; width:8rem; position:fixed; z-index:999999; cursor:pointer;}
 #afterLogin .login img{width:4rem;}
-
-/* .open{right:0;} */
+/*
 
 .sideMenu{background:#1B5080; width:20vw; height:100vh; position:fixed; top:0; right:-20vw; z-index: 99999; box-sizing: border-box; text-align: center;}
 .sideMenu{//애니메이션 효과
@@ -82,7 +75,7 @@ header ul li:hover .navDropdown{display: block;}
 .sideBtm li:hover svg .cls-1,
 .sideBtm li:hover svg .cls-2,
 .sideBtm li:hover svg .cls-3 {stroke:#FF4500;}
-.sideBtm li:hover svg .cls-5 {stroke:#FF4500; fill:#FF4500;}
+.sideBtm li:hover svg .cls-5 {stroke:#FF4500; fill:#FF4500;} */
 
 .mainVisual{animation: skyRotate 60s infinite;}
 @keyframes skyRotate{

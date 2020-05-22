@@ -4,12 +4,17 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>allcamper에 오신것을 환영합니다</title>
-      <link rel="stylesheet" href="./css/base.css">
+      <link rel="stylesheet" href="./css/style.css">
       <link rel="stylesheet" href="./css/diycamper.css">
       <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
       <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
       <script type="text/javascript" src="./js/main.js"></script>
       <script type="text/javascript" src="./js/jquery-3.4.1.js"></script>
+      <script>
+			$(function() {
+				$("#footer").load("./common/footer.jsp");
+			});
+      	</script>
   </head>
   <body>
       <div class="visual">
@@ -373,23 +378,6 @@
                       </article>
               </section><!--<div class="fillterContainer">-->
         </main>
-        <footer class="clear">
-              <div class="fLogo">
-                  <a href="index.html"><img src="./img/logo.svg" alt="allcamper logo"></a>
-              </div>
-              <div class="fCont clear">
-                      <p><span>상호명 : 올캠퍼</span>&nbsp;|&nbsp;</p>
-                      <p><span>대표자 : 변인섭</span>&nbsp;|&nbsp;</p>
-                      <p><span>개인정보 책임자 : 변인섭</span></p>
-                      <p><span>사업자 등록번호 : 120-87=95990</span>&nbsp;|&nbsp;</p>
-                      <p><span><a href="#">사업자정보확인</a></span>&nbsp;|&nbsp;</p>
-                      <p><span>통신판매업신고번호 : 2019-서울종로-1003</span>&nbsp;|&nbsp;</p>
-                      <p><span>관광사업자 등록번호 : 제2019-000006호</span></p>
-                      <p><span>주소 : 서울시 종로구 이화장길 40 율원빌딩 3층</span></p>
-                      <p><span>이메일문의 : <a href="mailto:soolmeet@b-um.com" target="_top">allcamper@b-um.com</a></span>&nbsp;|&nbsp;</p>
-                      <p><span><a href="#">이용약관</a></span>&nbsp;|&nbsp;</p>
-                      <p><span><a href="#">개인정보보호정책</a></span></p>
-              </div>
-          </footer>
+        <div id="footer"></div>
   </body>
 </html>

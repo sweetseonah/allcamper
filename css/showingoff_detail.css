@@ -12,7 +12,7 @@ header nav{position: absolute; top:1rem; left:50%; transform: translateX(-50%); 
 header nav ul li:nth-child(3){padding:0.5rem 0 0 0;}
 header nav ul li:nth-child(3) img{width:6rem;}
 
-header > ul{position:absolute; top:1rem; right:1rem; padding:;}
+header > ul{position:absolute; top:1rem; right:1rem; padding:;} /*padding 값 확인 필요*/
 header ul li:hover .navDropdown{display: block;}
 
 .navDropdown{display: none; line-height:1; margin:1.5rem 0 0 0; z-index:999999;}
@@ -171,7 +171,7 @@ main .relatedPosts>div>div:nth-child(2){height:56%;}
 
 .containerTop{padding:1rem 0.65rem 0.65rem 0.65rem;}
 .containerTop>div{display:inline-block;}
-.containerTop .campersIcon{float:left; margin-top:}
+.containerTop .campersIcon{float:left; margin-top:} /*margin-top 값 확인 필요*/
 .containerTop .campersIcon img{width:5rem;}
 .containerTop .location{float:right; line-height:3; }
 .containerTop .location img{width:1rem;}
@@ -201,14 +201,3 @@ main .relatedPosts>div>div:nth-child(2){height:56%;}
 .containerBtm .reviewStar{float:left;}
 .containerBtm .reviewStar img{width:1.125rem;}
 .containerBtm p{float:right;}
-
-footer{position:relative; width:100%; padding:1.5rem 3rem; box-sizing: border-box; background: #16436A;}
-footer > div{display:inline-block;}
-.fLogo {width:150px; float:left;}
-.fLogo a{width: 100%;}
-.fLogo a img{width: 100%;}
-.fCont{width: calc(100% - 300px); float:right; margin-top: -5rem;}
-.fCont li{float:right; display:block;;
-  font-family: 'NotoSansCJKkr-Light'; font-size: 0.95em; color: #fff; }
-.fCont li span{font-family: 'NotoSansCJKkr-Light';font-size: 0.95em; color: #fff;padding: 0 5px;}
-.fCont li a {font-family: 'NotoSansCJKkr-Light'; font-size: 1em; color: #fff; cursor: pointer;}

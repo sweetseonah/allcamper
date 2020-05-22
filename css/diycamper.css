@@ -13,7 +13,7 @@ header nav{position: absolute; top:4rem; left:50%; transform: translateX(-50%); 
 header nav ul li:nth-child(3){padding:0.5rem 0 0 0;}
 header nav ul li:nth-child(3) img{width:6rem;}
 
-header > ul{position:absolute; top:4rem; right:1rem; padding:;}
+header > ul{position:absolute; top:4rem; right:1rem; padding:0;}
 header ul li:hover .navDropdown{display: block;}
 
 .navDropdown{display: none; line-height:1; margin:1.5rem 0 0 0; z-index:999999;}
@@ -31,7 +31,8 @@ header ul li:hover .navDropdown{display: block;}
 /* .open{right:0;} */
 
 .sideMenu{background:#1B5080; width:20vw; height:100vh; position:fixed; top:0; right:-20vw; z-index: 99999; box-sizing: border-box; text-align: center;}
-.sideMenu{//애니메이션 효과
+.sideMenu{
+	/* 애니메이션 효과 */
     transition: All 0.2s ease;
     -webkit-transition: All 0.2s ease;
     -moz-transition: All 0.2s ease;
@@ -250,18 +251,7 @@ main .fillterContainer>article>section{position:relative; width:100%; display:in
 .containerBtm .posting input{width:76%; margin-right:0.5rem; border: 1px solid #16436A; height:2.3rem; border-radius:0.5rem;}
 .containerBtm .posting button:hover{background:#95c04c; color:#fff; border:0px;}
 
-footer{position:relative; width:100%; padding:1.5rem 3rem; box-sizing: border-box; background: #36393e;}
-footer > div{display:inline-block;}
-.fLogo {width:110px; float:left;}
-.fLogo a{width: 100%;}
-.fLogo a img{width: 100%;}
-.fCont{width: 100rem; float:right; margin-top: -3.5rem;}
-.fCont p{float:right; display:inline-block; font-family: 'NotoSansCJKkr-Light'; font-size: 0.95em; color: #fff; }
-.fCont p span{font-family: 'NotoSansCJKkr-Light';font-size: 0.95em; color: #fff;padding: 0 5px;}
-.fCont p a {font-family: 'NotoSansCJKkr-Light'; font-size: 1em; color: #fff; cursor: pointer;}
-
 /*-------------------------------- Respinsive Media Styles --------------------------------*/
-
 @media only screen and (min-width: 1554px) and (max-width: 1920px) {
   header{max-width:100%;}
   header h1{padding:0 0 0 2rem;}

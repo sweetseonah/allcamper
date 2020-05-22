@@ -12,7 +12,7 @@ header nav{position: absolute; top:4rem; left:50%; transform: translateX(-50%); 
 header nav ul li:nth-child(3){padding:0.5rem 0 0 0;}
 header nav ul li:nth-child(3) img{width:6rem;}
 
-header > ul{position:absolute; top:4rem; right:1rem; padding:;}
+header > ul{position:absolute; top:4rem; right:1rem; padding:0;}
 header ul li:hover .navDropdown{display: block;}
 
 .navDropdown{display: none; line-height:1; margin:1.5rem 0 0 0; z-index:999999;}
@@ -71,14 +71,3 @@ main .info>div article:nth-child(3) h2{padding:3rem 0 0 0; font-size: 3rem;}
 main .info>div article:nth-child(3) section{padding:3rem 0 8rem 0;}
 main .info>div article:nth-child(3) h3{padding:0 0 3rem 0;}
 main .info>div article:nth-child(3)>p{display: inline-block; border:1px solid #16436A; padding:0.5rem;}
-
-footer{position:relative; width:100%; padding:1.5rem 3rem; box-sizing: border-box; background: #16436A;}
-footer > div{display:inline-block;}
-.fLogo {width:150px; float:left;}
-.fLogo a{width: 100%;}
-.fLogo a img{width: 100%;}
-.fCont{width: calc(100% - 300px); float:right; margin-top: -5rem;}
-.fCont li{float:right; display:block;;
-  font-family: 'NotoSansCJKkr-Light'; font-size: 0.95em; color: #fff; }
-.fCont li span{font-family: 'NotoSansCJKkr-Light';font-size: 0.95em; color: #fff;padding: 0 5px;}
-.fCont li a {font-family: 'NotoSansCJKkr-Light'; font-size: 1em; color: #fff; cursor: pointer;}

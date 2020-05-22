@@ -118,17 +118,6 @@ main .fillterContainer>article>section{position:relative; width:100%; display:in
 .containerBtm .posting{width:100%; padding:1rem 0 0 ;}
 .containerBtm .posting input{width:76%; margin-right:0.5rem; border: 1px solid #16436A; height:2.3rem; border-radius:0.5rem;}
 .containerBtm .posting button:hover{background:#95c04c; color:#fff; border:0px;}
-
-footer{position:relative; width:100%; padding:1.5rem 3rem; box-sizing: border-box; background:#16436A;}
-footer > div{display:inline-block;}
-.fLogo {width:110px; float:left;}
-.fLogo a{width: 100%;}
-.fLogo a img{width: 100%;}
-.fCont{width: 100rem; float:right; margin-top: -3.5rem;}
-.fCont p{float:right; display:inline-block; font-family: 'NotoSansCJKkr-Light'; font-size: 0.95em; color: #fff; }
-.fCont p span{font-family: 'NotoSansCJKkr-Light';font-size: 0.95em; color: #fff;padding: 0 5px;}
-.fCont p a {font-family: 'NotoSansCJKkr-Light'; font-size: 1em; color: #fff; cursor: pointer;}
-
 /*-------------------------------- Respinsive Media Styles --------------------------------*/
 @media only screen and (min-width: 1554px) and (max-width: 1920px) {
   .fLogo {width:100px;}

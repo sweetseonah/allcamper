@@ -12,7 +12,7 @@ header nav{position: absolute; top:2rem; left:50%; transform: translateX(-50%); 
 header nav ul li:nth-child(3){padding:0.5rem 0 0 0;}
 header nav ul li:nth-child(3) img{width:6rem;}
 
-header > ul{position:absolute; top:4rem; right:1rem; padding:;}
+header > ul{position:absolute; top:4rem; right:1rem; padding:;} /*padding 값 확인*/
 header ul li:hover .navDropdown{display: block;}
 
 .navDropdown{display: none; line-height:1; margin:1.5rem 0 0 0; z-index:999999;}
@@ -78,14 +78,3 @@ main section:nth-child(3) article:first-child .content ul li .inputArea{ border:
 
 
 main section:nth-child(3) article:first-child .content {}
-
-footer{position:relative; width:100%; padding:1.5rem 3rem; box-sizing: border-box; background: #16436A;}
-footer > div{display:inline-block;}
-.fLogo {width:150px; float:left;}
-.fLogo a{width: 100%;}
-.fLogo a img{width: 100%;}
-.fCont{width: calc(100% - 300px); float:right; margin-top: -5rem;}
-.fCont li{float:right; display:block;;
-  font-family: 'NotoSansCJKkr-Light'; font-size: 0.95em; color: #fff; }
-.fCont li span{font-family: 'NotoSansCJKkr-Light';font-size: 0.95em; color: #fff;padding: 0 5px;}
-.fCont li a {font-family: 'NotoSansCJKkr-Light'; font-size: 1em; color: #fff; cursor: pointer;}

@@ -82,7 +82,7 @@
     color: #16436A;
   }
   .visual{
-    max-width: 1554px;
+    max-width: 1555px;
   }
   .visualBackground {
     height:80vh;
@@ -91,10 +91,10 @@
   }
   @keyframes movingBox {
     from {
-      margin-left: -1554px;
+      margin-left: -1555px;
     }
     to {
-    margin-left: -4500px;
+    margin-left: -4000px;
     }
   }
   .mainCamper{
@@ -166,10 +166,25 @@
   }
  }
 @media only screen and (min-width: 991px) and (max-width: 1199px) {
-  .visual{ height:75vh; width:100%; max-width: 991px;}
-  .mainCamper{top:55%; margin-left:-5000px; width:5000px;}
-  .mainCloud{top:12%;}
-  .visualBackground{left:0;background:url(../img/mainbackground4.svg) no-repeat bottom; width:4954px; height:75vh;}
+  .visual{
+    height:75vh;
+    width:100%;
+    max-width: 991px;
+  }
+  .mainCamper{
+    top:55%;
+    margin-left:-5000px;
+    width:5000px;
+  }
+  .mainCloud{
+    top:12%;
+  }
+  .visualBackground{
+    left:0;
+    background:url(../img/mainbackground4.svg) no-repeat bottom;
+    width:4954px;
+    height:75vh;
+  }
   .visualBackground {
     animation-name: movingBox;
     animation-duration: 30000ms;
@@ -200,13 +215,27 @@
       transform: translate(6000px, 0);
     }
   }
-
  }
 @media only screen and (min-width: 768px) and (max-width: 990px) {
-  .visual{ height:56vh; width:100%; max-width: 768px;}
-  .mainCamper{top:60%; margin-left:-4000px; width:4000px;}
-  .mainCloud{top:10%;}
-  .visualBackground{left:0;background:url(../img/mainbackground5.svg) no-repeat bottom; width:3829px; height:56vh;}
+  .visual{
+    height:56vh;
+    width:100%;
+    max-width: 768px;
+  }
+  .mainCamper{
+    top:60%;
+    margin-left:-4000px;
+    width:4000px;
+  }
+  .mainCloud{
+    top:10%;
+  }
+  .visualBackground{
+    left:0;
+    background:url(../img/mainbackground5.svg) no-repeat bottom;
+    width:3829px;
+    height:56vh;
+  }
   .visualBackground {
     animation-name: movingBox;
     animation-duration: 30000ms;
@@ -226,7 +255,6 @@
   .mainCloud {
     animation-name: cloud;
     animation-duration: 85000ms;
-    animation-iteration-count: infinite;
   }
   @keyframes cloud {
 

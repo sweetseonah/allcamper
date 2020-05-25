@@ -8,7 +8,7 @@
     z-index: 9;
     overflow:hidden;
 }
-.main-visual{
+.mainVisual{
   width:100vw;
   height:160vh;
   position:absolute;
@@ -16,10 +16,10 @@
   left:0;
   background:url(../img/visualbackground.svg) no-repeat;
   margin:-20rem 0 0 0;
-  background-size:contain;
+  background-size:cover;
   z-index:9;
 }
-.main-mountain{
+.mainMountain{
   position:absolute;
   left:0;
   bottom:0;
@@ -28,7 +28,7 @@
   height:24rem;
   z-index:99;
 }
-.main-camper{
+.mainCamper{
   position:absolute;
   bottom:0;
   left:50%;
@@ -48,7 +48,6 @@
     top: 0;
     z-index: 9999;
 }
-
 h1.logo {
     width: 5rem;
     position: absolute;
@@ -74,9 +73,8 @@ h1.logo img {
     box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.07);
     position: absolute;
     left: 50%;
-    margin-left: -30%;
     top: 50%;
-    transform: translateY(-50%);
+    transform: translate(-50%,-50%);
     z-index: 999999;
     overflow: hidden;
 }
@@ -146,4 +144,115 @@ a.signUp {
 .loginImg svg {
     width: 50%;
     object-fit: cover;
+}
+@media only screen and (min-width: 1554px) and (max-width: 1920px) {
+  .mainVisual{
+    height:130vh;
+    width:100vw;
+  }
+  .mainCamper{
+    width:30rem;
+    height:20rem;
+  }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1554px) {
+  .visual{
+    height:130vh;
+    width:100vw;
+  }
+  .mainCamper{
+    width:30rem;
+    height:20rem;
+  }
+  .loginImg {
+    width: 40%;
+    height: 50%;
+    padding: 7rem 0 0 0;
+  }
+}
+@media only screen and (min-width: 991px) and (max-width: 1199px) {
+  .mainCamper{
+    width:30rem;
+    height:20rem;
+  }
+  .login{
+    width:55%;
+  }
+  .loginImg{
+    width:45%;
+    height:50%;
+    padding:8rem 0 0 0;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 990px) {
+  .loginWrap{
+    width:90%;
+  }
+  .loginImg{
+    height:50%;
+    padding:8rem 0 0 0;
+  }
+}
+@media only screen and (max-width: 767px) {
+  h1.logo {
+    top: 10px;
+  }
+  .login{
+    width:100%;
+    height:60%;
+  }
+  .loginCont{
+    width:80%;
+  }
+  .loginWrap{
+    width:95%;
+    height:710px;
+
+  }
+  .loginImg{
+    display: block;
+    width:100%;
+    height:50%;
+    padding:0 0 0 0;
+  }
+  .loginImg svg {
+    width: 30%;
+  }
+}
+@media only screen and (max-width: 479px) {
+  .bodyBg {
+      width: 100vw;
+      height: 150vh;
+    }
+  .mainVisual{
+    height:200vh;
+    width:100vw;
+  }
+  .opac{
+    height:150vh;
+  }
+  h1.logo {
+    top: 10px;
+  }
+  .login{
+    width:100%;
+    height:60%;
+  }
+  .loginCont{
+    width:80%;
+  }
+  .loginWrap{
+    top:500px;
+    width:95%;
+    height:710px;
+  }
+  .loginImg{
+    display: block;
+    width:100%;
+    height:50%;
+    padding:0 0 0 0;
+  }
+  .loginImg svg {
+    width: 30%;
+  }
 }

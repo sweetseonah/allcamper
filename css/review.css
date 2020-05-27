@@ -186,7 +186,7 @@ main .fixedSide .fillter div a svg{width:6rem; height:4rem; padding:1rem 0 0.2re
 main .fixedSide .fillter >div:hover{border:1px solid #95C04C;}
 main .fixedSide .fillter >div:hover a{background:#95C04C;}
 main .fixedSide .fillter div a p{color:#fff;}
-
+/*
 main .fillterContainer{width:100%; display: inline-block; padding:10rem 0;}
 main .fillterContainer>article{border:1px solid #16436A; background:#fff; border-radius:20px; width:38.375rem; height:59rem; margin:0 auto; margin-bottom: 10rem;}
 main .fillterContainer>article>section{position:relative; width:100%; display:inline-block; box-sizing:border-box;}
@@ -221,7 +221,7 @@ main .fillterContainer>article>section{position:relative; width:100%; display:in
 .containerBtm .facilities img{width:2.5rem;}
 
 .containerBtm>div:nth-child(2){width:90%; padding:1rem 0; margin:0 auto;  }
-.containerBtm>div:nth-child(2) p{text-overflow: ellipsis; overflow:hidden; display: -webkit-box; -webkit-line-clamp: 7; /* 라인수 */-webkit-box-orient: vertical; word-wrap:break-word; line-height: 1.2em; }
+.containerBtm>div:nth-child(2) p{text-overflow: ellipsis; overflow:hidden; display: -webkit-box; -webkit-line-clamp: 7; /* 라인수 /-webkit-box-orient: vertical; word-wrap:break-word; line-height: 1.2em; }
 
 .containerBtm>div:nth-child(3){padding:0 0 1rem 0;}
 .containerBtm>div:nth-child(3) .location{padding:0.5rem 0 0 0;}
@@ -245,7 +245,50 @@ main .fillterContainer>article>section{position:relative; width:100%; display:in
 .containerBtm .comment{padding:1rem 0;}
 .containerBtm .posting{width:100%; padding:1rem 0 0 ;}
 .containerBtm .posting input{width:76%; margin-right:0.5rem; border: 1px solid #16436A; height:2.3rem; border-radius:0.5rem;}
+.containerBtm .posting button:hover{background:#95c04c; color:#fff; border:0px;} */
+
+/*
+
+
+main .fillterContainer>div{border:1px solid #16436A; background:#fff; border-radius:20px; width:38.375rem; margin:1.5rem; box-shadow: 0px 3px 6px rgba(0, 0, 0, .16); }
+main .fillterContainer>div>div{width:23rem; display:inline-block; box-sizing:border-box;}
+
+main .fillterContainer{width:100%; max-width:79.1rem;  margin: 0 auto; padding:10rem 0;}
+main .fillterContainer>article{border:1px solid #16436A; background:#fff; border-radius:20px; width:38.375rem; height:58rem; margin:0 auto; margin-bottom: 10rem;}
+main .fillterContainer>article>section{position:relative; width:100%; display:inline-block; box-sizing:border-box;}
+
+
+
+
+.containerBtm>div:nth-child(2){width:90%; padding:2rem 0 1.5rem; margin:0 auto;  }
+.containerBtm>div:nth-child(2) p{text-overflow: ellipsis; overflow:hidden; display: -webkit-box; -webkit-line-clamp: 7; /* 라인수 /-webkit-box-orient: vertical; word-wrap:break-word; line-height: 1.2em; }
+
+.containerBtm>div:nth-child(3){padding:0 0 1rem 0;}
+.containerBtm .location{float:left;}
+.containerBtm .location img{width:1rem;}
+.containerBtm .location img,
+.containerBtm .location p{display:inline-block; font-size: 0.8rem;}
+.containerBtm div:nth-child(3) ul{float:right; margin:-2.2rem 0 0 0;}
+.containerBtm div:nth-child(3) ul li{float:left; padding:0.3rem; }
+.containerBtm div:nth-child(3) ul li:first-child p{padding:0.7rem 0 0; font-size: 0.8rem;}
+
+.containerBtm .br{width:99%; height:1px; margin:0 auto; background:#16436A;}
+
+.containerBtm>div:nth-child(5){padding:1rem 0;}
+.containerBtm>div:nth-child(5) ul{}
+.containerBtm>div:nth-child(5) ul li{padding:0.2rem 0;}
+.containerBtm>div:nth-child(5) ul li p{float:left; padding:0 1rem;}
+.containerBtm>div:nth-child(5) ul li:last-child p{font-size: 0.8rem; color:#16436A;}
+
+.containerBtm>div:nth-child(6){ padding:0.2rem 0;}
+.containerBtm .comment{padding:1rem 0;}
+.containerBtm .posting{width:100%; padding:1rem 0 0 ;}
+.containerBtm .posting input{width:76%; margin-right:0.5rem; border: 1px solid #16436A; height:2.3rem; border-radius:0.5rem;}
 .containerBtm .posting button:hover{background:#95c04c; color:#fff; border:0px;}
+
+
+ */
+
 /*-------------------------------- Respinsive Media Styles --------------------------------*/
 
 @media only screen and (min-width: 1554px) and (max-width: 1920px) {

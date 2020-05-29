@@ -1,32 +1,4 @@
 @charset "utf-8";
-body{background:#F7FBFE;}
-
-header{position:relative; width:100%; z-index: 999999; box-sizing: border-box; }
-header nav,
-header ul{display:inline-block;}
-header nav ul li
-,header ul li {position:relative; width:10rem; padding:2rem 0 0 0; float:left; text-align: center;}
-header nav ul li a
-,header ul li a{color:#fff;}
-header nav{position: absolute; top:4rem; left:50%; transform: translateX(-50%); line-height: 1;}
-header nav ul li:nth-child(3){padding:0.5rem 0 0 0;}
-header nav ul li:nth-child(3) img{width:6rem;}
-
-header > ul{position:absolute; top:4rem; right:1rem; padding:;} /* padding 값 확인 필요*/
-header ul li:hover .navDropdown{display: block;}
-
-.navDropdown{display: none; line-height:1; margin:1.5rem 0 0 0; z-index:999999;}
-.navDropdown li{box-sizing:content-box; padding:1rem 0; }
-.navDropdown li:hover{background:#FF4500;}
-.navDropdown li:hover a{color:#fff;}
-
-#beforeLogin{display:none;}
-#afterLogin{display:block; padding:0 8.5rem 0 0;}
-#afterLogin li ul li{width:8rem;}
-
-#afterLogin .login{padding:0 0 0 0; width:8rem; position:fixed; z-index:999999; cursor:pointer;}
-#afterLogin .login img{width:4rem;}
-
 
 .visual{position:relative; height:120vh; width:100vw; margin: 0 auto; overflow: hidden; background:url(../img/sharebg1.svg) no-repeat bottom; background-size: cover; z-index:9;}
 .visual .star{height:120vh; width:100vw; background:url(../img/sharebg2.png) no-repeat bottom; background-size:cover; z-index:99;}

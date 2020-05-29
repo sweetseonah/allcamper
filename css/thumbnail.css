@@ -1,56 +1,89 @@
 @charset "utf-8";
 
+.inline{
+  width:100%;
+  display:inline;
+}
+.left{
+  float:left;
+}
+.right{
+  float:right;
+}
+
 main .fillterContainer{
   width:100%;
+}
+.big{
   display: inline-block;
   padding:10rem 0;
 }
-main .fillterContainer>article{
+.small{
+  padding:15rem 0;
+  margin: 0 auto;
+  width:76rem;
+}
+
+main .fillterContainer article{
   border:1px solid #16436A;
   background:#fff;
   border-radius:20px;
+}
+.bigBox{
+  display:inline-block;
+  width:23rem;
+  height:28rem;
+  margin:1.5rem 1rem;
+}
+.smallBox{
   width:38.375rem;
   height:58rem;
   margin:0 auto;
   margin-bottom: 10rem;
 }
+
 main .fillterContainer>article>section{
-  position:relative;
-  width:100%;
   display:inline-block;
   box-sizing:border-box;
 }
-
-.containerTop h3,
-.containerTop p,
-.containerImg .slideBtn img{
+.bigCom{
+  position:relative;
   width:100%;
-  display:inline;
+}
+.smallCom{
+  width:23rem;
+  cursor:pointer;
 }
 
-.containerTop{
-  position: relative;
+.smallHd{
   padding: 1.2rem 1.2rem 0.8rem 1.2rem;
 }
-.containerTop .user{
-  float:left;
+.bigHd{
+  padding:1rem 0.65rem 0.65rem 0.65rem;
 }
-.containerTop .user h3 img{
+
+.campersIcon img{
+  width:5rem;
+}
+.location{
+  line-height:3;
+}
+.location img{
+  width:1rem;
+}
+.user h3 img{
   width:3rem;
 }
-.containerTop .user p{
+.user p{
   font-size:1.2rem;
 }
-.containerTop .date{
-  float:right;
+.date{
   font-size:0.8rem;
   padding:1rem 0 0 0;
 }
 
 .containerImg{
-  position:relative;
   padding:0 1.2rem;
-  height:24rem;
 }
 .containerImg .slide{
   position:absolute;

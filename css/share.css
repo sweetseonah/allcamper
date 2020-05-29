@@ -1,5 +1,6 @@
 @charset "utf-8";
 
+<<<<<<< HEAD
 .visual{
   position:relative;
   height:120vh;
@@ -42,6 +43,15 @@
 .visual .star{
   animation: starRotate 40s infinite ;
 }
+=======
+.visual{position:relative; height:120vh; width:100vw; margin: 0 auto; overflow: hidden; background:url(../img/sharebg1.svg) no-repeat bottom; background-size: cover; z-index:9;}
+.visual .star{height:120vh; width:100vw; background:url(../img/sharebg2.png) no-repeat bottom; background-size:cover; z-index:99;}
+.visual .forest{position:absolute; bottom:0; left:0; width:100vw; z-index:999;}
+.visual .shareCamper{position:absolute; bottom:-2%; right:-3%; width:38%; z-index:9999;}
+.visual .shareGrass{position: absolute; bottom:0; left:0; width:100%; z-index:99999;}
+
+.visual .star{animation: starRotate 40s infinite ;}
+>>>>>>> cae29b38043a17d2ed370deea5c728f646130778
 @keyframes starRotate{
     0%{
       opacity: 1;

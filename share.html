@@ -6,7 +6,6 @@
       <title>allcamper에 오신것을 환영합니다</title>
       <link rel="stylesheet" href="./css/style.css">
       <link rel="stylesheet" href="./css/share.css">
-      <link rel="stylesheet" href="./css/lightpick.css">
       <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
       <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
       <script type="text/javascript" src="./js/main.js"></script>
@@ -19,33 +18,51 @@
   </head>
   <body>
       <div class="visual">
-              <header class="clear">
-                    <nav>
-                          <ul class="clear">
-                              <li><a href="file:///C:/Users/B-UM/Documents/GitHub/allcamper/introduction.html">Allcamper소개</a></li>
-                              <li><a href="file:///C:/Users/B-UM/Documents/GitHub/allcamper/community.html">커뮤니티</a></li>
-                              <li><a href="file:///C:/Users/B-UM/Documents/GitHub/allcamper/index.html"><img src="./img/logo.svg" alt="logo"/></a></li>
-                              <li><a href="file:///C:/Users/B-UM/Documents/GitHub/allcamper/review.html">캠핑카공유</a></li>
-                              <li><a href="file:///C:/Users/B-UM/Documents/GitHub/allcamper/share.html">사고팔기</a></li>
+        <header class="clear">
+              <nav class="gnb">
+                    <ul class="clear">
+                        <li><a href="./introduction.jsp">Allcamper소개</a></li>
+                        <li><a href="./community.jsp">커뮤니티</a></li>
+                        <li><a href="./index.jsp"><img src="./img/logo.svg" alt="logo"/></a></li>
+                        <li><a href="./review.jsp">캠핑카공유</a></li>
+                        <li><a href="./share.jsp">사고팔기</a></li>
+                    </ul>
+              </nav>
+              <nav>
+                    <div id="menu-toggle">
+                          <input type="checkbox" />
+                          <span></span>
+                          <span></span>
+                          <span></span>
+                          <ul id="navi-menu">
+                                <a href="#"><li>Allcamper소개</li></a>
+                                <a href="#"><li>커뮤니티</li></a>
+                                <a href="#"><li>캠핑카공유</li></a>
+                                <a href="#"><li>사고팔기</li></a>
+                                <a href="#"><li>마이페이지</li></a>
+                                <a href="#"><li>캠핑카등록</li></a>
+                                <a href="#"><li>내 캠핑카 공유</li></a>
+                                <a href="#"><li>전자지갑</li></a>
                           </ul>
-                    </nav>
-                    <ul Id="beforeLogin" class="clear">
-                          <li><a href="#">회원가입</a></li>
-                          <li><a href="#">로그인</a></li>
-                    </ul>
-                    <ul ID="afterLogin" class="clear">
-                          <li id="showRight" class="login" >
-                              <img src="./img/login.svg" alt="login">
-                              <ul class="navDropdown">
-                                    <li class="mypage"><a href="file:///C:/Users/B-UM/Documents/GitHub/allcamper/mypage.html">마이페이지</a></li>
-                                    <li class="registerCamper"><a href="file:///C:/Users/B-UM/Documents/GitHub/allcamper/modal_register1.html">캠핑카 등록</a></li>
-                                    <li class="sharingCamper"><a href="file:///C:/Users/B-UM/Documents/GitHub/allcamper/mycamper.html">내 캠핑카 공유</a></li>
-                                    <li class="ewallet"><a href="#">전자지갑</a></li>
-                                    <li class="logout"><a href="#">로그아웃</a></li>
-                              </ul>
-                          </li>
-                    </ul>
-              </header>
+                    </div>
+              </nav>
+              <ul Id="beforeLogin" class="clear">
+                    <li><a href="#">회원가입</a></li>
+                    <li><a href="#">로그인</a></li>
+              </ul>
+              <ul ID="afterLogin" class="clear">
+                    <li id="showRight" class="login" >
+                        <img src="./img/login.svg" alt="login">
+                        <ul class="navDropdown">
+                              <li class="mypage"><a href="./mypage.html">마이페이지</a></li>
+                              <li class="registerCamper"><a href="./modal_register1.html">캠핑카 등록</a></li>
+                              <li class="sharingCamper"><a href="./mycamper.jsp">내 캠핑카 공유</a></li>
+                              <li class="ewallet"><a href="#">전자지갑</a></li>
+                              <li class="logout"><a href="#">로그아웃</a></li>
+                        </ul>
+                    </li>
+              </ul>
+        </header>
               <div class="star"></div>
               <img class="forest" src="./img/shareforest.svg" alt="캠핑카 공유 메인 이미지"/>
               <img class="shareCamper" src="./img/sharecamper.svg" alt="캠핑카 공유 메인 이미지"/>

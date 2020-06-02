@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>allcamper 차량등록하기</title>
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/modal_post4.css">
+        <link rel="stylesheet" href="./css/modal.css">
     <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
     <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
     <script type="text/javascript" src="./js/main.js"></script>
@@ -13,9 +13,8 @@
     <script src="js/modernizr.custom.js"></script>
   </head>
   <body>
-    <div class="modalBg">
         <div class="modal">
-              <div class="modalTop clear">
+              <div class="modalTop btmBr clear">
                     <h3><img src="./img/logo.svg" alt="로고 아이콘"/>여행후기 작성하기</h3>
                     <a href="file:///C:/Users/B-UM/Documents/GitHub/allcamper/review.html"rel="">
                           <svg xmlns="http://www.w3.org/2000/svg" width="54.061" height="54.061" viewBox="0 0 54.061 54.061">
@@ -27,16 +26,25 @@
                     <h1>캠핑카 여행기를 작성해주세요.</h1>
                     <p>다녀오신 캠핑 여행을 사람들과 공유해보세요.</p>
               </div>
-              <div class="textArea">
-                      <input class="textareaBox" type="text" name="" value="">
+              <div class="modalCon">
+                <div class="textArea">
+                        <input class="textareaBox" type="text" name="" value="">
+                </div>
+                <div class="imgUpload">
+                    <a href=""><button type="button" name="button">이미지 업로드</button></a>
+                </div>
               </div>
-              <a href="" class="imgUpload"><button type="button" name="button">이미지 업로드</button></a>
-              <p class="pageIndex">3 of 3</p>
-              <div class="button">
-                    <a href="file:///C:/Users/B-UM/Documents/GitHub/allcamper/modal_post2.html"><button type="button" name="button">prev</button></a>
-                    <a href="file:///C:/Users/B-UM/Documents/GitHub/allcamper/review.html"><button type="button" name="button">등록완료</button></a>
+              <div class="modalBtm">
+                <p class="pageIndex">4 of 4</p>
+                <div class="button">
+                  <div class="prev">
+                    <a href="./modal_post3.html"><button type="button" name="button">prev</button></a>
+                  </div>
+                  <div class="next">
+                    <a href="./community.html"><button type="button" name="button">등록완료</button></a>
+                  </div>
+                </div>
               </div>
         </div>
-    </div>
   </body>
 </html>

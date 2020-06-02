@@ -1,5 +1,5 @@
 @charset "utf-8";
-
+/* 
 .modalBg{position:relative; width:100%; height:100%; background:rgba(0,0,0,0.5); padding:2.5rem 0;}
 .modal{position:relative; margin:0 auto; width:60vw; height:138vh; background:#fff; text-align: left;; color:#16436a;}
 .modal input{height:2.2rem; border:1px solid #16436a; }
@@ -27,4 +27,4 @@
 .modal .pageIndex{position:absolute; left:1rem; bottom:1rem;}
 .modal .button{position:absolute; left: 50%; transform: translateX(-50%); bottom:4rem;}
 .modal .button button{margin:0 2rem;}
-.modal .button button:hover{background:#95c04c; color:#fff; border:0px;}
+.modal .button button:hover{background:#95c04c; color:#fff; border:0px;} */

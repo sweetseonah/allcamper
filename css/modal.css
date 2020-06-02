@@ -1,0 +1,274 @@
+@charset "utf-8";
+body{
+  background:rgba(0,0,0,0.5);
+  wdth:100%;
+}
+.modal{
+  position:fixed;
+  width:1200px;
+  max-width:100%;
+  max-height:100%;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  color:#16436a;
+  text-align: center;
+  overflow: auto;
+}
+.modal>div{
+  width:100%;
+  box-sizing: border-box;
+}
+
+/*commmend header*/
+.modalTop{
+  padding:1rem;
+}
+.modalTop a{
+  float:right;
+}
+.modalTop a svg{
+  width:2rem;
+}
+
+/*sub header */
+.modalTop h3{
+  float:left;
+  padding:0.5rem 0 0 0;
+}
+.modalTop h3 img{
+  width:4rem;
+}
+.btmBr{
+  border-bottom:1px solid #16436a;
+}
+
+/*commend title*/
+.modalTit{
+  padding:2rem 0;
+}
+.modalTit h1 img{
+  width:8rem;
+}
+.modalTit p{
+  font-size:1.5rem;
+  padding:1rem 0 0 0;
+}
+
+/* commend contents*/
+.modalCon{
+  padding:1rem;
+}
+
+/*content of selecting icons at the main modal*/
+.selectIcon{
+  display:inline-block;
+}
+.selectIcon li{
+  float:left;
+  cursor:pointer;
+}
+.selectIcon li div{
+  width:14rem;
+  height:11rem;
+  border:2px solid #16436a;
+  box-sizing:border-box;
+}
+.selectIcon li div svg{
+  width:13rem;
+  height:10rem;
+}
+.selectIcon  li:hover div{
+  background:#95c04c;
+  border:0px;
+}
+.selectIcon li p{
+  padding:2rem 0 0 0;
+}
+
+/* content of Q&A */
+.modalCon .que{
+  width:70%;
+  margin:0 auto;
+}
+.modalCon .que h3{
+  padding:2rem 0;
+}
+.modalCon .que p{
+  padding:0 0 3rem;
+}
+.modalCon input{
+  width:100%;
+  height:2.2rem;
+  border-radius: 10px;
+  border:1px solid #16436a;
+}
+
+.modalCon .detail{
+  width:100%;
+}
+.modalCon .detail h3{
+  width:70%;
+  margin:5rem auto 3rem;
+}
+.modalCon .detail ul{
+  width:60%;
+  margin: 0 auto;
+}
+.modalCon .detail ul li{
+  width:100%;
+  margin:1.5rem 0;
+}
+.modalCon .detail ul li p {
+  float:left;
+  width:30%;
+  margin: 0.5rem auto 0;
+}
+.modalCon .detail ul li input {
+  float:right;
+  width:60%;
+  margin: 0 auto;
+}
+
+
+
+/* content of dragDrap */
+.modalCon .dragDrap{
+  padding:1rem;
+  border-radius: 20px;
+  background:#95c04c;
+  box-sizing: border-box;
+}
+.modalCon .dragDrap .dragdrapBox{
+  width:100%;
+  border-radius: 20px;
+  border:2px dashed #fff;
+  padding:5rem 0;
+}
+.modalCon .dragDrap .dragdrapBox svg{
+  width:30rem;
+}
+.modalCon .dragDrap .dragdrapBox h1{
+  color:#fff;
+}
+.modalCon .dragDrap .dragdrapBox p{
+  color:#fff;
+}
+
+/* content of textarea*/
+.modalCon .textArea{
+  width:80%;
+  height:60%;
+  padding:1rem;
+  margin:3rem auto;
+  background:#95c04c;
+  border-radius: 20px;
+  box-sizing: border-box;
+  text-align: center;
+}
+.modalCon .textArea .textareaBox{
+  width:100%;
+  height:86%;
+  border-radius: 20px;
+  border:1px dashed #fff;
+  padding:0 0 5rem 0;
+}
+.modalCon .imgUpload {
+  float: right;
+  padding: 0 7rem 0 0;
+}
+.modalCon .imgUpload button{
+  width:10rem;
+}
+.modalCon .imgUpload a:hover button{
+  background:#ff4500;
+  border:0px;
+  color:#fff;
+}
+
+/* form in content of textarea*/
+.modalCon .textArea textarea {
+  border:2px solid #16436a;
+}
+.modalCon .textArea input[type=text],
+.modalCon .textArea textarea {
+  width:100%;
+  height:86%;
+  font-size:1rem;
+  color:#373737;
+  border:1px dased #FFF;
+  background:#95c04c;
+  text-indent:1rem;
+  border-radius: 5px;
+  transition: all 0.5s;
+  vertical-align:middle;
+}
+.modalCon .textArea input::-webkit-input-placeholder{
+  color:#b5b5b5;
+  font-size:0.6rem;
+  line-height:100%;
+}
+.modalCon .textArea textarea {
+  height:86%;
+  padding:0.25rem 0;
+}
+.modalCon .textArea textarea:focus,
+.modalCon .textArea input:focus{
+  background:rgba(149, 192, 76, 0.3);
+  border: 1px solid #95c04c;
+}
+.modalCon .textArea input[type=text][readonly],
+.modalCon .textArea input[type=text][disabled],
+[disabled]{
+  background:#eaeaea;
+  border-color:#c0c0c0;
+  color:#666;
+  -webkit-appearance:none;
+  font-size:12px;
+}
+.modalCon .textArea textarea[readonly],
+.modalCon .textArea textarea[disabled]{
+  padding:0.55rem;
+  font-size:0.8rem;
+  color:#666;
+  font-weight:normal;
+  line-height:140%;
+  height:86%;
+  background:#eaeaea;
+  border:1px solid #c0c0c0;
+}
+
+/* bottom*/
+.modalBtm{
+  padding:10rem 0 0 0;
+  position:relative;
+}
+.modalBtm .pageIndex{
+  position:absolute;
+  left:1rem;
+  bottom:1rem;
+}
+.modalBtm .button{
+  position:absolute;
+  left: 50%;
+  bottom:5rem;
+  transform: translateX(-50%);
+}
+.modalBtm .button button{
+  padding:0.6rem 4rem;
+}
+.modalBtm .button a:hover button{
+  background:#95c04c;
+  color:#fff;
+  border:0px;
+}
+.modalBtm .button>div{
+  display: inline-block;
+}
+.prev{
+  padding:0 1rem 0 0;
+}
+.next{
+  padding:0 0 0 1rem;
+}

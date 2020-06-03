@@ -131,8 +131,6 @@ body{
   margin: 0 auto;
 }
 
-
-
 /* content of dragDrap */
 .modalCon .dragDrap{
   padding:1rem;
@@ -237,6 +235,38 @@ body{
   height:86%;
   background:#eaeaea;
   border:1px solid #c0c0c0;
+}
+
+/* content of facility icons */
+.facil{
+  width:100%;
+  padding:5rem 0 2rem;
+  text-align: center;
+}
+.facil ul{
+  display:inline-block;
+  padding:2rem 0 0;
+}
+.facil ul li{
+  float:left;
+  padding:1.5rem;
+}
+.facil ul li p{
+  padding:1rem 0;
+}
+.facil ul li div{
+  border:1px solid #16436a;
+  cursor: pointer;
+}
+.facil ul li:hover div{
+  background:#ff4500;
+  border:0px;
+}
+.facil ul li:hover p{
+  color:#ff4500;
+}
+.facil ul li div svg{
+  width:5rem;
 }
 
 /* bottom*/

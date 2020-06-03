@@ -1,41 +1,24 @@
 @charset "utf-8";
 
+.selectIcon li:nth-child(2){
+  padding:0 4rem;
+}
+.selectIcon li:first-child div svg .cls-1 {fill: none; stroke: #16436A; stroke-miterlimit: 10;}
+.selectIcon li:nth-child(2) div svg .cls-1,
+.selectIcon li:nth-child(2) div svg .cls-2,
+.selectIcon li:nth-child(2) div svg .cls-3{fill:none;stroke:#16436A;}
+.selectIcon li:nth-child(2) div svg .cls-1,
+.selectIcon li:nth-child(2) div svg .cls-3{stroke-miterlimit:10;}
+.selectIcon li:nth-child(2) div svg .cls-2,
+.selectIcon li:nth-child(2) div svg .cls-3{stroke-linecap:round;}
+.selectIcon li:nth-child(2) div svg .cls-2{stroke-linejoin:round;}
+.selectIcon li:nth-child(3) div svg .cls-1 {fill:none; stroke:#16436A; stroke-linecap:round; stroke-linejoin:round;}
+.selectIcon li:nth-child(3) div svg .cls-2{fill:#16436A;}
 
-.modalBg{position:relative; width:100vw; height:90vh; background:rgba(0,0,0,0.5); padding:2.5rem 0;}
-.modal{position:relative; margin:0 auto; width:60vw; height:90vh; background:#fff; text-align: center; color:#16436a;}
-
-.modal>a{position:absolute; top:0.5rem; right:1rem;}
-.modal>a svg{width:2rem;}
-.modal h1{padding:9rem 0 3rem;}
-.modal h1 img{width:8rem;}
-.modal .que Tit{font-size:1.5rem; padding:0 0 2rem 0;}
-.modal ul{display: inline-block; padding:3rem 0;}
-.modal ul li{float:left; cursor: pointer;}
-.modal ul li:nth-child(2){padding:0 4rem;}
-.modal ul li div {width:14rem; height:14rem; padding:1rem 0; border:2px solid #16436a; box-sizing:border-box; }
-.modal ul li div svg{width:12rem;}
-.modal ul li:first-child div svg{padding:2rem 0 0 0;}
-.modal ul li:first-child div svg .cls-1 {fill: none; stroke: #16436A; stroke-miterlimit: 10;}
-.modal ul li:nth-child(2) div svg .cls-1,
-.modal ul li:nth-child(2) div svg .cls-2,
-.modal ul li:nth-child(2) div svg .cls-3{fill:none;stroke:#16436A;}
-.modal ul li:nth-child(2) div svg .cls-1,
-.modal ul li:nth-child(2) div svg .cls-3{stroke-miterlimit:10;}
-.modal ul li:nth-child(2) div svg .cls-2,
-.modal ul li:nth-child(2) div svg .cls-3{stroke-linecap:round;}
-.modal ul li:nth-child(2) div svg .cls-2{stroke-linejoin:round;}
-.modal ul li:nth-child(3) div svg .cls-1 {fill:none; stroke:#16436A; stroke-linecap:round; stroke-linejoin:round;}
-.modal ul li:nth-child(3) div svg .cls-2{fill:#16436A;}
-.modal ul li:hover div{background:#95c04c; border:0px;}
-.modal ul li:first-child:hover div svg .cls-1{stroke: #fff;}
-.modal ul li:nth-child(2):hover div svg .cls-1{stroke: #fff;}
-.modal ul li:nth-child(2):hover div svg .cls-2 {stroke: #fff;}
-.modal ul li:nth-child(2):hover div svg .cls-3 {stroke: #fff;}
-.modal ul li:nth-child(2):hover div svg .cls-4 {fill: #fff;}
-.modal ul li:nth-child(3):hover div svg .cls-1 {stroke:#fff;}
-.modal ul li:nth-child(3):hover div svg .cls-2 {fill:#fff;}
-.modal ul li p{padding-top:2rem;}
-
-.modal .pageIndex{position:absolute; left:1rem; bottom:1rem;}
-.modal  .button{position:absolute; left: 50%; transform: translateX(-50%); bottom:3rem;}
-.modal .button:hover button{background:#95c04c; color:#fff; border:0px;}
+.selectIcon li:first-child:hover div svg .cls-1{stroke: #fff;}
+.selectIcon li:nth-child(2):hover div svg .cls-1{stroke: #fff;}
+.selectIcon li:nth-child(2):hover div svg .cls-2 {stroke: #fff;}
+.selectIcon li:nth-child(2):hover div svg .cls-3 {stroke: #fff;}
+.selectIcon li:nth-child(2):hover div svg .cls-4 {fill: #fff;}
+.selectIcon li:nth-child(3):hover div svg .cls-1 {stroke:#fff;}
+.selectIcon li:nth-child(3):hover div svg .cls-2 {fill:#fff;}

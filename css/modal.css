@@ -1,7 +1,7 @@
 @charset "utf-8";
 body{
   background:rgba(0,0,0,0.5);
-  wdth:100%;
+  width:100%;
 }
 .modal{
   position:fixed;
@@ -20,6 +20,18 @@ body{
   width:100%;
   box-sizing: border-box;
 }
+@media only screen and (min-width: 1554px) and (max-width: 1920px) {
+}
+@media only screen and (min-width: 1200px) and (max-width: 1554px) {
+}
+@media only screen and (min-width: 991px) and (max-width: 1199px) {
+}
+@media only screen and (min-width: 768px) and (max-width: 990px) {
+}
+@media only screen and (max-width: 767px) {
+}
+@media only screen and (max-width: 479px) {
+}
 
 /*commmend header*/
 .modalTop{
@@ -37,7 +49,8 @@ body{
   float:left;
   padding:0.5rem 0 0 0;
 }
-.modalTop h3 img{
+.modalTop h3 img,
+.modalTop h3 svg{
   width:4rem;
 }
 .btmBr{
@@ -48,7 +61,8 @@ body{
 .modalTit{
   padding:2rem 0;
 }
-.modalTit h1 img{
+.modalTit h1 img,
+.modalTit h1 svg{
   width:8rem;
 }
 .modalTit p{
@@ -56,9 +70,28 @@ body{
   padding:1rem 0 0 0;
 }
 
+@media only screen and (min-width: 1554px) and (max-width: 1920px) {
+ }
+@media only screen and (min-width: 1200px) and (max-width: 1554px) {
+ }
+@media only screen and (min-width: 991px) and (max-width: 1199px) {
+ }
+@media only screen and (min-width: 768px) and (max-width: 990px) {
+ }
+@media only screen and (max-width: 767px) {
+ }
+@media only screen and (max-width: 479px) {
+}
+
 /* commend contents*/
 .modalCon{
   padding:1rem;
+}
+.modalCon input{
+  width:100%;
+  height:2.2rem;
+  border-radius: 10px;
+  border:1px solid #16436a;
 }
 
 /*content of selecting icons at the main modal*/
@@ -88,23 +121,24 @@ body{
 }
 
 /* content of Q&A */
-.modalCon .que{
+.modalCon .que,
+.modalCon .que2{
   width:70%;
   margin:0 auto;
 }
-.modalCon .que h3{
+.modalCon .que h3,
+.modalCon .que2 h3{
   padding:2rem 0;
 }
 .modalCon .que p{
   padding:0 0 3rem;
 }
-.modalCon input{
-  width:100%;
-  height:2.2rem;
-  border-radius: 10px;
-  border:1px solid #16436a;
+.modalCon .que2 input{
+  width:75%;
 }
-
+.modalCon .que2 button{
+  margin: 0 0 0 1.5rem;
+}
 .modalCon .detail{
   width:100%;
 }
@@ -269,6 +303,133 @@ body{
   width:5rem;
 }
 
+/* content for allcampertoken */
+.tokenBox{
+  width: 90% !important;
+  margin: 0 auto;
+  background: #fff;
+  display: inline-block;
+  text-align: center;
+  border: 1px dashed #16436A;
+  border-radius: 20px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, .16);
+  box-sizing: border-box;
+}
+.exchange{
+  width:80%;
+  margin: 0 auto;
+}
+.exchange>p{
+  float:right;
+  display: inline-block;
+  padding:0.5rem;
+  border:1px solid #16436A;
+}
+.exchange>div{
+  margin:2rem 0;
+}
+.inputArea{
+  display: inline-block;
+  width:40%;
+  position:relative;
+  padding:5px 0;
+  border-radius: 20px;
+  border:1px solid #16436a;
+  text-align: left;
+  vertical-align:middle;
+}
+.inputAmout{
+  display: inline-block;
+  border:0px;
+  line-height: 34px;
+  font-size:28px;
+  font-weight:600;
+  color:#16436a;
+}
+.inputArea input[type=tel],
+.inputArea input[type=text],
+.inputArea input[type=password],
+.inputArea textarea{
+  width:70%;
+  height: 2rem;
+  font-size: 1rem;
+  border:0px;
+  border:0px;
+  background-color:transparent;
+  text-indent: 1rem;
+  border-radius: 0px;
+  transition: all 0.5s;
+}
+.inputArea p{
+  display: inline-block;
+  t
+}
+.exBtm{
+  display: inline-block;
+  margin: 0 2rem;
+}
+.btnDelete{
+  display: inline-block;
+  cursor:pointer;
+  border:0;
+  width:7%;
+  height:2rem;
+  background-color:transparent;
+}
+.btnDelete svg{
+  width:1.5rem;
+  height:1.5rem;
+}
+
+
+.prpgressBox{position:relative; width:100%; text-align:right;}
+.progressBar{position:relative; display: inline-block; width:80%; height:2rem; padding:0.4rem 0 0 0.5rem; border:1px solid #16436A; border-radius: 20px; box-sizing: border-box;}
+.progress{width:60%; height:1rem; background:#16436A; border-radius: 20px;}
+.progressNum{position:relative; width:100%;}
+.progressNum > div{position:absolute; display: inline-block; text-align:center;}
+.progressNum > div > span{display: inline-block; width:1px; height:3rem; background:#16436A;}
+.progressNum .zero{left:18%;}
+.progressNum .current{left:62%;}
+
+
+/* content for modal_user */
+.modalCon .userImg{
+  position:relative;
+  width:13rem;
+  height:13rem;
+  margin:0 auto;
+  border-radius: 10rem;
+  overflow: hidden;
+  cursor:pointer;
+}
+.modalCon .userImg img{
+  position:absolute;
+  top:0;
+  left:0;
+  z-index:9;
+}
+.modalCon .userImg p{
+  position:absolute;
+  top:50%;
+  left:50%;
+  color:#ff4500;
+  transform:translate(-50%,-50%);
+  z-index:9;
+}
+.modalCon .userImg .uerimgBg{
+  position:absolute;
+  top:-14rem;
+  left:0;
+  width:14rem;
+  height:14rem;
+  background:rgba(255, 255, 255, 0.6);
+  cursor:pointer;
+  z-index:99;
+}
+.modalCon .userImg:hover .uerimgBg{
+  top:0rem;
+}
+
 /* bottom*/
 .modalBtm{
   padding:10rem 0 0 0;
@@ -301,4 +462,17 @@ body{
 }
 .next{
   padding:0 0 0 1rem;
+}
+
+@media only screen and (min-width: 1554px) and (max-width: 1920px) {
+ }
+@media only screen and (min-width: 1200px) and (max-width: 1554px) {
+ }
+@media only screen and (min-width: 991px) and (max-width: 1199px) {
+ }
+@media only screen and (min-width: 768px) and (max-width: 990px) {
+ }
+@media only screen and (max-width: 767px) {
+ }
+@media only screen and (max-width: 479px) {
 }
